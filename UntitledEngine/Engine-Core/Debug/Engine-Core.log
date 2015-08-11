@@ -1,3 +1,5 @@
 ﻿  window.cpp
-g:\libraries\vsprojects\untitledengine\engine-core\src\graphics\window.cpp(41): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
   Engine-Core.vcxproj -> G:\Libraries\VSProjects\UntitledEngine\Debug\Engine-Core.exe
