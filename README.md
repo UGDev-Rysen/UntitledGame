@@ -7,8 +7,8 @@ This is the early development site for a game - codename "UntitledGame" - where 
 
 Credits (so far):
 
--Mokka: Programming, Engine
--Rysen: Assets, Story
--Alistair: Story, Artwork, Characters
--Kitsune: Story, Artwork, Assets
--Adrian: Story, Artwork, Level Design
+*Mokka: Programming, Engine
+*Rysen: Assets, Story
+*Alistair: Story, Artwork, Characters
+*Kitsune: Story, Artwork, Assets
+*Adrian: Story, Artwork, Level Design
