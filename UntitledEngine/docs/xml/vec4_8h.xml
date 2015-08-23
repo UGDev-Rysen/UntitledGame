@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="vec4_8h" kind="file" language="C++">
+    <compoundname>vec4.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="maths_8h" local="yes">G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/maths.h</includedby>
+    <includedby refid="vec4_8cpp" local="yes">G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp</includedby>
+    <incdepgraph>
+      <node id="93">
+        <label>iostream</label>
+      </node>
+      <node id="92">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.h</label>
+        <link refid="vec4.h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="95">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/maths.h</label>
+        <link refid="maths_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="97">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp</label>
+        <link refid="vec4_8cpp"/>
+      </node>
+      <node id="94">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.h</label>
+        <link refid="vec4.h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structu__engine_1_1maths_1_1vec4" prot="public">u_engine::maths::vec4</innerclass>
+    <innernamespace refid="namespaceu__engine">u_engine</innernamespace>
+    <innernamespace refid="namespaceu__engine_1_1maths">u_engine::maths</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceu__engine" kindref="compound">u_engine</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">maths<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structu__engine_1_1maths_1_1vec4" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="structu__engine_1_1maths_1_1vec4_1aa4ee395d64d387a30ec6e46a6413c3a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a7b942a2b3961a50f279a67f56dc5e74d" kindref="member">x</ref>,<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a6a927f4b26273d6edafc9dd1ae2ee6ff" kindref="member">y</ref>,<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1aa4ee395d64d387a30ec6e46a6413c3a1" kindref="member">z</ref>,<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a5bcce6d958d948707fec88887b05d7b6" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1ab0c186a02c834bda66c046547de6814d" kindref="member">vec4</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1ab0c186a02c834bda66c046547de6814d" kindref="member">vec4</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>z,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/>w);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1aa4235b88548c3fa37481b7486cfc80c5" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1ace7cc83f8c8ba43864caf8a5a508e175" kindref="member">substract</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1af65b36c890031315de94d474fa56f6fc" kindref="member">multiply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a52fd7b26797d488d2059acc885d56092" kindref="member">divide</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a9ec62ee0886928c55c9b6f0288c73c60" kindref="member">operator+</ref>(<ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="glew_8h_1a6358510bdde486b81c7951ee5c470ee4" kindref="member">left</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="glew_8h_1a18826d74cd7b4e758c25b4ba66e20be2" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1aefbcaef8da779dca955172b3245c56b0" kindref="member">operator-</ref>(<ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="glew_8h_1a6358510bdde486b81c7951ee5c470ee4" kindref="member">left</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="glew_8h_1a18826d74cd7b4e758c25b4ba66e20be2" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a37d87fd93437b19bb5227e993e55e01f" kindref="member">operator*</ref>(<ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="glew_8h_1a6358510bdde486b81c7951ee5c470ee4" kindref="member">left</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="glew_8h_1a18826d74cd7b4e758c25b4ba66e20be2" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a5a0b11e86fa22f63a08a7e7c21cfcc83" kindref="member">operator/</ref>(<ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref><sp/><ref refid="glew_8h_1a6358510bdde486b81c7951ee5c470ee4" kindref="member">left</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="glew_8h_1a18826d74cd7b4e758c25b4ba66e20be2" kindref="member">right</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1adef6410dbb61af15d95f8784a57b460c" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a5fca11dcf7d26779a77848a1a008fd81" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1afa920101db70f2d003a6bcb82cf6e0c4" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a83ad242c72ee1bf57378b3375f467076" kindref="member">operator-=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a45fe9c9271ba22c5fdf60985ba95cce9" kindref="member">operator*=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1acd51e1193766532515ecda949d1eace1" kindref="member">operator/=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="structu__engine_1_1maths_1_1vec4_1a6dcd498e1c41ae3faf0d638058aef180" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/><ref refid="glew_8h_1a10d3bc96cdfc1d478f52c13d5ffd9316" kindref="member">stream</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref>&amp;<sp/>vector);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.h"/>
+  </compounddef>
+</doxygen>

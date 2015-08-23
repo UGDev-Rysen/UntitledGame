@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="window_8h" local="yes">src\graphics\window.h</includes>
+    <includes refid="maths_8h" local="yes">src\maths\maths.h</includes>
+    <includes refid="glfw3_8h" local="no">glfw3.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>src\maths\maths.h</label>
+        <link refid="maths_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vec3.h</label>
+        <link refid="vec3_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src\graphics\window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>stdint.h</label>
+      </node>
+      <node id="33">
+        <label>glfw3.h</label>
+        <link refid="glfw3_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>glew.h</label>
+        <link refid="glew_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vec2.h</label>
+        <link refid="vec2_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>stddef.h</label>
+      </node>
+      <node id="32">
+        <label>GL/glu.h</label>
+      </node>
+      <node id="28">
+        <label>iostream</label>
+      </node>
+      <node id="38">
+        <label>vec4.h</label>
+        <link refid="vec4_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>GL/gl.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/main.cpp" line="5" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/main.cpp" bodystart="5" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="window_8h" kindref="compound">src\graphics\window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="maths_8h" kindref="compound">src\maths\maths.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="glfw3_8h" kindref="compound">glfw3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceu__engine" kindref="compound">u_engine</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">graphics;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">maths;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>Window<sp/>window(</highlight><highlight class="stringliteral">&quot;Untitled<sp/>Engine&quot;</highlight><highlight class="normal">,<sp/>960,<sp/>540);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1af339551012daa99fef8c4d313e98b546" kindref="member">glClearColor</ref>(0.2<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.3<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.8<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vao;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a71a2d01a12606fc26c1a28dba23dfce2" kindref="member">glGenVertexArrays</ref>(1,<sp/>&amp;vao);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(vao);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>vec3<sp/><ref refid="glew_8h_1a307708feff65d5bcfe44f8a767030677" kindref="member">a</ref>(1.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>2.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>3.0<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>vec3<sp/><ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>(2,<sp/>4,<sp/>6);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>+=<sp/><ref refid="glew_8h_1a7b01aaccb6b1691185992154f99088cb" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!window.closed())<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.clear();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>(<ref refid="glew_8h_1a307708feff65d5bcfe44f8a767030677" kindref="member">a</ref>)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="glew_8h_1a36b428225d54dd9cf2e564e5ada3ad3d" kindref="member">GL_QUADS</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(-0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>-0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(-0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>-0.5<ref refid="glew_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glew_8h_1a1101b854177debf0c1d2611fbec24ffa" kindref="member">glDrawArrays</ref>(<ref refid="glew_8h_1a7180045dcb52b22af2cd0366026bc3ed" kindref="member">GL_ARRAY_BUFFER</ref>,<sp/>0,<sp/>6);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.update();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/main.cpp"/>
+  </compounddef>
+</doxygen>

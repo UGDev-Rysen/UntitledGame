@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_8574ffe85ef09534ebddddc8a19e597f" kind="dir">
+    <compoundname>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src</compoundname>
+    <innerdir refid="dir_3c9fe894468b476c7649312c4f0ccac1">G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics</innerdir>
+    <innerdir refid="dir_94a113110f2e733b1116b3a7140d126c">G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/"/>
+  </compounddef>
+</doxygen>

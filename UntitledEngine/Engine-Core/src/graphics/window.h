@@ -3,8 +3,7 @@
 #include <glew.h>
 #include <glfw3.h>
 
-namespace u_engine {
-	namespace graphics {
+namespace u_engine { namespace graphics {
 
 #define MAX_KEYS 1024
 #define MAX_BUTTONS 32

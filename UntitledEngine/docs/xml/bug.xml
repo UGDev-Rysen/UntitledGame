@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="bug" kind="page">
+    <compoundname>bug</compoundname>
+    <title>Bug List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="bug_1_bug000001"/>globalScope&gt; Member <ref refid="group__monitor_1gacfa9978e57c73670577d530df23bf275" kindref="member">glfwSetMonitorCallback</ref>  (GLFWmonitorfun cbfun)</term></varlistentry>
+<listitem><para><bold>X11:</bold> This callback is not yet called on monitor configuration changes.</para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>
