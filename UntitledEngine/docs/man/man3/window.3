@@ -1,0 +1,1461 @@
+.TH "window" 3 "Sun Aug 23 2015" "Version v0.0.3" "UntitledEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+window \- Window handling
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBGLFWwindow\fP \fBGLFWwindow\fP"
+.br
+.RI "\fIOpaque window object\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowposfun\fP) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+.br
+.RI "\fIThe function signature for window position callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowsizefun\fP) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+.br
+.RI "\fIThe function signature for window resize callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowclosefun\fP) (\fBGLFWwindow\fP *)"
+.br
+.RI "\fIThe function signature for window close callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowrefreshfun\fP) (\fBGLFWwindow\fP *)"
+.br
+.RI "\fIThe function signature for window content refresh callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowfocusfun\fP) (\fBGLFWwindow\fP *, \fBint\fP)"
+.br
+.RI "\fIThe function signature for window focus/defocus callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWwindowiconifyfun\fP) (\fBGLFWwindow\fP *, \fBint\fP)"
+.br
+.RI "\fIThe function signature for window iconify/restore callbacks\&. \fP"
+.ti -1c
+.RI "typedef \fBvoid\fP(* \fBGLFWframebuffersizefun\fP) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+.br
+.RI "\fIThe function signature for framebuffer resize callbacks\&. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwDefaultWindowHints\fP (\fBvoid\fP)"
+.br
+.RI "\fIResets all window hints to their default values\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwWindowHint\fP (\fBint\fP \fBtarget\fP, \fBint\fP hint)"
+.br
+.RI "\fISets the specified window hint to the desired value\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindow\fP * \fBglfwCreateWindow\fP (\fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP, const char *title, \fBGLFWmonitor\fP *monitor, \fBGLFWwindow\fP *share)"
+.br
+.RI "\fICreates a window and its associated context\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwDestroyWindow\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIDestroys the specified window and its context\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBint\fP \fBglfwWindowShouldClose\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIChecks the close flag of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSetWindowShouldClose\fP (\fBGLFWwindow\fP *window, \fBint\fP \fBvalue\fP)"
+.br
+.RI "\fISets the close flag of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSetWindowTitle\fP (\fBGLFWwindow\fP *window, const char *title)"
+.br
+.RI "\fISets the title of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwGetWindowPos\fP (\fBGLFWwindow\fP *window, \fBint\fP *xpos, \fBint\fP *ypos)"
+.br
+.RI "\fIRetrieves the position of the client area of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSetWindowPos\fP (\fBGLFWwindow\fP *window, \fBint\fP xpos, \fBint\fP ypos)"
+.br
+.RI "\fISets the position of the client area of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwGetWindowSize\fP (\fBGLFWwindow\fP *window, \fBint\fP *\fBwidth\fP, \fBint\fP *\fBheight\fP)"
+.br
+.RI "\fIRetrieves the size of the client area of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSetWindowSize\fP (\fBGLFWwindow\fP *window, \fBint\fP \fBwidth\fP, \fBint\fP \fBheight\fP)"
+.br
+.RI "\fISets the size of the client area of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwGetFramebufferSize\fP (\fBGLFWwindow\fP *window, \fBint\fP *\fBwidth\fP, \fBint\fP *\fBheight\fP)"
+.br
+.RI "\fIRetrieves the size of the framebuffer of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwGetWindowFrameSize\fP (\fBGLFWwindow\fP *window, \fBint\fP *\fBleft\fP, \fBint\fP *\fBtop\fP, \fBint\fP *\fBright\fP, \fBint\fP *\fBbottom\fP)"
+.br
+.RI "\fIRetrieves the size of the frame of the window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwIconifyWindow\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIIconifies the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwRestoreWindow\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIRestores the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwShowWindow\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIMakes the specified window visible\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwHideWindow\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIHides the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWmonitor\fP * \fBglfwGetWindowMonitor\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIReturns the monitor that the window uses for full screen mode\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBint\fP \fBglfwGetWindowAttrib\fP (\fBGLFWwindow\fP *window, \fBint\fP attrib)"
+.br
+.RI "\fIReturns an attribute of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSetWindowUserPointer\fP (\fBGLFWwindow\fP *window, \fBvoid\fP *\fBpointer\fP)"
+.br
+.RI "\fISets the user pointer of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP * \fBglfwGetWindowUserPointer\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fIReturns the user pointer of the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowposfun\fP \fBglfwSetWindowPosCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowposfun\fP cbfun)"
+.br
+.RI "\fISets the position callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowsizefun\fP \fBglfwSetWindowSizeCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowsizefun\fP cbfun)"
+.br
+.RI "\fISets the size callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowclosefun\fP \fBglfwSetWindowCloseCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowclosefun\fP cbfun)"
+.br
+.RI "\fISets the close callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowrefreshfun\fP \fBglfwSetWindowRefreshCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowrefreshfun\fP cbfun)"
+.br
+.RI "\fISets the refresh callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowfocusfun\fP \fBglfwSetWindowFocusCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowfocusfun\fP cbfun)"
+.br
+.RI "\fISets the focus callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWwindowiconifyfun\fP \fBglfwSetWindowIconifyCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWwindowiconifyfun\fP cbfun)"
+.br
+.RI "\fISets the iconify callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBGLFWframebuffersizefun\fP \fBglfwSetFramebufferSizeCallback\fP (\fBGLFWwindow\fP *window, \fBGLFWframebuffersizefun\fP cbfun)"
+.br
+.RI "\fISets the framebuffer resize callback for the specified window\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwPollEvents\fP (\fBvoid\fP)"
+.br
+.RI "\fIProcesses all pending events\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwWaitEvents\fP (\fBvoid\fP)"
+.br
+.RI "\fIWaits until events are queued and processes them\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwPostEmptyEvent\fP (\fBvoid\fP)"
+.br
+.RI "\fIPosts an empty event to the event queue\&. \fP"
+.ti -1c
+.RI "\fBGLFWAPI\fP \fBvoid\fP \fBglfwSwapBuffers\fP (\fBGLFWwindow\fP *window)"
+.br
+.RI "\fISwaps the front and back buffers of the specified window\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the reference documentation for window related functions and types, including creation, deletion and event polling\&. For more information, see the \fBWindow handling\fP\&. 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBvoid\fP(*  GLFWframebuffersizefun) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+
+.PP
+The function signature for framebuffer resize callbacks\&. This is the function signature for framebuffer resize callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose framebuffer was resized\&. 
+.br
+\fIwidth\fP The new width, in pixels, of the framebuffer\&. 
+.br
+\fIheight\fP The new height, in pixels, of the framebuffer\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetFramebufferSizeCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 841 of file glfw3\&.h\&.
+.SS "typedef struct \fBGLFWwindow\fP \fBGLFWwindow\fP"
+
+.PP
+Opaque window object\&. Opaque window object\&. 
+.PP
+Definition at line 722 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowclosefun) (\fBGLFWwindow\fP *)"
+
+.PP
+The function signature for window close callbacks\&. This is the function signature for window close callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window that the user attempted to close\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowCloseCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 785 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowfocusfun) (\fBGLFWwindow\fP *, \fBint\fP)"
+
+.PP
+The function signature for window focus/defocus callbacks\&. This is the function signature for window focus callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window that gained or lost input focus\&. 
+.br
+\fIfocused\fP \fCGL_TRUE\fP if the window was given input focus, or \fCGL_FALSE\fP if it lost it\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowFocusCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 811 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowiconifyfun) (\fBGLFWwindow\fP *, \fBint\fP)"
+
+.PP
+The function signature for window iconify/restore callbacks\&. This is the function signature for window iconify/restore callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window that was iconified or restored\&. 
+.br
+\fIiconified\fP \fCGL_TRUE\fP if the window was iconified, or \fCGL_FALSE\fP if it was restored\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowIconifyCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 826 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowposfun) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+
+.PP
+The function signature for window position callbacks\&. This is the function signature for window position callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window that was moved\&. 
+.br
+\fIxpos\fP The new x-coordinate, in screen coordinates, of the upper-left corner of the client area of the window\&. 
+.br
+\fIypos\fP The new y-coordinate, in screen coordinates, of the upper-left corner of the client area of the window\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowPosCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 759 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowrefreshfun) (\fBGLFWwindow\fP *)"
+
+.PP
+The function signature for window content refresh callbacks\&. This is the function signature for window refresh callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose content needs to be refreshed\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowRefreshCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 797 of file glfw3\&.h\&.
+.SS "typedef \fBvoid\fP(*  GLFWwindowsizefun) (\fBGLFWwindow\fP *, \fBint\fP, \fBint\fP)"
+
+.PP
+The function signature for window resize callbacks\&. This is the function signature for window size callback functions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window that was resized\&. 
+.br
+\fIwidth\fP The new width, in screen coordinates, of the window\&. 
+.br
+\fIheight\fP The new height, in screen coordinates, of the window\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBglfwSetWindowSizeCallback\fP 
+.RE
+.PP
+
+.PP
+Definition at line 773 of file glfw3\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBGLFWAPI\fP \fBGLFWwindow\fP* glfwCreateWindow (\fBint\fP width, \fBint\fP height, const char * title, \fBGLFWmonitor\fP * monitor, \fBGLFWwindow\fP * share)"
+
+.PP
+Creates a window and its associated context\&. This function creates a window and its associated OpenGL or OpenGL ES context\&. Most of the options controlling how the window and its context should be created are specified with \fBwindow hints\fP\&.
+.PP
+Successful creation does not change which context is current\&. Before you can use the newly created context, you need to \fBmake it current\fP\&. For information about the \fCshare\fP parameter, see \fBcontext_sharing\fP\&.
+.PP
+The created window, framebuffer and context may differ from what you requested, as not all parameters and hints are \fBhard constraints\fP\&. This includes the size of the window, especially for full screen windows\&. To query the actual attributes of the created window, framebuffer and context, use queries like \fBglfwGetWindowAttrib\fP and \fBglfwGetWindowSize\fP\&.
+.PP
+To create a full screen window, you need to specify the monitor the window will cover\&. If no monitor is specified, windowed mode will be used\&. Unless you have a way for the user to choose a specific monitor, it is recommended that you pick the primary monitor\&. For more information on how to query connected monitors, see \fBmonitor_monitors\fP\&.
+.PP
+For full screen windows, the specified size becomes the resolution of the window's \fIdesired video mode\fP\&. As long as a full screen window has input focus, the supported video mode most closely matching the desired video mode is set for the specified monitor\&. For more information about full screen windows, including the creation of so called \fIwindowed full screen\fP or \fIborderless full screen\fP windows, see \fBwindow_windowed_full_screen\fP\&.
+.PP
+By default, newly created windows use the placement recommended by the window system\&. To create the window at a specific position, make it initially invisible using the \fBGLFW_VISIBLE\fP window hint, set its \fBposition\fP and then \fBshow\fP it\&.
+.PP
+If a full screen window has input focus, the screensaver is prohibited from starting\&.
+.PP
+Window systems put limits on window sizes\&. Very large or very small window dimensions may be overridden by the window system on creation\&. Check the actual \fBsize\fP after creation\&.
+.PP
+The \fBswap interval\fP is not set during window creation and the initial value may vary depending on driver settings and defaults\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP The desired width, in screen coordinates, of the window\&. This must be greater than zero\&. 
+.br
+\fIheight\fP The desired height, in screen coordinates, of the window\&. This must be greater than zero\&. 
+.br
+\fItitle\fP The initial, UTF-8 encoded window title\&. 
+.br
+\fImonitor\fP The monitor to use for full screen mode, or \fCNULL\fP to use windowed mode\&. 
+.br
+\fIshare\fP The window whose context to share resources with, or \fCNULL\fP to not share resources\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The handle of the created window, or \fCNULL\fP if an \fBerror\fP occurred\&.
+.RE
+.PP
+\fBRemarks:\fP
+.RS 4
+\fBWindows:\fP Window creation will fail if the Microsoft GDI software OpenGL implementation is the only one available\&.
+.PP
+\fBWindows:\fP If the executable has an icon resource named \fCGLFW_ICON,\fP it will be set as the icon for the window\&. If no such icon is present, the \fCIDI_WINLOGO\fP icon will be used instead\&.
+.PP
+\fBWindows:\fP The context to share resources with may not be current on any other thread\&.
+.PP
+\fBOS X:\fP The GLFW window has no icon, as it is not a document window, but the dock icon will be the same as the application bundle's icon\&. For more information on bundles, see the \fCBundle Programming Guide\fP in the Mac Developer Library\&.
+.PP
+\fBOS X:\fP The first time a window is created the menu bar is populated with common commands like Hide, Quit and About\&. The About entry opens a minimal about dialog with information from the application's bundle\&. The menu bar can be disabled with a \fBcompile-time option\fP\&.
+.PP
+\fBOS X:\fP On OS X 10\&.10 and later the window frame will not be rendered at full resolution on Retina displays unless the \fCNSHighResolutionCapable\fP key is enabled in the application bundle's \fCInfo\&.plist\fP\&. For more information, see \fCHigh Resolution Guidelines for OS X\fP in the Mac Developer Library\&.
+.PP
+\fBX11:\fP There is no mechanism for setting the window icon yet\&.
+.PP
+\fBX11:\fP Some window managers will not respect the placement of initially hidden windows\&.
+.RE
+.PP
+\fBReentrancy\fP
+.RS 4
+This function may not be called from a callback\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_creation\fP 
+.PP
+\fBglfwDestroyWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. Replaces \fCglfwOpenWindow\fP\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwDefaultWindowHints (\fBvoid\fP)"
+
+.PP
+Resets all window hints to their default values\&. This function resets all window hints to their \fBdefault values\fP\&.
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_hints\fP 
+.PP
+\fBglfwWindowHint\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwDestroyWindow (\fBGLFWwindow\fP * window)"
+
+.PP
+Destroys the specified window and its context\&. This function destroys the specified window and its context\&. On calling this function, no further callbacks will be called for that window\&.
+.PP
+If the context of the specified window is current on the main thread, it is detached before being destroyed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to destroy\&.
+.RE
+.PP
+\fBNote:\fP
+.RS 4
+The context of the specified window must not be current on any other thread when this function is called\&.
+.RE
+.PP
+\fBReentrancy\fP
+.RS 4
+This function may not be called from a callback\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_creation\fP 
+.PP
+\fBglfwCreateWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. Replaces \fCglfwCloseWindow\fP\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwGetFramebufferSize (\fBGLFWwindow\fP * window, \fBint\fP * width, \fBint\fP * height)"
+
+.PP
+Retrieves the size of the framebuffer of the specified window\&. This function retrieves the size, in pixels, of the framebuffer of the specified window\&. If you wish to retrieve the size of the window in screen coordinates, see \fBglfwGetWindowSize\fP\&.
+.PP
+Any or all of the size arguments may be \fCNULL\fP\&. If an error occurs, all non-\fCNULL\fP size arguments will be set to zero\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose framebuffer to query\&. 
+.br
+\fIwidth\fP Where to store the width, in pixels, of the framebuffer, or \fCNULL\fP\&. 
+.br
+\fIheight\fP Where to store the height, in pixels, of the framebuffer, or \fCNULL\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_fbsize\fP 
+.PP
+\fBglfwSetFramebufferSizeCallback\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBint\fP glfwGetWindowAttrib (\fBGLFWwindow\fP * window, \fBint\fP attrib)"
+
+.PP
+Returns an attribute of the specified window\&. This function returns the value of an attribute of the specified window or its OpenGL or OpenGL ES context\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to query\&. 
+.br
+\fIattrib\fP The \fBwindow attribute\fP whose value to return\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The value of the attribute, or zero if an \fBerror\fP occurred\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_attribs\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. Replaces \fCglfwGetWindowParam\fP and \fCglfwGetGLVersion\fP\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwGetWindowFrameSize (\fBGLFWwindow\fP * window, \fBint\fP * left, \fBint\fP * top, \fBint\fP * right, \fBint\fP * bottom)"
+
+.PP
+Retrieves the size of the frame of the window\&. This function retrieves the size, in screen coordinates, of each edge of the frame of the specified window\&. This size includes the title bar, if the window has one\&. The size of the frame may vary depending on the \fBwindow-related hints\fP used to create it\&.
+.PP
+Because this function retrieves the size of each window frame edge and not the offset along a particular coordinate axis, the retrieved values will always be zero or positive\&.
+.PP
+Any or all of the size arguments may be \fCNULL\fP\&. If an error occurs, all non-\fCNULL\fP size arguments will be set to zero\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose frame size to query\&. 
+.br
+\fIleft\fP Where to store the size, in screen coordinates, of the left edge of the window frame, or \fCNULL\fP\&. 
+.br
+\fItop\fP Where to store the size, in screen coordinates, of the top edge of the window frame, or \fCNULL\fP\&. 
+.br
+\fIright\fP Where to store the size, in screen coordinates, of the right edge of the window frame, or \fCNULL\fP\&. 
+.br
+\fIbottom\fP Where to store the size, in screen coordinates, of the bottom edge of the window frame, or \fCNULL\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_size\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.1\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWmonitor\fP* glfwGetWindowMonitor (\fBGLFWwindow\fP * window)"
+
+.PP
+Returns the monitor that the window uses for full screen mode\&. This function returns the handle of the monitor that the specified window is in full screen on\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to query\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The monitor, or \fCNULL\fP if the window is in windowed mode or an error occurred\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_monitor\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwGetWindowPos (\fBGLFWwindow\fP * window, \fBint\fP * xpos, \fBint\fP * ypos)"
+
+.PP
+Retrieves the position of the client area of the specified window\&. This function retrieves the position, in screen coordinates, of the upper-left corner of the client area of the specified window\&.
+.PP
+Any or all of the position arguments may be \fCNULL\fP\&. If an error occurs, all non-\fCNULL\fP position arguments will be set to zero\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to query\&. 
+.br
+\fIxpos\fP Where to store the x-coordinate of the upper-left corner of the client area, or \fCNULL\fP\&. 
+.br
+\fIypos\fP Where to store the y-coordinate of the upper-left corner of the client area, or \fCNULL\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_pos\fP 
+.PP
+\fBglfwSetWindowPos\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwGetWindowSize (\fBGLFWwindow\fP * window, \fBint\fP * width, \fBint\fP * height)"
+
+.PP
+Retrieves the size of the client area of the specified window\&. This function retrieves the size, in screen coordinates, of the client area of the specified window\&. If you wish to retrieve the size of the framebuffer of the window in pixels, see \fBglfwGetFramebufferSize\fP\&.
+.PP
+Any or all of the size arguments may be \fCNULL\fP\&. If an error occurs, all non-\fCNULL\fP size arguments will be set to zero\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose size to retrieve\&. 
+.br
+\fIwidth\fP Where to store the width, in screen coordinates, of the client area, or \fCNULL\fP\&. 
+.br
+\fIheight\fP Where to store the height, in screen coordinates, of the client area, or \fCNULL\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_size\fP 
+.PP
+\fBglfwSetWindowSize\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP* glfwGetWindowUserPointer (\fBGLFWwindow\fP * window)"
+
+.PP
+Returns the user pointer of the specified window\&. This function returns the current value of the user-defined pointer of the specified window\&. The initial value is \fCNULL\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose pointer to return\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&. Access is not synchronized\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_userptr\fP 
+.PP
+\fBglfwSetWindowUserPointer\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwHideWindow (\fBGLFWwindow\fP * window)"
+
+.PP
+Hides the specified window\&. This function hides the specified window if it was previously visible\&. If the window is already hidden or is in full screen mode, this function does nothing\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to hide\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_hide\fP 
+.PP
+\fBglfwShowWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwIconifyWindow (\fBGLFWwindow\fP * window)"
+
+.PP
+Iconifies the specified window\&. This function iconifies (minimizes) the specified window if it was previously restored\&. If the window is already iconified, this function does nothing\&.
+.PP
+If the specified window is a full screen window, the original monitor resolution is restored until the window is restored\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to iconify\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_iconify\fP 
+.PP
+\fBglfwRestoreWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 2\&.1\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwPollEvents (\fBvoid\fP)"
+
+.PP
+Processes all pending events\&. This function processes only those events that are already in the event queue and then returns immediately\&. Processing events will cause the window and input callbacks associated with those events to be called\&.
+.PP
+On some platforms, a window move, resize or menu operation will cause event processing to block\&. This is due to how event processing is designed on those platforms\&. You can use the \fBwindow refresh callback\fP to redraw the contents of your window when necessary during such operations\&.
+.PP
+On some platforms, certain events are sent directly to the application without going through the event queue, causing callbacks to be called outside of a call to one of the event processing functions\&.
+.PP
+Event processing is not required for joystick input to work\&.
+.PP
+\fBReentrancy\fP
+.RS 4
+This function may not be called from a callback\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBevents\fP 
+.PP
+\fBglfwWaitEvents\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwPostEmptyEvent (\fBvoid\fP)"
+
+.PP
+Posts an empty event to the event queue\&. This function posts an empty event from the current thread to the event queue, causing \fBglfwWaitEvents\fP to return\&.
+.PP
+If no windows exist, this function returns immediately\&. For synchronization of threads in applications that do not create windows, use your threading library of choice\&.
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBevents\fP 
+.PP
+\fBglfwWaitEvents\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.1\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwRestoreWindow (\fBGLFWwindow\fP * window)"
+
+.PP
+Restores the specified window\&. This function restores the specified window if it was previously iconified (minimized)\&. If the window is already restored, this function does nothing\&.
+.PP
+If the specified window is a full screen window, the resolution chosen for the window is restored on the selected monitor\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to restore\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_iconify\fP 
+.PP
+\fBglfwIconifyWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 2\&.1\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWframebuffersizefun\fP glfwSetFramebufferSizeCallback (\fBGLFWwindow\fP * window, \fBGLFWframebuffersizefun\fP cbfun)"
+
+.PP
+Sets the framebuffer resize callback for the specified window\&. This function sets the framebuffer resize callback of the specified window, which is called when the framebuffer of the specified window is resized\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_fbsize\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowclosefun\fP glfwSetWindowCloseCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowclosefun\fP cbfun)"
+
+.PP
+Sets the close callback for the specified window\&. This function sets the close callback of the specified window, which is called when the user attempts to close the window, for example by clicking the close widget in the title bar\&.
+.PP
+The close flag is set before this callback is called, but you can modify it at any time with \fBglfwSetWindowShouldClose\fP\&.
+.PP
+The close callback is not triggered by \fBglfwDestroyWindow\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBRemarks:\fP
+.RS 4
+\fBOS X:\fP Selecting Quit from the application menu will trigger the close callback for all windows\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_close\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 2\&.5\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. Updated callback signature\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowfocusfun\fP glfwSetWindowFocusCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowfocusfun\fP cbfun)"
+
+.PP
+Sets the focus callback for the specified window\&. This function sets the focus callback of the specified window, which is called when the window gains or loses input focus\&.
+.PP
+After the focus callback is called for a window that lost input focus, synthetic key and mouse button release events will be generated for all such that had been pressed\&. For more information, see \fBglfwSetKeyCallback\fP and \fBglfwSetMouseButtonCallback\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_focus\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowiconifyfun\fP glfwSetWindowIconifyCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowiconifyfun\fP cbfun)"
+
+.PP
+Sets the iconify callback for the specified window\&. This function sets the iconification callback of the specified window, which is called when the window is iconified or restored\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_iconify\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSetWindowPos (\fBGLFWwindow\fP * window, \fBint\fP xpos, \fBint\fP ypos)"
+
+.PP
+Sets the position of the client area of the specified window\&. This function sets the position, in screen coordinates, of the upper-left corner of the client area of the specified windowed mode window\&. If the window is a full screen window, this function does nothing\&.
+.PP
+\fBDo not use this function\fP to move an already visible window unless you have very good reasons for doing so, as it will confuse and annoy the user\&.
+.PP
+The window manager may put limits on what positions are allowed\&. GLFW cannot and should not override these limits\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to query\&. 
+.br
+\fIxpos\fP The x-coordinate of the upper-left corner of the client area\&. 
+.br
+\fIypos\fP The y-coordinate of the upper-left corner of the client area\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_pos\fP 
+.PP
+\fBglfwGetWindowPos\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowposfun\fP glfwSetWindowPosCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowposfun\fP cbfun)"
+
+.PP
+Sets the position callback for the specified window\&. This function sets the position callback of the specified window, which is called when the window is moved\&. The callback is provided with the screen position of the upper-left corner of the client area of the window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_pos\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowrefreshfun\fP glfwSetWindowRefreshCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowrefreshfun\fP cbfun)"
+
+.PP
+Sets the refresh callback for the specified window\&. This function sets the refresh callback of the specified window, which is called when the client area of the window needs to be redrawn, for example if the window has been exposed after having been covered by another window\&.
+.PP
+On compositing window systems such as Aero, Compiz or Aqua, where the window contents are saved off-screen, this callback may be called only very infrequently or never at all\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_refresh\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 2\&.5\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. Updated callback signature\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSetWindowShouldClose (\fBGLFWwindow\fP * window, \fBint\fP value)"
+
+.PP
+Sets the close flag of the specified window\&. This function sets the value of the close flag of the specified window\&. This can be used to override the user's attempt to close the window, or to signal that it should be closed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose flag to change\&. 
+.br
+\fIvalue\fP The new value\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&. Access is not synchronized\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_close\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSetWindowSize (\fBGLFWwindow\fP * window, \fBint\fP width, \fBint\fP height)"
+
+.PP
+Sets the size of the client area of the specified window\&. This function sets the size, in screen coordinates, of the client area of the specified window\&.
+.PP
+For full screen windows, this function selects and switches to the resolution closest to the specified size, without affecting the window's context\&. As the context is unaffected, the bit depths of the framebuffer remain unchanged\&.
+.PP
+The window manager may put limits on what sizes are allowed\&. GLFW cannot and should not override these limits\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to resize\&. 
+.br
+\fIwidth\fP The desired width of the specified window\&. 
+.br
+\fIheight\fP The desired height of the specified window\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_size\fP 
+.PP
+\fBglfwGetWindowSize\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBGLFWwindowsizefun\fP glfwSetWindowSizeCallback (\fBGLFWwindow\fP * window, \fBGLFWwindowsizefun\fP cbfun)"
+
+.PP
+Sets the size callback for the specified window\&. This function sets the size callback of the specified window, which is called when the window is resized\&. The callback is provided with the size, in screen coordinates, of the client area of the window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose callback to set\&. 
+.br
+\fIcbfun\fP The new callback, or \fCNULL\fP to remove the currently set callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The previously set callback, or \fCNULL\fP if no callback was set or the library had not been \fBinitialized\fP\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_size\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. Updated callback signature\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSetWindowTitle (\fBGLFWwindow\fP * window, const char * title)"
+
+.PP
+Sets the title of the specified window\&. This function sets the window title, encoded as UTF-8, of the specified window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose title to change\&. 
+.br
+\fItitle\fP The UTF-8 encoded window title\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_title\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSetWindowUserPointer (\fBGLFWwindow\fP * window, \fBvoid\fP * pointer)"
+
+.PP
+Sets the user pointer of the specified window\&. This function sets the user-defined pointer of the specified window\&. The current value is retained until the window is destroyed\&. The initial value is \fCNULL\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose pointer to set\&. 
+.br
+\fIpointer\fP The new value\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&. Access is not synchronized\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_userptr\fP 
+.PP
+\fBglfwGetWindowUserPointer\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwShowWindow (\fBGLFWwindow\fP * window)"
+
+.PP
+Makes the specified window visible\&. This function makes the specified window visible if it was previously hidden\&. If the window is already visible or is in full screen mode, this function does nothing\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to make visible\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_hide\fP 
+.PP
+\fBglfwHideWindow\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwSwapBuffers (\fBGLFWwindow\fP * window)"
+
+.PP
+Swaps the front and back buffers of the specified window\&. This function swaps the front and back buffers of the specified window\&. If the swap interval is greater than zero, the GPU driver waits the specified number of screen updates before swapping the buffers\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window whose buffers to swap\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBbuffer_swap\fP 
+.PP
+\fBglfwSwapInterval\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 1\&.0\&.
+.RE
+.PP
+\fB\fP
+.RS 4
+\fBGLFW 3:\fP Added window handle parameter\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwWaitEvents (\fBvoid\fP)"
+
+.PP
+Waits until events are queued and processes them\&. This function puts the calling thread to sleep until at least one event is available in the event queue\&. Once one or more events are available, it behaves exactly like \fBglfwPollEvents\fP, i\&.e\&. the events in the queue are processed and the function then returns immediately\&. Processing events will cause the window and input callbacks associated with those events to be called\&.
+.PP
+Since not all events are associated with callbacks, this function may return without a callback having been called even if you are monitoring all callbacks\&.
+.PP
+On some platforms, a window move, resize or menu operation will cause event processing to block\&. This is due to how event processing is designed on those platforms\&. You can use the \fBwindow refresh callback\fP to redraw the contents of your window when necessary during such operations\&.
+.PP
+On some platforms, certain callbacks may be called outside of a call to one of the event processing functions\&.
+.PP
+If no windows exist, this function returns immediately\&. For synchronization of threads in applications that do not create windows, use your threading library of choice\&.
+.PP
+Event processing is not required for joystick input to work\&.
+.PP
+\fBReentrancy\fP
+.RS 4
+This function may not be called from a callback\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBevents\fP 
+.PP
+\fBglfwPollEvents\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 2\&.5\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBvoid\fP glfwWindowHint (\fBint\fP target, \fBint\fP hint)"
+
+.PP
+Sets the specified window hint to the desired value\&. This function sets hints for the next call to \fBglfwCreateWindow\fP\&. The hints, once set, retain their values until changed by a call to \fBglfwWindowHint\fP or \fBglfwDefaultWindowHints\fP, or until the library is terminated\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fItarget\fP The \fBwindow hint\fP to set\&. 
+.br
+\fIhint\fP The new value of the window hint\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may only be called from the main thread\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_hints\fP 
+.PP
+\fBglfwDefaultWindowHints\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. Replaces \fCglfwOpenWindowHint\fP\&. 
+.RE
+.PP
+
+.SS "\fBGLFWAPI\fP \fBint\fP glfwWindowShouldClose (\fBGLFWwindow\fP * window)"
+
+.PP
+Checks the close flag of the specified window\&. This function returns the value of the close flag of the specified window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindow\fP The window to query\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The value of the close flag\&.
+.RE
+.PP
+\fBThread Safety\fP
+.RS 4
+This function may be called from any thread\&. Access is not synchronized\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwindow_close\fP
+.RE
+.PP
+\fBSince:\fP
+.RS 4
+Added in GLFW 3\&.0\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UntitledEngine from the source code\&.

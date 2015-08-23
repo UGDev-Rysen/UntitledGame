@@ -1,0 +1,1368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__input" kind="group">
+    <compoundname>input</compoundname>
+    <title>Input handling</title>
+    <innergroup refid="group__keys">Keyboard keys</innergroup>
+    <innergroup refid="group__mods">Modifier key flags</innergroup>
+    <innergroup refid="group__buttons">Mouse buttons</innergroup>
+    <innergroup refid="group__joysticks">Joysticks</innergroup>
+    <innergroup refid="group__shapes">Standard cursor shapes</innergroup>
+      <sectiondef kind="user-defined">
+      <header>Key and button actions</header>
+      <memberdef kind="define" id="group__input_1gada11d965c4da13090ad336e030e4d11f" prot="public" static="no">
+        <name>GLFW_RELEASE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>The key or mouse button was released. </para>        </briefdescription>
+        <detaileddescription>
+<para>The key or mouse button was released. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="225" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__input_1ga2485743d0b59df3791c45951c4195265" prot="public" static="no">
+        <name>GLFW_PRESS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The key or mouse button was pressed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The key or mouse button was pressed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="232" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__input_1gac96fd3b9fc66c6f0eebaf6532595338f" prot="public" static="no">
+        <name>GLFW_REPEAT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>The key was held down until it repeated. </para>        </briefdescription>
+        <detaileddescription>
+<para>The key was held down until it repeated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="239" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__input_1ga39893a4a7e7c3239c98d29c9e084350c" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWmousebuttonfun) (GLFWwindow *, int, int, int)</definition>
+        <argsstring>)(GLFWwindow *, int, int, int)</argsstring>
+        <name>GLFWmousebuttonfun</name>
+        <briefdescription>
+<para>The function signature for mouse button callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for mouse button callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__buttons" kindref="compound">mouse button</ref> that was pressed or released. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mods</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit field describing which <ref refid="group__mods" kindref="compound">modifier keys</ref> were held down.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1ga20e5ba1ce4e086aedd48a06dc311c95f" kindref="member">glfwSetMouseButtonCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="858" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1ga4cfad918fa836f09541e7b9acd36686c" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWcursorposfun) (GLFWwindow *, double, double)</definition>
+        <argsstring>)(GLFWwindow *, double, double)</argsstring>
+        <name>GLFWcursorposfun</name>
+        <briefdescription>
+<para>The function signature for cursor position callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for cursor position callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x-coordinate, in screen coordinates, of the cursor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y-coordinate, in screen coordinates, of the cursor.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1ga9c49c0d3d3c775c3124726f1d902124d" kindref="member">glfwSetCursorPosCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="872" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="872" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1ga51ab436c41eeaed6db5a0c9403b1c840" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWcursorenterfun) (GLFWwindow *, int)</definition>
+        <argsstring>)(GLFWwindow *, int)</argsstring>
+        <name>GLFWcursorenterfun</name>
+        <briefdescription>
+<para>The function signature for cursor enter/leave callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for cursor enter/leave callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">entered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>GL_TRUE</computeroutput> if the cursor entered the window&apos;s client area, or <computeroutput>GL_FALSE</computeroutput> if it left it.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1gaa20014985561efeb2c53f1956f727830" kindref="member">glfwSetCursorEnterCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="886" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="886" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1ga4687e2199c60a18a8dd1da532e6d75c9" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWscrollfun) (GLFWwindow *, double, double)</definition>
+        <argsstring>)(GLFWwindow *, double, double)</argsstring>
+        <name>GLFWscrollfun</name>
+        <briefdescription>
+<para>The function signature for scroll callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for scroll callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xoffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll offset along the x-axis. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">yoffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scroll offset along the y-axis.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1ga29011514e93368712a3063a28707ced3" kindref="member">glfwSetScrollCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="900" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="900" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1ga0192a232a41e4e82948217c8ba94fdfd" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWkeyfun) (GLFWwindow *, int, int, int, int)</definition>
+        <argsstring>)(GLFWwindow *, int, int, int, int)</argsstring>
+        <name>GLFWkeyfun</name>
+        <briefdescription>
+<para>The function signature for keyboard key callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for keyboard key callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__keys" kindref="compound">keyboard key</ref> that was pressed or released. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">scancode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The system-specific scancode of the key. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>GLFW_PRESS</computeroutput>, <computeroutput>GLFW_RELEASE</computeroutput> or <computeroutput>GLFW_REPEAT</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mods</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit field describing which <ref refid="group__mods" kindref="compound">modifier keys</ref> were held down.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1gaa73bb92f628a2a0be9c132d56f19362c" kindref="member">glfwSetKeyCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="917" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="917" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1gabf24451c7ceb1952bc02b17a0d5c3e5f" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWcharfun) (GLFWwindow *, unsigned int)</definition>
+        <argsstring>)(GLFWwindow *, unsigned int)</argsstring>
+        <name>GLFWcharfun</name>
+        <briefdescription>
+<para>The function signature for Unicode character callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for Unicode character callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">codepoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Unicode code point of the character.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1ga07b2959b23dc3e466ce7475746021002" kindref="member">glfwSetCharCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="930" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1gae36fb6897d2b7df9b128900c8ce9c507" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWcharmodsfun) (GLFWwindow *, unsigned int, int)</definition>
+        <argsstring>)(GLFWwindow *, unsigned int, int)</argsstring>
+        <name>GLFWcharmodsfun</name>
+        <briefdescription>
+<para>The function signature for Unicode character with modifiers callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for Unicode character with modifiers callback functions. It is called for each input character, regardless of what modifier keys are held down.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">codepoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Unicode code point of the character. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mods</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit field describing which <ref refid="group__mods" kindref="compound">modifier keys</ref> were held down.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1gae6eee0bda7429bfe8028615847cf6795" kindref="member">glfwSetCharModsCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="948" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__input_1gab71f4ca80b651462852e601caf308c4a" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWdropfun) (GLFWwindow *, int, const char **)</definition>
+        <argsstring>)(GLFWwindow *, int, const char **)</argsstring>
+        <name>GLFWdropfun</name>
+        <briefdescription>
+<para>The function signature for file drop callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for file drop callbacks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that received the event. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of dropped files. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">paths</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UTF-8 encoded file and/or directory path names.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__input_1gad4fc40df63a5d0441ab06de9a585cc04" kindref="member">glfwSetDropCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="962" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="962" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__input_1ga1248dd5b1e566b2817e71547564d6af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>GLFWAPI int glfwGetInputMode</definition>
+        <argsstring>(GLFWwindow *window, int mode)</argsstring>
+        <name>glfwGetInputMode</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value of an input option for the specified window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the value of an input option for the specified window. The mode must be one of <computeroutput>GLFW_CURSOR</computeroutput>, <computeroutput>GLFW_STICKY_KEYS</computeroutput> or <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of <computeroutput>GLFW_CURSOR</computeroutput>, <computeroutput>GLFW_STICKY_KEYS</computeroutput> or <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1gae1eb729d2dd91dc33fd60e150a6e1684" kindref="member">glfwSetInputMode</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gae1eb729d2dd91dc33fd60e150a6e1684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetInputMode</definition>
+        <argsstring>(GLFWwindow *window, int mode, int value)</argsstring>
+        <name>glfwSetInputMode</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets an input option for the specified window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets an input mode option for the specified window. The mode must be one of <computeroutput>GLFW_CURSOR</computeroutput>, <computeroutput>GLFW_STICKY_KEYS</computeroutput> or <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput>.</para><para>If the mode is <computeroutput>GLFW_CURSOR</computeroutput>, the value must be one of the following cursor modes:<itemizedlist>
+<listitem><para><computeroutput>GLFW_CURSOR_NORMAL</computeroutput> makes the cursor visible and behaving normally.</para></listitem><listitem><para><computeroutput>GLFW_CURSOR_HIDDEN</computeroutput> makes the cursor invisible when it is over the client area of the window but does not restrict the cursor from leaving.</para></listitem><listitem><para><computeroutput>GLFW_CURSOR_DISABLED</computeroutput> hides and grabs the cursor, providing virtual and unlimited cursor movement. This is useful for implementing for example 3D camera controls.</para></listitem></itemizedlist>
+</para><para>If the mode is <computeroutput>GLFW_STICKY_KEYS</computeroutput>, the value must be either <computeroutput>GL_TRUE</computeroutput> to enable sticky keys, or <computeroutput>GL_FALSE</computeroutput> to disable it. If sticky keys are enabled, a key press will ensure that <ref refid="group__input_1ga7d8ad8ffaf272808f04e1d5d33ec8859" kindref="member">glfwGetKey</ref> returns <computeroutput>GLFW_PRESS</computeroutput> the next time it is called even if the key had been released before the call. This is useful when you are only interested in whether keys have been pressed but not when or in which order.</para><para>If the mode is <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput>, the value must be either <computeroutput>GL_TRUE</computeroutput> to enable sticky mouse buttons, or <computeroutput>GL_FALSE</computeroutput> to disable it. If sticky mouse buttons are enabled, a mouse button press will ensure that <ref refid="group__input_1ga6da5efb04f700c312a57a169fa9393a0" kindref="member">glfwGetMouseButton</ref> returns <computeroutput>GLFW_PRESS</computeroutput> the next time it is called even if the mouse button had been released before the call. This is useful when you are only interested in whether mouse buttons have been pressed but not when or in which order.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose input mode to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of <computeroutput>GLFW_CURSOR</computeroutput>, <computeroutput>GLFW_STICKY_KEYS</computeroutput> or <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value of the specified input mode.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1ga1248dd5b1e566b2817e71547564d6af9" kindref="member">glfwGetInputMode</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwEnable</computeroutput> and <computeroutput>glfwDisable</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2436" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga7d8ad8ffaf272808f04e1d5d33ec8859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>GLFWAPI int glfwGetKey</definition>
+        <argsstring>(GLFWwindow *window, int key)</argsstring>
+        <name>glfwGetKey</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Returns the last reported state of a keyboard key for the specified window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the last state reported for the specified key to the specified window. The returned state is one of <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>. The higher-level action <computeroutput>GLFW_REPEAT</computeroutput> is only reported to the key callback.</para><para>If the <computeroutput>GLFW_STICKY_KEYS</computeroutput> input mode is enabled, this function returns <computeroutput>GLFW_PRESS</computeroutput> the first time you call it for a key that was pressed, even if that key has already been released.</para><para>The key functions deal with physical keys, with <ref refid="group__keys" kindref="compound">key tokens</ref> named after their use on the standard US keyboard layout. If you want to input text, use the Unicode character callback instead.</para><para>The <ref refid="group__mods" kindref="compound">modifier key bit masks</ref> are not key tokens and cannot be used with this function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired window. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired <ref refid="group__keys" kindref="compound">keyboard key</ref>. <computeroutput>GLFW_KEY_UNKNOWN</computeroutput> is not a valid key for this function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>One of <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_key</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Added window handle parameter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2474" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga6da5efb04f700c312a57a169fa9393a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>GLFWAPI int glfwGetMouseButton</definition>
+        <argsstring>(GLFWwindow *window, int button)</argsstring>
+        <name>glfwGetMouseButton</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Returns the last reported state of a mouse button for the specified window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the last state reported for the specified mouse button to the specified window. The returned state is one of <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>.</para><para>If the <computeroutput>GLFW_STICKY_MOUSE_BUTTONS</computeroutput> input mode is enabled, this function <computeroutput>GLFW_PRESS</computeroutput> the first time you call it for a mouse button that was pressed, even if that mouse button has already been released.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired window. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired <ref refid="group__buttons" kindref="compound">mouse button</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>One of <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_mouse_button</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Added window handle parameter. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2503" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gad289438eb7cf53d11eca685373f44105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwGetCursorPos</definition>
+        <argsstring>(GLFWwindow *window, double *xpos, double *ypos)</argsstring>
+        <name>glfwGetCursorPos</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the position of the cursor relative to the client area of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the position of the cursor, in screen coordinates, relative to the upper-left corner of the client area of the specified window.</para><para>If the cursor is disabled (with <computeroutput>GLFW_CURSOR_DISABLED</computeroutput>) then the cursor position is unbounded and limited only by the minimum and maximum values of a <computeroutput>double</computeroutput>.</para><para>The coordinate can be converted to their integer equivalents with the <computeroutput>floor</computeroutput> function. Casting directly to an integer type works for positive coordinates, but fails for negative ones.</para><para>Any or all of the position arguments may be <computeroutput>NULL</computeroutput>. If an error occurs, all non-<computeroutput>NULL</computeroutput> position arguments will be set to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired window. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the cursor x-coordinate, relative to the left edge of the client area, or <computeroutput>NULL</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the cursor y-coordinate, relative to the to top edge of the client area, or <computeroutput>NULL</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_pos </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1gaaf152cc93418acb0ba342e3f4af922bc" kindref="member">glfwSetCursorPos</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwGetMousePos</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2539" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gaaf152cc93418acb0ba342e3f4af922bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetCursorPos</definition>
+        <argsstring>(GLFWwindow *window, double xpos, double ypos)</argsstring>
+        <name>glfwSetCursorPos</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the cursor, relative to the client area of the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the position, in screen coordinates, of the cursor relative to the upper-left corner of the client area of the specified window. The window must have input focus. If the window does not have input focus when this function is called, it fails silently.</para><para><bold>Do not use this function</bold> to implement things like camera controls. GLFW already provides the <computeroutput>GLFW_CURSOR_DISABLED</computeroutput> cursor mode that hides the cursor, transparently re-centers it and provides unconstrained cursor motion. See <ref refid="group__input_1gae1eb729d2dd91dc33fd60e150a6e1684" kindref="member">glfwSetInputMode</ref> for more information.</para><para>If the cursor mode is <computeroutput>GLFW_CURSOR_DISABLED</computeroutput> then the cursor position is unconstrained and limited only by the minimum and maximum values of a <computeroutput>double</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired window. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired x-coordinate, relative to the left edge of the client area. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired y-coordinate, relative to the top edge of the client area.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para><bold>X11:</bold> Due to the asynchronous nature of a modern X desktop, it may take a moment for the window focus event to arrive. This means you will not be able to set the cursor position directly after window creation.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_pos </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1gad289438eb7cf53d11eca685373f44105" kindref="member">glfwGetCursorPos</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwSetMousePos</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gac0f0f691f2d110f9acfb4bfe07f1216c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="glfw3_8h_1a89261ae18c75e863aaf2656ecdd238f4" kindref="member">GLFWcursor</ref> *</type>
+        <definition>GLFWAPI GLFWcursor* glfwCreateCursor</definition>
+        <argsstring>(const GLFWimage *image, int xhot, int yhot)</argsstring>
+        <name>glfwCreateCursor</name>
+        <param>
+          <type>const <ref refid="struct_g_l_f_wimage" kindref="compound">GLFWimage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>xhot</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>yhot</declname>
+        </param>
+        <briefdescription>
+<para>Creates a custom cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates a new custom cursor image that can be set for a window with <ref refid="group__input_1gafaf103cea2f43530cff7de4e01126a4f" kindref="member">glfwSetCursor</ref>. The cursor can be destroyed with <ref refid="group__input_1ga27556b7122117bc1bbb4bb3cc003ea43" kindref="member">glfwDestroyCursor</ref>. Any remaining cursors are destroyed by <ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref>.</para><para>The pixels are 32-bit little-endian RGBA, i.e. eight bits per channel. They are arranged canonically as packed sequential rows, starting from the top-left corner.</para><para>The cursor hotspot is specified in pixels, relative to the upper-left corner of the cursor image. Like all other coordinate systems in GLFW, the X-axis points to the right and the Y-axis points down.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired cursor image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xhot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired x-coordinate, in pixels, of the cursor hotspot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">yhot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired y-coordinate, in pixels, of the cursor hotspot.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The handle of the created cursor, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The specified image data is copied before this function returns.</para></simplesect>
+<simplesect kind="par"><title>Reentrancy</title><para>This function may not be called from a callback.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_object </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1ga27556b7122117bc1bbb4bb3cc003ea43" kindref="member">glfwDestroyCursor</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1ga969dd87ad2ddbf3e1086cc40f235eed1" kindref="member">glfwCreateStandardCursor</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2618" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga969dd87ad2ddbf3e1086cc40f235eed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="glfw3_8h_1a89261ae18c75e863aaf2656ecdd238f4" kindref="member">GLFWcursor</ref> *</type>
+        <definition>GLFWAPI GLFWcursor* glfwCreateStandardCursor</definition>
+        <argsstring>(int shape)</argsstring>
+        <name>glfwCreateStandardCursor</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+<para>Creates a cursor with a standard shape. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a cursor with a <ref refid="group__shapes" kindref="compound">standard shape</ref>, that can be set for a window with <ref refid="group__input_1gafaf103cea2f43530cff7de4e01126a4f" kindref="member">glfwSetCursor</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of the <ref refid="group__shapes" kindref="compound">standard shapes</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new cursor ready to use or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Reentrancy</title><para>This function may not be called from a callback.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_object </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1gac0f0f691f2d110f9acfb4bfe07f1216c" kindref="member">glfwCreateCursor</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2643" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga27556b7122117bc1bbb4bb3cc003ea43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwDestroyCursor</definition>
+        <argsstring>(GLFWcursor *cursor)</argsstring>
+        <name>glfwDestroyCursor</name>
+        <param>
+          <type><ref refid="glfw3_8h_1a89261ae18c75e863aaf2656ecdd238f4" kindref="member">GLFWcursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a cursor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function destroys a cursor previously created with <ref refid="group__input_1gac0f0f691f2d110f9acfb4bfe07f1216c" kindref="member">glfwCreateCursor</ref>. Any remaining cursors will be destroyed by <ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cursor object to destroy.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Reentrancy</title><para>This function may not be called from a callback.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_object </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1gac0f0f691f2d110f9acfb4bfe07f1216c" kindref="member">glfwCreateCursor</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2666" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gafaf103cea2f43530cff7de4e01126a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetCursor</definition>
+        <argsstring>(GLFWwindow *window, GLFWcursor *cursor)</argsstring>
+        <name>glfwSetCursor</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="glfw3_8h_1a89261ae18c75e863aaf2656ecdd238f4" kindref="member">GLFWcursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+<para>Sets the cursor for the window. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the cursor image to be used when the cursor is over the client area of the specified window. The set cursor will only be visible when the cursor mode of the window is <computeroutput>GLFW_CURSOR_NORMAL</computeroutput>.</para><para>On some platforms, the set cursor may not be visible unless the window also has input focus.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window to set the cursor for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cursor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cursor to set, or <computeroutput>NULL</computeroutput> to switch back to the default arrow cursor.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_object</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2691" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gaa73bb92f628a2a0be9c132d56f19362c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1ga0192a232a41e4e82948217c8ba94fdfd" kindref="member">GLFWkeyfun</ref></type>
+        <definition>GLFWAPI GLFWkeyfun glfwSetKeyCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWkeyfun cbfun)</argsstring>
+        <name>glfwSetKeyCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1ga0192a232a41e4e82948217c8ba94fdfd" kindref="member">GLFWkeyfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the key callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the key callback of the specified window, which is called when a key is pressed, repeated or released.</para><para>The key functions deal with physical keys, with layout independent <ref refid="group__keys" kindref="compound">key tokens</ref> named after their values in the standard US keyboard layout. If you want to input text, use the <ref refid="group__input_1ga07b2959b23dc3e466ce7475746021002" kindref="member">character callback</ref> instead.</para><para>When a window loses input focus, it will generate synthetic key release events for all pressed keys. You can tell these events from user-generated events by the fact that the synthetic ones are generated after the focus loss event has been processed, i.e. after the <ref refid="group__window_1gac89c6534ba7fbab6f6c68b855656c0d4" kindref="member">window focus callback</ref> has been called.</para><para>The scancode of a key is specific to that platform or sometimes even to that machine. Scancodes are intended to allow users to bind keys that don&apos;t have a GLFW key token. Such keys have <computeroutput>key</computeroutput> set to <computeroutput>GLFW_KEY_UNKNOWN</computeroutput>, their state is not saved and so it cannot be queried with <ref refid="group__input_1ga7d8ad8ffaf272808f04e1d5d33ec8859" kindref="member">glfwGetKey</ref>.</para><para>Sometimes GLFW needs to generate synthetic key events, in which case the scancode may be zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new key callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_key</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Added window handle parameter. Updated callback signature. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2735" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga07b2959b23dc3e466ce7475746021002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1gabf24451c7ceb1952bc02b17a0d5c3e5f" kindref="member">GLFWcharfun</ref></type>
+        <definition>GLFWAPI GLFWcharfun glfwSetCharCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWcharfun cbfun)</argsstring>
+        <name>glfwSetCharCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1gabf24451c7ceb1952bc02b17a0d5c3e5f" kindref="member">GLFWcharfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the Unicode character callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the character callback of the specified window, which is called when a Unicode character is input.</para><para>The character callback is intended for Unicode text input. As it deals with characters, it is keyboard layout dependent, whereas the <ref refid="group__input_1gaa73bb92f628a2a0be9c132d56f19362c" kindref="member">key callback</ref> is not. Characters do not map 1:1 to physical keys, as a key may produce zero, one or more characters. If you want to know whether a specific physical key was pressed or released, see the key callback instead.</para><para>The character callback behaves as system text input normally does and will not be called if modifier keys are held down that would prevent normal text input on that platform, for example a Super (Command) key on OS X or Alt key on Windows. There is a <ref refid="group__input_1gae6eee0bda7429bfe8028615847cf6795" kindref="member">character with modifiers callback</ref> that receives these events.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_char</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 2.4.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Added window handle parameter. Updated callback signature. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gae6eee0bda7429bfe8028615847cf6795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1gae36fb6897d2b7df9b128900c8ce9c507" kindref="member">GLFWcharmodsfun</ref></type>
+        <definition>GLFWAPI GLFWcharmodsfun glfwSetCharModsCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWcharmodsfun cbfun)</argsstring>
+        <name>glfwSetCharModsCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1gae36fb6897d2b7df9b128900c8ce9c507" kindref="member">GLFWcharmodsfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the Unicode character with modifiers callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the character with modifiers callback of the specified window, which is called when a Unicode character is input regardless of what modifier keys are used.</para><para>The character with modifiers callback is intended for implementing custom Unicode character input. For regular Unicode text input, see the <ref refid="group__input_1ga07b2959b23dc3e466ce7475746021002" kindref="member">character callback</ref>. Like the character callback, the character with modifiers callback deals with characters and is keyboard layout dependent. Characters do not map 1:1 to physical keys, as a key may produce zero, one or more characters. If you want to know whether a specific physical key was pressed or released, see the <ref refid="group__input_1gaa73bb92f628a2a0be9c132d56f19362c" kindref="member">key callback</ref> instead.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_char</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2806" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga20e5ba1ce4e086aedd48a06dc311c95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1ga39893a4a7e7c3239c98d29c9e084350c" kindref="member">GLFWmousebuttonfun</ref></type>
+        <definition>GLFWAPI GLFWmousebuttonfun glfwSetMouseButtonCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWmousebuttonfun cbfun)</argsstring>
+        <name>glfwSetMouseButtonCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1ga39893a4a7e7c3239c98d29c9e084350c" kindref="member">GLFWmousebuttonfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the mouse button callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the mouse button callback of the specified window, which is called when a mouse button is pressed or released.</para><para>When a window loses input focus, it will generate synthetic mouse button release events for all pressed mouse buttons. You can tell these events from user-generated events by the fact that the synthetic ones are generated after the focus loss event has been processed, i.e. after the <ref refid="group__window_1gac89c6534ba7fbab6f6c68b855656c0d4" kindref="member">window focus callback</ref> has been called.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>input_mouse_button</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Added window handle parameter. Updated callback signature. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2837" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga9c49c0d3d3c775c3124726f1d902124d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1ga4cfad918fa836f09541e7b9acd36686c" kindref="member">GLFWcursorposfun</ref></type>
+        <definition>GLFWAPI GLFWcursorposfun glfwSetCursorPosCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWcursorposfun cbfun)</argsstring>
+        <name>glfwSetCursorPosCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1ga4cfad918fa836f09541e7b9acd36686c" kindref="member">GLFWcursorposfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the cursor position callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the cursor position callback of the specified window, which is called when the cursor is moved. The callback is provided with the position, in screen coordinates, relative to the upper-left corner of the client area of the window.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_pos</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwSetMousePosCallback</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2861" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gaa20014985561efeb2c53f1956f727830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1ga51ab436c41eeaed6db5a0c9403b1c840" kindref="member">GLFWcursorenterfun</ref></type>
+        <definition>GLFWAPI GLFWcursorenterfun glfwSetCursorEnterCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWcursorenterfun cbfun)</argsstring>
+        <name>glfwSetCursorEnterCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1ga51ab436c41eeaed6db5a0c9403b1c840" kindref="member">GLFWcursorenterfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the cursor enter/exit callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the cursor boundary crossing callback of the specified window, which is called when the cursor enters or leaves the client area of the window.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>cursor_enter</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2884" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga29011514e93368712a3063a28707ced3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1ga4687e2199c60a18a8dd1da532e6d75c9" kindref="member">GLFWscrollfun</ref></type>
+        <definition>GLFWAPI GLFWscrollfun glfwSetScrollCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWscrollfun cbfun)</argsstring>
+        <name>glfwSetScrollCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1ga4687e2199c60a18a8dd1da532e6d75c9" kindref="member">GLFWscrollfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the scroll callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the scroll callback of the specified window, which is called when a scrolling device is used, such as a mouse wheel or scrolling area of a touchpad.</para><para>The scroll callback receives all scrolling input, like that from a mouse wheel or a touchpad scrolling area.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new scroll callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>scrolling</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwSetMouseWheelCallback</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2910" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gad4fc40df63a5d0441ab06de9a585cc04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__input_1gab71f4ca80b651462852e601caf308c4a" kindref="member">GLFWdropfun</ref></type>
+        <definition>GLFWAPI GLFWdropfun glfwSetDropCallback</definition>
+        <argsstring>(GLFWwindow *window, GLFWdropfun cbfun)</argsstring>
+        <name>glfwSetDropCallback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="group__input_1gab71f4ca80b651462852e601caf308c4a" kindref="member">GLFWdropfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the file drop callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the file drop callback of the specified window, which is called when one or more dragged files are dropped on the window.</para><para>Because the path array and its strings may have been generated specifically for that event, they are not guaranteed to be valid after the callback has returned. If you wish to use them after the callback returns, you need to make a deep copy.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window whose callback to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new file drop callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>path_drop</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2937" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga7f81f22f355f4b7d315caf73cdfd9906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>GLFWAPI int glfwJoystickPresent</definition>
+        <argsstring>(int joy)</argsstring>
+        <name>glfwJoystickPresent</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>joy</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the specified joystick is present. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns whether the specified joystick is present.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__joysticks" kindref="compound">joystick</ref> to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>GL_TRUE</computeroutput> if the joystick is present, or <computeroutput>GL_FALSE</computeroutput> otherwise.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>joystick</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwGetJoystickParam</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2955" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gaab9e573d808b088c5079c0f577d39448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const float *</type>
+        <definition>GLFWAPI const float* glfwGetJoystickAxes</definition>
+        <argsstring>(int joy, int *count)</argsstring>
+        <name>glfwGetJoystickAxes</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>joy</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Returns the values of all axes of the specified joystick. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the values of all axes of the specified joystick. Each element in the array is a value between -1.0 and 1.0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__joysticks" kindref="compound">joystick</ref> to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the number of axis values in the returned array. This is set to zero if an error occurred. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An array of axis values, or <computeroutput>NULL</computeroutput> if the joystick is not present.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned array is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified joystick is disconnected, this function is called again for that joystick or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>joystick_axis</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwGetJoystickPos</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="2981" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga3951bea72b5fb4870b1aa0e5c2e9c903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const unsigned char *</type>
+        <definition>GLFWAPI const unsigned char* glfwGetJoystickButtons</definition>
+        <argsstring>(int joy, int *count)</argsstring>
+        <name>glfwGetJoystickButtons</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>joy</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Returns the state of all buttons of the specified joystick. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the state of all buttons of the specified joystick. Each element in the array is either <computeroutput>GLFW_PRESS</computeroutput> or <computeroutput>GLFW_RELEASE</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__joysticks" kindref="compound">joystick</ref> to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the number of button states in the returned array. This is set to zero if an error occurred. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An array of button states, or <computeroutput>NULL</computeroutput> if the joystick is not present.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned array is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified joystick is disconnected, this function is called again for that joystick or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>joystick_button</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 2.2.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Changed to return a dynamic array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3010" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1gac50a4fd9b01886cf9fa2c45f19191fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const char *</type>
+        <definition>GLFWAPI const char* glfwGetJoystickName</definition>
+        <argsstring>(int joy)</argsstring>
+        <name>glfwGetJoystickName</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>joy</declname>
+        </param>
+        <briefdescription>
+<para>Returns the name of the specified joystick. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the name, encoded as UTF-8, of the specified joystick. The returned string is allocated and freed by GLFW. You should not free it yourself.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__joysticks" kindref="compound">joystick</ref> to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UTF-8 encoded name of the joystick, or <computeroutput>NULL</computeroutput> if the joystick is not present.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned string is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified joystick is disconnected, this function is called again for that joystick or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>joystick_name</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3036" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga7a580309bbc185a0459c3559021d2fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetClipboardString</definition>
+        <argsstring>(GLFWwindow *window, const char *string)</argsstring>
+        <name>glfwSetClipboardString</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+<para>Sets the clipboard to the specified string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the system clipboard to the specified, UTF-8 encoded string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that will own the clipboard contents. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A UTF-8 encoded string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The specified string is copied before this function returns.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>clipboard </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1ga3ac90c8bbaf0b46063bb02b574f3b6f7" kindref="member">glfwGetClipboardString</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3059" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga3ac90c8bbaf0b46063bb02b574f3b6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const char *</type>
+        <definition>GLFWAPI const char* glfwGetClipboardString</definition>
+        <argsstring>(GLFWwindow *window)</argsstring>
+        <name>glfwGetClipboardString</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>Returns the contents of the clipboard as a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the contents of the system clipboard, if it contains or is convertible to a UTF-8 encoded string.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The window that will request the clipboard contents. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The contents of the clipboard as a UTF-8 encoded string, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned string is allocated and freed by GLFW. You should not free it yourself. It is valid until the next call to <ref refid="group__input_1ga3ac90c8bbaf0b46063bb02b574f3b6f7" kindref="member">glfwGetClipboardString</ref> or <ref refid="group__input_1ga7a580309bbc185a0459c3559021d2fd7" kindref="member">glfwSetClipboardString</ref>, or until the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>clipboard </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__input_1ga7a580309bbc185a0459c3559021d2fd7" kindref="member">glfwSetClipboardString</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3086" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga03d4a1039b8662c71eeb40beea8cb622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> double</type>
+        <definition>GLFWAPI double glfwGetTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>glfwGetTime</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+<para>Returns the value of the GLFW timer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the value of the GLFW timer. Unless the timer has been set using <ref refid="group__input_1ga94360a3628a09f32708f83cc3fa48590" kindref="member">glfwSetTime</ref>, the timer measures time elapsed since GLFW was initialized.</para><para>The resolution of the timer is system dependent, but is usually on the order of a few micro- or nanoseconds. It uses the highest-resolution monotonic time source on each supported platform.</para><para><simplesect kind="return"><para>The current value, in seconds, or zero if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may be called from any thread. Access is not synchronized.</para></simplesect>
+<simplesect kind="see"><para>time</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__input_1ga94360a3628a09f32708f83cc3fa48590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetTime</definition>
+        <argsstring>(double time)</argsstring>
+        <name>glfwSetTime</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Sets the GLFW timer. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the value of the GLFW timer. It then continues to count up from that value. The value must be a positive finite number less than or equal to 18446744073.0, which is approximately 584.5 years.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value, in seconds.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>The upper limit of the timer is calculated as floor((2<superscript>64</superscript> - 1) / 10<superscript>9</superscript>) and is due to implementations storing nanoseconds in 64 bits. The limit may be increased in the future.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>time</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 2.2. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="3133" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the reference documentation for input related functions and types. For more information, see the <ref refid="group__input" kindref="compound">Input handling</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

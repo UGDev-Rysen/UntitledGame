@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="namespaceu__engine_1_1maths" kind="namespace" language="C++">
+    <compoundname>u_engine::maths</compoundname>
+    <innerclass refid="structu__engine_1_1maths_1_1vec2" prot="public">u_engine::maths::vec2</innerclass>
+    <innerclass refid="structu__engine_1_1maths_1_1vec3" prot="public">u_engine::maths::vec3</innerclass>
+    <innerclass refid="structu__engine_1_1maths_1_1vec4" prot="public">u_engine::maths::vec4</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1af706ff2fa7f3159252e89962677b7927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+        <definition>vec2 u_engine::maths::operator+</definition>
+        <argsstring>(vec2 left, const vec2 &amp;right)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="45" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1af0a4764e710da0fc93a4f86e87dcabe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+        <definition>vec2 u_engine::maths::operator-</definition>
+        <argsstring>(vec2 left, const vec2 &amp;right)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="48" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a5e66adfe6195e1d03ea4242de39db68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+        <definition>vec2 u_engine::maths::operator*</definition>
+        <argsstring>(vec2 left, const vec2 &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="51" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a1f7447be74c676613ab8fa948869b231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+        <definition>vec2 u_engine::maths::operator/</definition>
+        <argsstring>(vec2 left, const vec2 &amp;right)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="54" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a326606ab3a13a1fc4c9397fdd2cd0bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; u_engine::maths::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const vec2 &amp;vector)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec2" kindref="compound">vec2</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="87" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1aad42671b542feffba3bdc837b5c975f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+        <definition>vec3 u_engine::maths::operator+</definition>
+        <argsstring>(vec3 left, const vec3 &amp;right)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" line="47" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1adc1c3d78334a48bf48dca43444a67c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+        <definition>vec3 u_engine::maths::operator-</definition>
+        <argsstring>(vec3 left, const vec3 &amp;right)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" line="50" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a41b7af7ce217d3f932b72a86d4bae629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+        <definition>vec3 u_engine::maths::operator*</definition>
+        <argsstring>(vec3 left, const vec3 &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" line="53" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a9a5dd0d1dab28e44218caab2f8b3d1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+        <definition>vec3 u_engine::maths::operator/</definition>
+        <argsstring>(vec3 left, const vec3 &amp;right)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" line="56" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1afdfa5bc03f8e270e5afee8f4cf50496b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; u_engine::maths::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const vec3 &amp;vector)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec3" kindref="compound">vec3</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" line="89" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec3.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1aeae4c97d0a32a7cc72a9c42b6df80620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+        <definition>vec4 u_engine::maths::operator+</definition>
+        <argsstring>(vec4 left, const vec4 &amp;right)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" line="55" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a6c734d41e2d1303467dd55b6cbce50f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+        <definition>vec4 u_engine::maths::operator-</definition>
+        <argsstring>(vec4 left, const vec4 &amp;right)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" line="58" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a1ff1dca0474ee684473ada64ab04541c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+        <definition>vec4 u_engine::maths::operator*</definition>
+        <argsstring>(vec4 left, const vec4 &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" line="61" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1af26c29a5161740f35b1ba04b51a0c0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+        <definition>vec4 u_engine::maths::operator/</definition>
+        <argsstring>(vec4 left, const vec4 &amp;right)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref></type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref> &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" line="64" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1maths_1a107603a52537e093a859116d1c6009ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; u_engine::maths::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const vec4 &amp;vector)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structu__engine_1_1maths_1_1vec4" kindref="compound">vec4</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" line="97" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec4.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/maths/vec2.cpp" line="3" column="1"/>
+  </compounddef>
+</doxygen>

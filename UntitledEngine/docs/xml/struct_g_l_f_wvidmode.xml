@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct_g_l_f_wvidmode" kind="struct" language="C++" prot="public">
+    <compoundname>GLFWvidmode</compoundname>
+    <includes refid="glfw3_8h" local="no">glfw3.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1a698dcb200562051a7249cb6ae154c71d" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The width, in screen coordinates, of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="987" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1ac65942a5f6981695517437a9d571d03c" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The height, in screen coordinates, of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="990" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1a6066c4ecd251098700062d3b735dba1b" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::redBits</definition>
+        <argsstring></argsstring>
+        <name>redBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The bit depth of the red channel of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="993" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1a292fdd281f3485fb3ff102a5bda43faa" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::greenBits</definition>
+        <argsstring></argsstring>
+        <name>greenBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The bit depth of the green channel of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="996" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1af310977f58d2e3b188175b6e3d314047" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::blueBits</definition>
+        <argsstring></argsstring>
+        <name>blueBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The bit depth of the blue channel of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="999" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_f_wvidmode_1a791bdd6c7697b09f7e9c97054bf05649" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLFWvidmode::refreshRate</definition>
+        <argsstring></argsstring>
+        <name>refreshRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The refresh rate, in Hz, of the video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1002" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Video mode type. </para>    </briefdescription>
+    <detaileddescription>
+<para>This describes a single video mode. </para>    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="984" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="983" bodyend="1003"/>
+    <listofallmembers>
+      <member refid="struct_g_l_f_wvidmode_1af310977f58d2e3b188175b6e3d314047" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>blueBits</name></member>
+      <member refid="struct_g_l_f_wvidmode_1a292fdd281f3485fb3ff102a5bda43faa" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>greenBits</name></member>
+      <member refid="struct_g_l_f_wvidmode_1ac65942a5f6981695517437a9d571d03c" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>height</name></member>
+      <member refid="struct_g_l_f_wvidmode_1a6066c4ecd251098700062d3b735dba1b" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>redBits</name></member>
+      <member refid="struct_g_l_f_wvidmode_1a791bdd6c7697b09f7e9c97054bf05649" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>refreshRate</name></member>
+      <member refid="struct_g_l_f_wvidmode_1a698dcb200562051a7249cb6ae154c71d" prot="public" virt="non-virtual"><scope>GLFWvidmode</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_16a8dcb5a870a242fc33cc975e0c3996" kind="dir">
+    <compoundname>G:/Libraries/VSProjects/UntitledEngine/Dependencies/include</compoundname>
+    <innerfile refid="glew_8h">glew.h</innerfile>
+    <innerfile refid="glfw3_8h">glfw3.h</innerfile>
+    <innerfile refid="glfw3native_8h">glfw3native.h</innerfile>
+    <innerfile refid="glxew_8h">glxew.h</innerfile>
+    <innerfile refid="wglew_8h">wglew.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/"/>
+  </compounddef>
+</doxygen>

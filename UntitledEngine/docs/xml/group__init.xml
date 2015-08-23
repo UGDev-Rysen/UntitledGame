@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__init" kind="group">
+    <compoundname>init</compoundname>
+    <title>Initialization, version and errors</title>
+    <innergroup refid="group__errors">Error codes</innergroup>
+      <sectiondef kind="user-defined">
+      <header>GLFW version macros</header>
+      <memberdef kind="define" id="group__init_1ga6337d9ea43b22fc529b2bba066b4a576" prot="public" static="no">
+        <name>GLFW_VERSION_MAJOR</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>The major version number of the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is incremented when the API is changed in non-compatible ways. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="200" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__init_1gaf80d40f0aea7088ff337606e9c48f7a3" prot="public" static="no">
+        <name>GLFW_VERSION_MINOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The minor version number of the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is incremented when features are added to the API but it remains backward-compatible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="207" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__init_1gab72ae2e2035d9ea461abc3495eac0502" prot="public" static="no">
+        <name>GLFW_VERSION_REVISION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The revision number of the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is incremented when a bug fix release is made that does not contain any API changes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="214" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__init_1ga6b8a2639706d5c409fc1287e8f55e928" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWerrorfun) (int, const char *)</definition>
+        <argsstring>)(int, const char *)</argsstring>
+        <name>GLFWerrorfun</name>
+        <briefdescription>
+<para>The function signature for error callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for error callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An <ref refid="group__errors" kindref="compound">error code</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A UTF-8 encoded string describing the error.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__init_1ga5919096b958c47102126061fb5a6f9c3" kindref="member">glfwSetErrorCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="743" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="743" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>GLFWAPI int glfwInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>glfwInit</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+<para>Initializes the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the GLFW library. Before most GLFW functions can be used, GLFW must be initialized, and before an application terminates GLFW should be terminated in order to free any resources allocated during or after initialization.</para><para>If this function fails, it calls <ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref> before returning. If it succeeds, you should call <ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref> before the application exits.</para><para>Additional calls to this function after successful initialization but before termination will return <computeroutput>GL_TRUE</computeroutput> immediately.</para><para><simplesect kind="return"><para><computeroutput>GL_TRUE</computeroutput> if successful, or <computeroutput>GL_FALSE</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="remark"><para><bold>OS X:</bold> This function will change the current directory of the application to the <computeroutput>Contents/Resources</computeroutput> subdirectory of the application&apos;s bundle, if present. This can be disabled with a compile-time option.</para></simplesect>
+<simplesect kind="remark"><para><bold>X11:</bold> If the <computeroutput>LC_CTYPE</computeroutput> category of the current locale is set to <computeroutput>&quot;C&quot;</computeroutput> then the environment&apos;s locale will be applied to that category. This is done because character input will not function when <computeroutput>LC_CTYPE</computeroutput> is set to <computeroutput>&quot;C&quot;</computeroutput>. If another locale was set before this function was called, it will be left untouched.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>intro_init </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1086" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwTerminate</definition>
+        <argsstring>(void)</argsstring>
+        <name>glfwTerminate</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+<para>Terminates the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function destroys all remaining windows and cursors, restores any modified gamma ramps and frees any other allocated resources. Once this function is called, you must again call <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref> successfully before you will be able to use most GLFW functions.</para><para>If GLFW has been successfully initialized, this function should be called before the application exits. If initialization fails, there is no need to call this function, as it is called by <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref> before it returns failure.</para><para><simplesect kind="remark"><para>This function may be called before <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref>.</para></simplesect>
+<simplesect kind="warning"><para>No window&apos;s context may be current on another thread when this function is called.</para></simplesect>
+<simplesect kind="par"><title>Reentrancy</title><para>This function may not be called from a callback.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>intro_init </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__init_1ga2402c7824ac0194c13722790ff9559ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwGetVersion</definition>
+        <argsstring>(int *major, int *minor, int *rev)</argsstring>
+        <name>glfwGetVersion</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>major</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>minor</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>rev</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the version of the GLFW library. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function retrieves the major, minor and revision numbers of the GLFW library. It is intended for when you are using GLFW as a shared library and want to ensure that you are using the minimum required version.</para><para>Any or all of the version arguments may be <computeroutput>NULL</computeroutput>. This function always succeeds.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">major</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the major version number, or <computeroutput>NULL</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">minor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the minor version number, or <computeroutput>NULL</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">rev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the revision number, or <computeroutput>NULL</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>This function may be called before <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref>.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may be called from any thread.</para></simplesect>
+<simplesect kind="see"><para>intro_version </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__init_1ga4b9092ac5eace57d94d3cd551d6b8ded" kindref="member">glfwGetVersionString</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__init_1ga4b9092ac5eace57d94d3cd551d6b8ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const char *</type>
+        <definition>GLFWAPI const char* glfwGetVersionString</definition>
+        <argsstring>(void)</argsstring>
+        <name>glfwGetVersionString</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+<para>Returns a string describing the compile-time configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the compile-time generated version string of the GLFW library binary. It describes the version, platform, compiler and any platform-specific compile-time options.</para><para><bold>Do not use the version string</bold> to parse the GLFW library version. The <ref refid="group__init_1ga2402c7824ac0194c13722790ff9559ff" kindref="member">glfwGetVersion</ref> function already provides the version of the running library binary.</para><para>This function always succeeds.</para><para><simplesect kind="return"><para>The GLFW version string.</para></simplesect>
+<simplesect kind="remark"><para>This function may be called before <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref>.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned string is static and compile-time generated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may be called from any thread.</para></simplesect>
+<simplesect kind="see"><para>intro_version </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__init_1ga2402c7824ac0194c13722790ff9559ff" kindref="member">glfwGetVersion</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__init_1ga5919096b958c47102126061fb5a6f9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__init_1ga6b8a2639706d5c409fc1287e8f55e928" kindref="member">GLFWerrorfun</ref></type>
+        <definition>GLFWAPI GLFWerrorfun glfwSetErrorCallback</definition>
+        <argsstring>(GLFWerrorfun cbfun)</argsstring>
+        <name>glfwSetErrorCallback</name>
+        <param>
+          <type><ref refid="group__init_1ga6b8a2639706d5c409fc1287e8f55e928" kindref="member">GLFWerrorfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the error callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the error callback, which is called with an error code and a human-readable description each time a GLFW error occurs.</para><para>The error callback is called on the thread where the error occurred. If you are using GLFW from multiple threads, your error callback needs to be written accordingly.</para><para>Because the description string may have been generated specifically for that error, it is not guaranteed to be valid after the callback has returned. If you wish to use it after the callback returns, you need to make a copy.</para><para>Once set, the error callback remains set even after the library has been terminated.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set.</para></simplesect>
+<simplesect kind="remark"><para>This function may be called before <ref refid="group__init_1gab41771f0215a2e0afb4cf1cf98082d40" kindref="member">glfwInit</ref>.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>error_handling</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1210" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the reference documentation for initialization and termination of the library, version management and error handling. For more information, see the intro. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

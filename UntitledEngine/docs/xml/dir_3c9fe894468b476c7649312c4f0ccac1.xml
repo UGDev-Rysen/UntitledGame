@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_3c9fe894468b476c7649312c4f0ccac1" kind="dir">
+    <compoundname>G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics</compoundname>
+    <innerfile refid="window_8cpp">window.cpp</innerfile>
+    <innerfile refid="window_8h">window.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__buttons" kind="group">
+    <compoundname>buttons</compoundname>
+    <title>Mouse buttons</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__buttons_1ga181a6e875251fd8671654eff00f9112e" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_1</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="423" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga604b39b92c88ce9bd332e97fc3f4156c" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_2</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="424" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga0130d505563d0236a6f85545f19e1721" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_3</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="425" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga53f4097bb01d5521c7d9513418c91ca9" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_4</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="426" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1gaf08c4ddecb051d3d9667db1d5e417c9c" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_5</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="427" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1gae8513e06aab8aa393b595f22c6d8257a" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_6</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="428" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga8b02a1ab55dde45b3a3883d54ffd7dc7" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_7</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="429" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga35d5c4263e0dc0d0a4731ca6c562f32c" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_8</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="430" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1gab1fd86a4518a9141ec7bcde2e15a2fdf" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_LAST</name>
+        <initializer><ref refid="group__buttons_1ga35d5c4263e0dc0d0a4731ca6c562f32c" kindref="member">GLFW_MOUSE_BUTTON_8</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="431" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1gaf37100431dcd5082d48f95ee8bc8cd56" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_LEFT</name>
+        <initializer><ref refid="group__buttons_1ga181a6e875251fd8671654eff00f9112e" kindref="member">GLFW_MOUSE_BUTTON_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="432" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga3e2f2cf3c4942df73cc094247d275e74" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_RIGHT</name>
+        <initializer><ref refid="group__buttons_1ga604b39b92c88ce9bd332e97fc3f4156c" kindref="member">GLFW_MOUSE_BUTTON_2</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="433" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__buttons_1ga34a4d2a701434f763fd93a2ff842b95a" prot="public" static="no">
+        <name>GLFW_MOUSE_BUTTON_MIDDLE</name>
+        <initializer><ref refid="group__buttons_1ga0130d505563d0236a6f85545f19e1721" kindref="member">GLFW_MOUSE_BUTTON_3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="434" column="9" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>See mouse button input for how these are used. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

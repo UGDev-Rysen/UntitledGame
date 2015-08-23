@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__monitor" kind="group">
+    <compoundname>monitor</compoundname>
+    <title>Monitor handling</title>
+    <innerclass refid="struct_g_l_f_wvidmode" prot="public">GLFWvidmode</innerclass>
+    <innerclass refid="struct_g_l_f_wgammaramp" prot="public">GLFWgammaramp</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" prot="public" static="no">
+        <type>struct <ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref></type>
+        <definition>typedef struct GLFWmonitor GLFWmonitor</definition>
+        <argsstring></argsstring>
+        <name>GLFWmonitor</name>
+        <briefdescription>
+<para>Opaque monitor object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Opaque monitor object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="706" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__monitor_1ga8a7ee579a66720f24d656526f3e44c63" prot="public" static="no">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref>(*</type>
+        <definition>typedef void(*  GLFWmonitorfun) (GLFWmonitor *, int)</definition>
+        <argsstring>)(GLFWmonitor *, int)</argsstring>
+        <name>GLFWmonitorfun</name>
+        <briefdescription>
+<para>The function signature for monitor configuration callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the function signature for monitor configuration callback functions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor that was connected or disconnected. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of <computeroutput>GLFW_CONNECTED</computeroutput> or <computeroutput>GLFW_DISCONNECTED</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__monitor_1gacfa9978e57c73670577d530df23bf275" kindref="member">glfwSetMonitorCallback</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="975" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" bodystart="975" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__monitor_1gae48aadf4ea0967e6605c8f58fa5daccb" prot="public" static="no">
+        <type>struct <ref refid="struct_g_l_f_wvidmode" kindref="compound">GLFWvidmode</ref></type>
+        <definition>typedef struct GLFWvidmode  GLFWvidmode</definition>
+        <argsstring></argsstring>
+        <name>GLFWvidmode</name>
+        <briefdescription>
+<para>Video mode type. </para>        </briefdescription>
+        <detaileddescription>
+<para>This describes a single video mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1003" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__monitor_1gaec0bd37af673be8813592849f13e02f0" prot="public" static="no">
+        <type>struct <ref refid="struct_g_l_f_wgammaramp" kindref="compound">GLFWgammaramp</ref></type>
+        <definition>typedef struct GLFWgammaramp  GLFWgammaramp</definition>
+        <argsstring></argsstring>
+        <name>GLFWgammaramp</name>
+        <briefdescription>
+<para>Gamma ramp. </para>        </briefdescription>
+        <detaileddescription>
+<para>This describes the gamma ramp for a monitor.</para><para><simplesect kind="see"><para><ref refid="group__monitor_1gaeeac9198f3c91b83440eed679441f76b" kindref="member">glfwGetGammaRamp</ref> <ref refid="group__monitor_1gac9f36a1cfa10eab191d3029ea8bc9558" kindref="member">glfwSetGammaRamp</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1027" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__monitor_1gab4d483284c57e28837bc2cd9639e9665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> **</type>
+        <definition>GLFWAPI GLFWmonitor** glfwGetMonitors</definition>
+        <argsstring>(int *count)</argsstring>
+        <name>glfwGetMonitors</name>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Returns the currently connected monitors. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns an array of handles for all currently connected monitors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the number of monitors in the returned array. This is set to zero if an error occurred. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An array of monitor handles, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned array is allocated and freed by GLFW. You should not free it yourself. It is guaranteed to be valid only until the monitor configuration changes or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_monitors </para></simplesect>
+<simplesect kind="see"><para>monitor_event </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__monitor_1ga59ea49f377fe701dd76764183e64d9f4" kindref="member">glfwGetPrimaryMonitor</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1ga59ea49f377fe701dd76764183e64d9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+        <definition>GLFWAPI GLFWmonitor* glfwGetPrimaryMonitor</definition>
+        <argsstring>(void)</argsstring>
+        <name>glfwGetPrimaryMonitor</name>
+        <param>
+          <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        </param>
+        <briefdescription>
+<para>Returns the primary monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the primary monitor. This is usually the monitor where elements like the Windows task bar or the OS X menu bar is located.</para><para><simplesect kind="return"><para>The primary monitor, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_monitors </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__monitor_1gab4d483284c57e28837bc2cd9639e9665" kindref="member">glfwGetMonitors</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1ga45b5481a614ad7beb2aade9746d07563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwGetMonitorPos</definition>
+        <argsstring>(GLFWmonitor *monitor, int *xpos, int *ypos)</argsstring>
+        <name>glfwGetMonitorPos</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+<para>Returns the position of the monitor&apos;s viewport on the virtual screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the position, in screen coordinates, of the upper-left corner of the specified monitor.</para><para>Any or all of the position arguments may be <computeroutput>NULL</computeroutput>. If an error occurs, all non-<computeroutput>NULL</computeroutput> position arguments will be set to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">xpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the monitor x-coordinate, or <computeroutput>NULL</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ypos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the monitor y-coordinate, or <computeroutput>NULL</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_properties</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1gad0e93a9e42b32394369cabbbdc1ab702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwGetMonitorPhysicalSize</definition>
+        <argsstring>(GLFWmonitor *monitor, int *widthMM, int *heightMM)</argsstring>
+        <name>glfwGetMonitorPhysicalSize</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>widthMM</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>heightMM</declname>
+        </param>
+        <briefdescription>
+<para>Returns the physical size of the monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the size, in millimetres, of the display area of the specified monitor.</para><para>Some systems do not provide accurate monitor size information, either because the monitor <ulink url="https://en.wikipedia.org/wiki/Extended_display_identification_data">EDID</ulink> data is incorrect or because the driver does not report it accurately.</para><para>Any or all of the size arguments may be <computeroutput>NULL</computeroutput>. If an error occurs, all non-<computeroutput>NULL</computeroutput> size arguments will be set to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">widthMM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the width, in millimetres, of the monitor&apos;s display area, or <computeroutput>NULL</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">heightMM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the height, in millimetres, of the monitor&apos;s display area, or <computeroutput>NULL</computeroutput>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para><bold>Windows:</bold> The OS calculates the returned physical size from the current resolution and system DPI instead of querying the monitor EDID data.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_properties</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1ga22f62011bae33ea8d2974eff5d14f9b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const char *</type>
+        <definition>GLFWAPI const char* glfwGetMonitorName</definition>
+        <argsstring>(GLFWmonitor *monitor)</argsstring>
+        <name>glfwGetMonitorName</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <briefdescription>
+<para>Returns the name of the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns a human-readable name, encoded as UTF-8, of the specified monitor. The name typically reflects the make and model of the monitor and is not guaranteed to be unique among the connected monitors.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UTF-8 encoded name of the monitor, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned string is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified monitor is disconnected or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_properties</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1gacfa9978e57c73670577d530df23bf275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="group__monitor_1ga8a7ee579a66720f24d656526f3e44c63" kindref="member">GLFWmonitorfun</ref></type>
+        <definition>GLFWAPI GLFWmonitorfun glfwSetMonitorCallback</definition>
+        <argsstring>(GLFWmonitorfun cbfun)</argsstring>
+        <name>glfwSetMonitorCallback</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8a7ee579a66720f24d656526f3e44c63" kindref="member">GLFWmonitorfun</ref></type>
+          <declname>cbfun</declname>
+        </param>
+        <briefdescription>
+<para>Sets the monitor configuration callback. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the monitor configuration callback, or removes the currently set callback. This is called when a monitor is connected to or disconnected from the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbfun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new callback, or <computeroutput>NULL</computeroutput> to remove the currently set callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The previously set callback, or <computeroutput>NULL</computeroutput> if no callback was set or the library had not been initialized.</para></simplesect>
+<xrefsect id="bug_1_bug000001"><xreftitle>Bug</xreftitle><xrefdescription><para><bold>X11:</bold> This callback is not yet called on monitor configuration changes.</para></xrefdescription></xrefsect></para><para><simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_event</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1ga811c28d61595e630774389985947c665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const <ref refid="struct_g_l_f_wvidmode" kindref="compound">GLFWvidmode</ref> *</type>
+        <definition>GLFWAPI const GLFWvidmode* glfwGetVideoModes</definition>
+        <argsstring>(GLFWmonitor *monitor, int *count)</argsstring>
+        <name>glfwGetVideoModes</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref> *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Returns the available video modes for the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns an array of all video modes supported by the specified monitor. The returned array is sorted in ascending order, first by color bit depth (the sum of all channel depths) and then by resolution area (the product of width and height).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where to store the number of video modes in the returned array. This is set to zero if an error occurred. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An array of video modes, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned array is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified monitor is disconnected, this function is called again for that monitor or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_modes </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__monitor_1gac234b63ec525c70d7e18ac84aca088c6" kindref="member">glfwGetVideoMode</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 1.0.</para></simplesect>
+<simplesect kind="par"><title></title><para><bold>GLFW 3:</bold> Changed to return an array of modes for a specific monitor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1gac234b63ec525c70d7e18ac84aca088c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const <ref refid="struct_g_l_f_wvidmode" kindref="compound">GLFWvidmode</ref> *</type>
+        <definition>GLFWAPI const GLFWvidmode* glfwGetVideoMode</definition>
+        <argsstring>(GLFWmonitor *monitor)</argsstring>
+        <name>glfwGetVideoMode</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current mode of the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the current video mode of the specified monitor. If you have created a full screen window for that monitor, the return value will depend on whether that window is iconified.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current mode of the monitor, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned array is allocated and freed by GLFW. You should not free it yourself. It is valid until the specified monitor is disconnected or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_modes </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__monitor_1ga811c28d61595e630774389985947c665" kindref="member">glfwGetVideoModes</ref></para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. Replaces <computeroutput>glfwGetDesktopMode</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1ga3e4ab484476c935b4cd0bf49a5c429d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetGamma</definition>
+        <argsstring>(GLFWmonitor *monitor, float gamma)</argsstring>
+        <name>glfwSetGamma</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Generates a gamma ramp and sets it for the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function generates a 256-element gamma ramp from the specified exponent and then calls <ref refid="group__monitor_1gac9f36a1cfa10eab191d3029ea8bc9558" kindref="member">glfwSetGammaRamp</ref> with it. The value must be a finite number greater than zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor whose gamma ramp to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired exponent.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_gamma</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1445" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1gaeeac9198f3c91b83440eed679441f76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> const <ref refid="struct_g_l_f_wgammaramp" kindref="compound">GLFWgammaramp</ref> *</type>
+        <definition>GLFWAPI const GLFWgammaramp* glfwGetGammaRamp</definition>
+        <argsstring>(GLFWmonitor *monitor)</argsstring>
+        <name>glfwGetGammaRamp</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current gamma ramp for the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the current gamma ramp of the specified monitor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor to query. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current gamma ramp, or <computeroutput>NULL</computeroutput> if an error occurred.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The returned structure and its arrays are allocated and freed by GLFW. You should not free them yourself. They are valid until the specified monitor is disconnected, this function is called again for that monitor or the library is terminated.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_gamma</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__monitor_1gac9f36a1cfa10eab191d3029ea8bc9558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glfw3_8h_1a56da5036b2cc259351ae22fd6439bb47" kindref="member">GLFWAPI</ref> <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>GLFWAPI void glfwSetGammaRamp</definition>
+        <argsstring>(GLFWmonitor *monitor, const GLFWgammaramp *ramp)</argsstring>
+        <name>glfwSetGammaRamp</name>
+        <param>
+          <type><ref refid="group__monitor_1ga8d9efd1cde9426692c73fe40437d0ae3" kindref="member">GLFWmonitor</ref> *</type>
+          <declname>monitor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_g_l_f_wgammaramp" kindref="compound">GLFWgammaramp</ref> *</type>
+          <declname>ramp</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current gamma ramp for the specified monitor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the current gamma ramp for the specified monitor. The original gamma ramp for that monitor is saved by GLFW the first time this function is called and is restored by <ref refid="group__init_1gafd90e6fd4819ea9e22e5e739519a6504" kindref="member">glfwTerminate</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">monitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The monitor whose gamma ramp to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ramp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gamma ramp to use.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Gamma ramp sizes other than 256 are not supported by all platforms or graphics hardware.</para></simplesect>
+<simplesect kind="remark"><para><bold>Windows:</bold> The gamma ramp size must be 256.</para></simplesect>
+<simplesect kind="par"><title>Pointer Lifetime</title><para>The specified gamma ramp is copied before this function returns.</para></simplesect>
+<simplesect kind="par"><title>Thread Safety</title><para>This function may only be called from the main thread.</para></simplesect>
+<simplesect kind="see"><para>monitor_gamma</para></simplesect>
+<simplesect kind="since"><para>Added in GLFW 3.0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glfw3.h" line="1498" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the reference documentation for monitor related functions and types. For more information, see the <ref refid="group__monitor" kindref="compound">Monitor handling</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

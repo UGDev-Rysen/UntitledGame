@@ -1,0 +1,170 @@
+.TH "u_engine::maths::vec2" 3 "Sun Aug 23 2015" "Version v0.0.3" "UntitledEngine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+u_engine::maths::vec2 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <vec2\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvec2\fP ()"
+.br
+.ti -1c
+.RI "\fBvec2\fP (const float &\fBx\fP, const float &\fBy\fP)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBadd\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBsubstract\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBmultiply\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBdivide\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBoperator+=\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBoperator\-=\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBoperator*=\fP (const \fBvec2\fP &other)"
+.br
+.ti -1c
+.RI "\fBvec2\fP & \fBoperator/=\fP (const \fBvec2\fP &other)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "\fBvec2\fP \fBoperator+\fP (\fBvec2\fP \fBleft\fP, const \fBvec2\fP &\fBright\fP)"
+.br
+.ti -1c
+.RI "\fBvec2\fP \fBoperator\-\fP (\fBvec2\fP \fBleft\fP, const \fBvec2\fP &\fBright\fP)"
+.br
+.ti -1c
+.RI "\fBvec2\fP \fBoperator*\fP (\fBvec2\fP \fBleft\fP, const \fBvec2\fP &\fBright\fP)"
+.br
+.ti -1c
+.RI "\fBvec2\fP \fBoperator/\fP (\fBvec2\fP \fBleft\fP, const \fBvec2\fP &\fBright\fP)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &\fBstream\fP, const \fBvec2\fP &vector)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 5 of file vec2\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "u_engine::maths::vec2::vec2 ()"
+
+.PP
+Definition at line 5 of file vec2\&.cpp\&.
+.SS "u_engine::maths::vec2::vec2 (const float & x, const float & y)"
+
+.PP
+Definition at line 10 of file vec2\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBvec2\fP & u_engine::maths::vec2::add (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 16 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::divide (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 37 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::multiply (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 30 of file vec2\&.cpp\&.
+.SS "bool u_engine::maths::vec2::operator!= (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 82 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::operator*= (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 68 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::operator+= (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 60 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::operator\-= (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 64 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::operator/= (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 72 of file vec2\&.cpp\&.
+.SS "bool u_engine::maths::vec2::operator== (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 78 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP & u_engine::maths::vec2::substract (const \fBvec2\fP & other)"
+
+.PP
+Definition at line 23 of file vec2\&.cpp\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "\fBvec2\fP operator* (\fBvec2\fP left, const \fBvec2\fP & right)\fC [friend]\fP"
+
+.PP
+Definition at line 51 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP operator+ (\fBvec2\fP left, const \fBvec2\fP & right)\fC [friend]\fP"
+
+.PP
+Definition at line 45 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP operator\- (\fBvec2\fP left, const \fBvec2\fP & right)\fC [friend]\fP"
+
+.PP
+Definition at line 48 of file vec2\&.cpp\&.
+.SS "\fBvec2\fP operator/ (\fBvec2\fP left, const \fBvec2\fP & right)\fC [friend]\fP"
+
+.PP
+Definition at line 54 of file vec2\&.cpp\&.
+.SS "std::ostream& operator<< (std::ostream & stream, const \fBvec2\fP & vector)\fC [friend]\fP"
+
+.PP
+Definition at line 87 of file vec2\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float u_engine::maths::vec2::x"
+
+.PP
+Definition at line 6 of file vec2\&.h\&.
+.SS "float u_engine::maths::vec2::y"
+
+.PP
+Definition at line 6 of file vec2\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UntitledEngine from the source code\&.
