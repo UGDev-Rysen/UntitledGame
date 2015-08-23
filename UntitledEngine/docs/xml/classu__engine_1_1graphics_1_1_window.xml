@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="classu__engine_1_1graphics_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>u_engine::graphics::Window</compoundname>
+    <includes refid="window_8h" local="no">window.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classu__engine_1_1graphics_1_1_window_1aae4160679a33d851ec8945cc866dfaac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct GLFWwindow</definition>
+        <argsstring></argsstring>
+        <name>GLFWwindow</name>
+        <briefdescription>
+<para>Opaque window object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Opaque window object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="13" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classu__engine_1_1graphics_1_1_window_1a934c179d0911e7f70088cebec526bfb6" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static friend void mouse_button_callback</definition>
+        <argsstring>(GLFWwindow *window, int button, int action, int mods)</argsstring>
+        <name>mouse_button_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="39" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="friend" id="classu__engine_1_1graphics_1_1_window_1a5d0f196b2f1443f793ef20de522995a3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static friend void key_callback</definition>
+        <argsstring>(GLFWwindow *window, int key, int scancode, int action, int mods)</argsstring>
+        <name>key_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>scancode</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="40" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="friend" id="classu__engine_1_1graphics_1_1_window_1abd0dee5e80d63ce619c6681efb034852" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>static friend void cursor_position_callback</definition>
+        <argsstring>(GLFWwindow *window, double xpos, double ypos)</argsstring>
+        <name>cursor_position_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="41" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a07f1079c410e842a8e5fe19e6a0589be" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* u_engine::graphics::Window::m_title</definition>
+        <argsstring></argsstring>
+        <name>m_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="14" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a679eacb010c5c75612f3b10a8496e76a" prot="private" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int u_engine::graphics::Window::m_width</definition>
+        <argsstring></argsstring>
+        <name>m_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="15" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a0b882d3ee3f462e4f587936f599a7b77" prot="private" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int u_engine::graphics::Window::m_height</definition>
+        <argsstring></argsstring>
+        <name>m_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="15" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a3d8ef06cd802d37d07dc147c238472c9" prot="private" static="no" mutable="no">
+        <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+        <definition>GLFWwindow* u_engine::graphics::Window::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="16" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1aed382ff77e62643dc9e289fa75630d21" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::m_closed</definition>
+        <argsstring></argsstring>
+        <name>m_closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="17" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a2367dc04604aa8e70ced2aec5e5d740d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::m_keys[MAX_KEYS]</definition>
+        <argsstring>[MAX_KEYS]</argsstring>
+        <name>m_keys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="19" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1acf2a1812150dfe9e6bcaa04654801674" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::m_mousebuttons[MAX_BUTTONS]</definition>
+        <argsstring>[MAX_BUTTONS]</argsstring>
+        <name>m_mousebuttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="20" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1a21866954c51845bbd415d2acc632bd4f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double u_engine::graphics::Window::m_mx</definition>
+        <argsstring></argsstring>
+        <name>m_mx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="21" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classu__engine_1_1graphics_1_1_window_1ae1de9822d2067c5f4e947561d70397af" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double u_engine::graphics::Window::m_my</definition>
+        <argsstring></argsstring>
+        <name>m_my</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="21" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1abffd9ce4556a8020292f0db6e86c4b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>u_engine::graphics::Window::Window</definition>
+        <argsstring>(const char *title, int width, int height)</argsstring>
+        <name>Window</name>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="25" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="12" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a8e30906139e8e91cceb32c50c2a44098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>u_engine::graphics::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="26" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a96d6897109221d2147c9302b52e0e860" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::closed</definition>
+        <argsstring>() const </argsstring>
+        <name>closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="27" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a498d5b982b6b7589653a3f60686c089c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::Window::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="28" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a1bd69497bd45d1265b0bf3bc07f086c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::Window::clear</definition>
+        <argsstring>() const </argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="29" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1aff46afa2292ddca01e3e02fbe37e0173" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int u_engine::graphics::Window::getWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="31" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1ad60ae406aebee2012dd2d71ab08de66f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int u_engine::graphics::Window::getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="32" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a3653c57a4857b352f4460860f2612858" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::isKeyPressed</definition>
+        <argsstring>(unsigned int keycode) const </argsstring>
+        <name>isKeyPressed</name>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="34" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1a1ce63ea608ff16bfeb6ebbcec26a200d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::isMButtonPressed</definition>
+        <argsstring>(unsigned int button) const </argsstring>
+        <name>isMButtonPressed</name>
+        <param>
+          <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="35" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1ae49ae110d10fa0741a3da682849b1ff1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::Window::getMousePosition</definition>
+        <argsstring>(double &amp;x, double &amp;y) const </argsstring>
+        <name>getMousePosition</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="36" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classu__engine_1_1graphics_1_1_window_1af58746c75ba485a0e3387052e10c6530" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool u_engine::graphics::Window::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="38" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="37" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" line="11" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.h" bodystart="11" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a1bd69497bd45d1265b0bf3bc07f086c4" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>clear</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a96d6897109221d2147c9302b52e0e860" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>closed</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1abd0dee5e80d63ce619c6681efb034852" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>cursor_position_callback</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1ad60ae406aebee2012dd2d71ab08de66f" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>getHeight</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1ae49ae110d10fa0741a3da682849b1ff1" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>getMousePosition</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1aff46afa2292ddca01e3e02fbe37e0173" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>getWidth</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1aae4160679a33d851ec8945cc866dfaac" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>GLFWwindow</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1af58746c75ba485a0e3387052e10c6530" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>init</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a3653c57a4857b352f4460860f2612858" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>isKeyPressed</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a1ce63ea608ff16bfeb6ebbcec26a200d" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>isMButtonPressed</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a5d0f196b2f1443f793ef20de522995a3" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>key_callback</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1aed382ff77e62643dc9e289fa75630d21" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_closed</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a0b882d3ee3f462e4f587936f599a7b77" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_height</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a2367dc04604aa8e70ced2aec5e5d740d" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_keys</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1acf2a1812150dfe9e6bcaa04654801674" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_mousebuttons</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a21866954c51845bbd415d2acc632bd4f" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_mx</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1ae1de9822d2067c5f4e947561d70397af" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_my</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a07f1079c410e842a8e5fe19e6a0589be" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_title</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a679eacb010c5c75612f3b10a8496e76a" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_width</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a3d8ef06cd802d37d07dc147c238472c9" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>m_window</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a934c179d0911e7f70088cebec526bfb6" prot="private" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>mouse_button_callback</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a498d5b982b6b7589653a3f60686c089c" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>update</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1abffd9ce4556a8020292f0db6e86c4b7b" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>Window</name></member>
+      <member refid="classu__engine_1_1graphics_1_1_window_1a8e30906139e8e91cceb32c50c2a44098" prot="public" virt="non-virtual"><scope>u_engine::graphics::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

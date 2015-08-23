@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="namespaceu__engine_1_1graphics" kind="namespace" language="C++">
+    <compoundname>u_engine::graphics</compoundname>
+    <innerclass refid="classu__engine_1_1graphics_1_1_window" prot="public">u_engine::graphics::Window</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceu__engine_1_1graphics_1ae4afea9df23f60dfcd44f6a587ecdf95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::window_resize</definition>
+        <argsstring>(GLFWwindow *window, int width, int height)</argsstring>
+        <name>window_resize</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" line="10" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1graphics_1ac31e754896e2a053b38cf3cc842ef3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::mouse_button_callback</definition>
+        <argsstring>(GLFWwindow *window, int button, int action, int mods)</argsstring>
+        <name>mouse_button_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" line="115" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1graphics_1ac676971bc941d55fd95cc6da0041a878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::key_callback</definition>
+        <argsstring>(GLFWwindow *window, int key, int scancode, int action, int mods)</argsstring>
+        <name>key_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>scancode</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" line="120" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu__engine_1_1graphics_1adee435291af6de6077aaffaf9b07f57c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="wglew_8h_1aeea6e3dfae3acf232096f57d2d57f084" kindref="member">void</ref></type>
+        <definition>void u_engine::graphics::cursor_position_callback</definition>
+        <argsstring>(GLFWwindow *window, double xpos, double ypos)</argsstring>
+        <name>cursor_position_callback</name>
+        <param>
+          <type><ref refid="group__window_1ga3c96d80d363e67d13a41b5d1821f3242" kindref="member">GLFWwindow</ref> *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" line="125" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" bodystart="125" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Engine-Core/src/graphics/window.cpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

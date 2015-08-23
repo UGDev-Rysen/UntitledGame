@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct_g_l_x_hyperpipe_config_s_g_i_x" kind="struct" language="C++" prot="public">
+    <compoundname>GLXHyperpipeConfigSGIX</compoundname>
+    <includes refid="glxew_8h" local="no">glxew.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_config_s_g_i_x_1a9e3748f92005cac81cb44d4c67acccb8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char GLXHyperpipeConfigSGIX::pipeName[GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX]</definition>
+        <argsstring>[GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX]</argsstring>
+        <name>pipeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" line="1262" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" bodystart="1262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_config_s_g_i_x_1abc812d8796ba89d5de4e33b3532d8335" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLXHyperpipeConfigSGIX::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" line="1263" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" bodystart="1263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_config_s_g_i_x_1a093cfaaec305531f66e1120929b5b01b" prot="public" static="no" mutable="no">
+        <type>unsigned <ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>unsigned int GLXHyperpipeConfigSGIX::participationType</definition>
+        <argsstring></argsstring>
+        <name>participationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" line="1264" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" bodystart="1264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_config_s_g_i_x_1afe9288e75dc1ae5e0f33eff978d7024d" prot="public" static="no" mutable="no">
+        <type><ref refid="wglew_8h_1a500a82aecba06f4550f6849b8099ca21" kindref="member">int</ref></type>
+        <definition>int GLXHyperpipeConfigSGIX::timeSlice</definition>
+        <argsstring></argsstring>
+        <name>timeSlice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" line="1265" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" bodystart="1265" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" line="1261" column="1" bodyfile="G:/Libraries/VSProjects/UntitledEngine/Dependencies/include/glxew.h" bodystart="1261" bodyend="1266"/>
+    <listofallmembers>
+      <member refid="struct_g_l_x_hyperpipe_config_s_g_i_x_1abc812d8796ba89d5de4e33b3532d8335" prot="public" virt="non-virtual"><scope>GLXHyperpipeConfigSGIX</scope><name>channel</name></member>
+      <member refid="struct_g_l_x_hyperpipe_config_s_g_i_x_1a093cfaaec305531f66e1120929b5b01b" prot="public" virt="non-virtual"><scope>GLXHyperpipeConfigSGIX</scope><name>participationType</name></member>
+      <member refid="struct_g_l_x_hyperpipe_config_s_g_i_x_1a9e3748f92005cac81cb44d4c67acccb8" prot="public" virt="non-virtual"><scope>GLXHyperpipeConfigSGIX</scope><name>pipeName</name></member>
+      <member refid="struct_g_l_x_hyperpipe_config_s_g_i_x_1afe9288e75dc1ae5e0f33eff978d7024d" prot="public" virt="non-virtual"><scope>GLXHyperpipeConfigSGIX</scope><name>timeSlice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
