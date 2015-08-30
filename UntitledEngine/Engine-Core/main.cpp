@@ -14,15 +14,25 @@ int main() {
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
 
-	vec3 a(1.0f, 2.0f, 3.0f);
-	vec3 b(2, 4, 6);
+	vec4 a(1.0f, 2.0f, 3.0f , 1.0f);
+	vec4 b(2, 4, 6, 1);
 
-	a += b;
+	vec4 c = a * b;
 	
+
+	mat4 position = mat4::translation(vec3(2, 3, 4));
+	position *= mat4::identity();
+
+	position.elements[2] = 2.0f;
+
+	vec4 column = position.columns[3];
+
+	std::cout << std::endl;
+	std::cout << column << std::endl;
+
 	while (!window.closed()) {
 		window.clear();
-		std::cout << std::endl;
-		std::cout << (a) << std::endl;
+		
 
 #if 1
 		glBegin(GL_QUADS);
