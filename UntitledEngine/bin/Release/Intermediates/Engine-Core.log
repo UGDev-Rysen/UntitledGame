@@ -1,8 +1,7 @@
 ﻿  main.cpp
-  window.cpp
-  vec2.cpp
-  vec3.cpp
-  vec4.cpp
+g:\libraries\vsprojects\untitledengine\engine-core\src\maths\maths_func.h(11): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+  mat4.cpp
+g:\libraries\vsprojects\untitledengine\engine-core\src\maths\maths_func.h(11): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
   Generating code
   Finished generating code
   Engine-Core.vcxproj -> G:\Libraries\VSProjects\UntitledEngine\\bin\Release\Engine-Core.exe
