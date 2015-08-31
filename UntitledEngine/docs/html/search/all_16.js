@@ -19,11 +19,11 @@ var searchData=
   ['vec3_2ecpp',['vec3.cpp',['../vec3_8cpp.html',1,'']]],
   ['vec3_2eh',['vec3.h',['../vec3_8h.html',1,'']]],
   ['vec4',['vec4',['../structu__engine_1_1maths_1_1vec4.html',1,'u_engine::maths']]],
-  ['vec4',['vec4',['../structu__engine_1_1maths_1_1vec4.html#ab0c186a02c834bda66c046547de6814d',1,'u_engine::maths::vec4::vec4()'],['../structu__engine_1_1maths_1_1vec4.html#ad631a181d415966bb60ff6957d3e86f2',1,'u_engine::maths::vec4::vec4(const float &amp;x, const float &amp;y, const float &amp;z, const float &amp;w)']]],
+  ['vec4',['vec4',['../structu__engine_1_1maths_1_1vec4.html#a27572645f3e2c3e21447dba4fb43fe9e',1,'u_engine::maths::vec4::vec4()=default'],['../structu__engine_1_1maths_1_1vec4.html#ad631a181d415966bb60ff6957d3e86f2',1,'u_engine::maths::vec4::vec4(const float &amp;x, const float &amp;y, const float &amp;z, const float &amp;w)']]],
   ['vec4_2ecpp',['vec4.cpp',['../vec4_8cpp.html',1,'']]],
   ['vec4_2eh',['vec4.h',['../vec4_8h.html',1,'']]],
   ['vertexbuffercount',['vertexBufferCount',['../glew_8h.html#a9abab2561bf5b0c9d48828e66a00c3f5',1,'glew.h']]],
-  ['void',['void',['../glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2',1,'void(GLAPIENTRY *PFNGLCOPYTEXSUBIMAGE3DPROC)(GLenum target:&#160;glew.h'],['../wglew_8h.html#aeea6e3dfae3acf232096f57d2d57f084',1,'void(WINAPI *PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC)(GLushort id):&#160;wglew.h'],['../wglew_8h.html#a226d0100fb70523a2f1c16366add1196',1,'VOID(WINAPI *PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC)(HGLRC dstCtx:&#160;wglew.h']]],
+  ['void',['VOID',['../wglew_8h.html#a226d0100fb70523a2f1c16366add1196',1,'VOID(WINAPI *PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC)(HGLRC dstCtx:&#160;wglew.h'],['../glew_8h.html#a1659df18b3b413a60a397d5a7540f3d2',1,'void(GLAPIENTRY *PFNGLCOPYTEXSUBIMAGE3DPROC)(GLenum target:&#160;glew.h'],['../wglew_8h.html#aeea6e3dfae3acf232096f57d2d57f084',1,'void(WINAPI *PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC)(GLushort id):&#160;wglew.h']]],
   ['vorder',['vorder',['../glew_8h.html#acd4d2b309dae14d5210665bd1c47a5e3',1,'glew.h']]],
   ['vstride',['vstride',['../glew_8h.html#a60703cfb6ea898d8d2bb036ef4c6b2d1',1,'glew.h']]]
 ];

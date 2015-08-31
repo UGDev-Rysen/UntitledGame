@@ -1,6 +1,6 @@
 var structu__engine_1_1maths_1_1vec4 =
 [
-    [ "vec4", "structu__engine_1_1maths_1_1vec4.html#ab0c186a02c834bda66c046547de6814d", null ],
+    [ "vec4", "structu__engine_1_1maths_1_1vec4.html#a27572645f3e2c3e21447dba4fb43fe9e", null ],
     [ "vec4", "structu__engine_1_1maths_1_1vec4.html#ad631a181d415966bb60ff6957d3e86f2", null ],
     [ "add", "structu__engine_1_1maths_1_1vec4.html#aa4235b88548c3fa37481b7486cfc80c5", null ],
     [ "divide", "structu__engine_1_1maths_1_1vec4.html#a52fd7b26797d488d2059acc885d56092", null ],

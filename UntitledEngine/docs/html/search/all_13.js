@@ -7,7 +7,7 @@ var searchData=
   ['samplers',['samplers',['../glew_8h.html#a84e60a04ad95496f384d36ed0651a57d',1,'glew.h']]],
   ['samples',['samples',['../glew_8h.html#a1d93829fc44881966fb3b59a0241947f',1,'glew.h']]],
   ['sbc',['sbc',['../wglew_8h.html#a736174037e55824c2eb6f4cf40ff5965',1,'wglew.h']]],
-  ['scale',['scale',['../glew_8h.html#a281421b881aa7a1266842b73a3bc7655',1,'glew.h']]],
+  ['scale',['scale',['../structu__engine_1_1maths_1_1mat4.html#a7c7d37cb58d4c116c945308592bf65e8',1,'u_engine::maths::mat4::scale()'],['../glew_8h.html#a281421b881aa7a1266842b73a3bc7655',1,'scale():&#160;glew.h']]],
   ['seconds',['seconds',['../wglew_8h.html#a0b0bf11730a56d9138d77ed713db634e',1,'wglew.h']]],
   ['send_5fevent',['send_event',['../struct_g_l_x_pbuffer_clobber_event.html#aa51969e67e4ad6095bda26ca64fe8ba6',1,'GLXPbufferClobberEvent::send_event()'],['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#af43bf0edbe40a74ef58dfb546a75118b',1,'GLXBufferClobberEventSGIX::send_event()']]],
   ['sequence_5fnum',['sequence_num',['../glew_8h.html#aa0a930adf11315c827636598f52e12ea',1,'glew.h']]],
