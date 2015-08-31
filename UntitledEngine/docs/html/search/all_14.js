@@ -24,9 +24,11 @@ var searchData=
   ['timeslice',['timeSlice',['../struct_g_l_x_hyperpipe_config_s_g_i_x.html#afe9288e75dc1ae5e0f33eff978d7024d',1,'GLXHyperpipeConfigSGIX']]],
   ['tlow',['tlow',['../glew_8h.html#afddb663d358e852f0de2c243c60450b8',1,'glew.h']]],
   ['top',['top',['../glew_8h.html#a2d9dcbd99961f3384f2c4d57014e0c38',1,'glew.h']]],
+  ['toradians',['toRadians',['../namespaceu__engine_1_1maths.html#a3f3903fc6e03dbc3aba56774bc675cc1',1,'u_engine::maths']]],
   ['transform',['transform',['../glew_8h.html#a07993c0d92c1aeeb357ba0495c8b5325',1,'glew.h']]],
   ['transformtype',['transformType',['../glew_8h.html#aa0383c6d98a1c3b3954a845f8b9c6aab',1,'glew.h']]],
   ['transformvalues',['transformValues',['../glew_8h.html#afea31925132c2489ba63d8b8b477d1eb',1,'glew.h']]],
+  ['translation',['translation',['../structu__engine_1_1maths_1_1mat4.html#a611759978e5699de27e278913a499239',1,'u_engine::maths::mat4']]],
   ['transpose',['transpose',['../glew_8h.html#a7ad291818ab127e386dec37f7e1bdb97',1,'glew.h']]],
   ['type',['type',['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#a36e3e8a5feea664623ea43d0f273b63a',1,'GLXBufferClobberEventSGIX::type()'],['../glew_8h.html#a8d78e2e8a676abd547a596dd84811285',1,'type():&#160;glew.h'],['../wglew_8h.html#adef6e62b57cfeb2a6221fa6bc6c311a3',1,'type():&#160;wglew.h']]],
   ['types',['types',['../glew_8h.html#a4acc56c8d89f835adc106648c5d9f491',1,'glew.h']]]
