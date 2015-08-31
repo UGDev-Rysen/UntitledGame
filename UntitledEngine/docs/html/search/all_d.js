@@ -7,7 +7,12 @@ var searchData=
   ['mapping',['mapping',['../glew_8h.html#aa4f194e5160ccbb5a8e83ab6ef4676d2',1,'glew.h']]],
   ['marker',['marker',['../glew_8h.html#ad197067eba8400e74603a2bcd4fac47e',1,'glew.h']]],
   ['mask',['mask',['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#a74b4ad1ad3cac011001151411f621da1',1,'GLXBufferClobberEventSGIX::mask()'],['../glew_8h.html#a7ea8e824401ae7ae3a0b6a56d768f559',1,'mask():&#160;glew.h'],['../wglew_8h.html#ac96012c186757f49c8d39675cd43a4e4',1,'mask():&#160;wglew.h']]],
+  ['mat4',['mat4',['../structu__engine_1_1maths_1_1mat4.html',1,'u_engine::maths']]],
+  ['mat4',['mat4',['../structu__engine_1_1maths_1_1mat4.html#a3e30d4dc01f897306d0b9ab969e6a78f',1,'u_engine::maths::mat4::mat4()'],['../structu__engine_1_1maths_1_1mat4.html#aaab4e7ed7809ee1a99ea5ae8b5488ce4',1,'u_engine::maths::mat4::mat4(float diagonal)']]],
+  ['mat4_2ecpp',['mat4.cpp',['../mat4_8cpp.html',1,'']]],
+  ['mat4_2eh',['mat4.h',['../mat4_8h.html',1,'']]],
   ['maths_2eh',['maths.h',['../maths_8h.html',1,'']]],
+  ['maths_5ffunc_2eh',['maths_func.h',['../maths__func_8h.html',1,'']]],
   ['matrix',['matrix',['../glew_8h.html#a7b24a3f2f56eb1244ae69dacb4fecb6f',1,'glew.h']]],
   ['max_5fbuttons',['MAX_BUTTONS',['../window_8h.html#a8bb0c7f312bb8665c3377a061dae552c',1,'window.h']]],
   ['max_5fkeys',['MAX_KEYS',['../window_8h.html#a3077ecca3770bdee50e6a17dfb55d002',1,'window.h']]],
@@ -42,6 +47,6 @@ var searchData=
   ['monitors',['monitors',['../glew_8h.html#a3c0106911a867ae012fd008394e41257',1,'glew.h']]],
   ['mouse_5fbutton_5fcallback',['mouse_button_callback',['../classu__engine_1_1graphics_1_1_window.html#a934c179d0911e7f70088cebec526bfb6',1,'u_engine::graphics::Window::mouse_button_callback()'],['../namespaceu__engine_1_1graphics.html#ac31e754896e2a053b38cf3cc842ef3ec',1,'u_engine::graphics::mouse_button_callback()']]],
   ['msc',['msc',['../wglew_8h.html#ac6ab09fc64bb73d869061c8f9a13c9fd',1,'wglew.h']]],
-  ['multiply',['multiply',['../structu__engine_1_1maths_1_1vec2.html#a72e4eb0147653cfb7e11d17a95905a63',1,'u_engine::maths::vec2::multiply()'],['../structu__engine_1_1maths_1_1vec3.html#ae35579d6f1e5d5f8d13f813f918da5f2',1,'u_engine::maths::vec3::multiply()'],['../structu__engine_1_1maths_1_1vec4.html#af65b36c890031315de94d474fa56f6fc',1,'u_engine::maths::vec4::multiply()']]],
+  ['multiply',['multiply',['../structu__engine_1_1maths_1_1mat4.html#a24a049d834f2b5905d22e3cdbd75b10d',1,'u_engine::maths::mat4::multiply()'],['../structu__engine_1_1maths_1_1vec2.html#a72e4eb0147653cfb7e11d17a95905a63',1,'u_engine::maths::vec2::multiply()'],['../structu__engine_1_1maths_1_1vec3.html#ae35579d6f1e5d5f8d13f813f918da5f2',1,'u_engine::maths::vec3::multiply()'],['../structu__engine_1_1maths_1_1vec4.html#af65b36c890031315de94d474fa56f6fc',1,'u_engine::maths::vec4::multiply()']]],
   ['muxsum',['muxSum',['../glew_8h.html#a674394192718069c0907bd12ac434c4a',1,'glew.h']]]
 ];

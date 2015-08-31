@@ -21,6 +21,7 @@ var searchData=
   ['result',['result',['../glew_8h.html#a5fb5836a37f7607602a16ad733ed6357',1,'glew.h']]],
   ['returnedspacing',['returnedSpacing',['../glew_8h.html#a99db6d706adaa9ad06c22774393c34de',1,'glew.h']]],
   ['right',['right',['../glew_8h.html#a18826d74cd7b4e758c25b4ba66e20be2',1,'glew.h']]],
+  ['rotation',['rotation',['../structu__engine_1_1maths_1_1mat4.html#a4eaef201f513b1a506962323d625e928',1,'u_engine::maths::mat4']]],
   ['row',['row',['../glew_8h.html#a90d3e7e4182a9630993f640fa0443b0b',1,'glew.h']]],
   ['rowbufsize',['rowBufSize',['../glew_8h.html#a649a72094f1fdb9a553000e09e80d8c9',1,'glew.h']]]
 ];
