@@ -1,1 +1,14 @@
-﻿
+﻿  vec4.cpp
+  vec3.cpp
+  vec2.cpp
+  mat4.cpp
+g:\libraries\vsprojects\untitledgame\untitledengine\engine-core\src\maths\maths_func.h(11): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+  window.cpp
+  main.cpp
+g:\libraries\vsprojects\untitledgame\untitledengine\engine-core\src\maths\maths_func.h(11): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  LINK : G:\Libraries\VSProjects\UntitledGame\UntitledEngine\\bin\Debug\Engine-Core.exe not found or not built by the last incremental link; performing full link
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'G:\Libraries\VSProjects\UntitledGame\UntitledEngine\bin\Debug\vc120.pdb'; linking object as if no debug info
+  Engine-Core.vcxproj -> G:\Libraries\VSProjects\UntitledGame\UntitledEngine\\bin\Debug\Engine-Core.exe
