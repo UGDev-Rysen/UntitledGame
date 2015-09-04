@@ -89,7 +89,7 @@ namespace u_engine { namespace maths {
 		result.elements[2 + 3 * 4] = c;
 
 
-		return c;
+		return result;
 	}
 
 
@@ -128,9 +128,9 @@ namespace u_engine { namespace maths {
 		result.elements[1 + 1 * 4] = y * omc + c;
 		result.elements[2 + 1 * 4] = y * z * omc + x * s;
 
-		result.elements[0 + 1 * 4] = x * z * omc + y * s;
-		result.elements[1 + 1 * 4] = y * z * omc - x * s;
-		result.elements[2 + 1 * 4] = z * omc + c;
+		result.elements[0 + 2 * 4] = x * z * omc + y * s;
+		result.elements[1 + 2 * 4] = y * z * omc - x * s;
+		result.elements[2 + 2 * 4] = z * omc + c;
 
 		return result;
 

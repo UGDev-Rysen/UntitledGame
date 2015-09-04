@@ -7,7 +7,7 @@ int main() {
 	using namespace graphics;
 	using namespace maths;
 
-	Window window("Untitled Engine", 960, 540);
+	Window window("Untitled Engine", 1280, 720);
 	glClearColor(0.2f, 0.3f, 0.8f, 1.0f);
 
 	GLuint vao;
