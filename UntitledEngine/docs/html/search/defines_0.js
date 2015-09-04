@@ -15,5 +15,6 @@ var searchData=
   ['_5f_5fwglew_5fh_5f_5f',['__WGLEW_H__',['../wglew_8h.html#a751c24c3631aa4abee81a5d1fe3e96de',1,'wglew.h']]],
   ['_5f_5fwglext_5fh_5f',['__wglext_h_',['../wglew_8h.html#ad280bef26e8b92343568301ed5134878',1,'wglew.h']]],
   ['_5f_5fx_5fgl_5fh',['__X_GL_H',['../glew_8h.html#a1a4d2e6b44a13a38af34dbfcfb73af28',1,'glew.h']]],
-  ['_5fgl_5fh',['_GL_H',['../glew_8h.html#a596af8b5e3f887806efdd7c27ba3d329',1,'glew.h']]]
+  ['_5fgl_5fh',['_GL_H',['../glew_8h.html#a596af8b5e3f887806efdd7c27ba3d329',1,'glew.h']]],
+  ['_5fuse_5fmath_5fdefines',['_USE_MATH_DEFINES',['../maths__func_8h.html#a525335710b53cb064ca56b936120431e',1,'maths_func.h']]]
 ];

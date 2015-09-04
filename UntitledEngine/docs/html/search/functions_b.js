@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['substract',['substract',['../structu__engine_1_1maths_1_1vec2.html#aa7e68398e0f2145437e596f49e3e2558',1,'u_engine::maths::vec2::substract()'],['../structu__engine_1_1maths_1_1vec3.html#aa2da6da52c959d9196f827732efaa9fb',1,'u_engine::maths::vec3::substract()'],['../structu__engine_1_1maths_1_1vec4.html#ace7cc83f8c8ba43864caf8a5a508e175',1,'u_engine::maths::vec4::substract()']]]
+  ['perspective',['perspective',['../structu__engine_1_1maths_1_1mat4.html#acda9cbc9ebf493380f80c6ae75b666dd',1,'u_engine::maths::mat4::perspective()'],['../namespaceu__engine_1_1maths.html#a0dcd7e97b7afc7139967a3bd6c0d3d74',1,'u_engine::maths::perspective()']]]
 ];
