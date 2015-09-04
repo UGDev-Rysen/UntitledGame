@@ -1,3 +1,1 @@
-﻿  main.cpp
-g:\libraries\vsprojects\untitledengine\engine-core\src\maths\maths_func.h(11): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-  Engine-Core.vcxproj -> G:\Libraries\VSProjects\UntitledEngine\\bin\Debug\Engine-Core.exe
+﻿
