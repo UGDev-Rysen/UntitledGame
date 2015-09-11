@@ -14,9 +14,8 @@ This is the early development site for a game - codename "UntitledGame" - where 
 Credits (so far):
 
 * Mokka: Programming, Engine
+
 * Rysen: Assets, Story, Level Design
-
-
 * Alistair: Story, Artwork, Characters
 * Kitsune: Story, Artwork, Assets
 * Adrian: Story, Level Design
