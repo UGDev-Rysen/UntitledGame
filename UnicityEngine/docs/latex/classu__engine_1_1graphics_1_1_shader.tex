@@ -1,0 +1,165 @@
+\hypertarget{classu__engine_1_1graphics_1_1_shader}{}\section{u\+\_\+engine\+:\+:graphics\+:\+:Shader Class Reference}
+\label{classu__engine_1_1graphics_1_1_shader}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+
+
+{\ttfamily \#include $<$shader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classu__engine_1_1graphics_1_1_shader_a983b1025759d580f47499d4103321e1e}{Shader} (const char $\ast$vert\+Path, const char $\ast$frag\+Path)
+\item 
+\hyperlink{classu__engine_1_1graphics_1_1_shader_a8d08acdf9bb1b18cc980a8229838434a}{$\sim$\+Shader} ()
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_a0427896de6509827a587bff443ffdade}{set\+Uniform1i} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, \hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_a26942fd2ed566ef553eae82d2c109c8f}{val})
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_ac4f9160e334ff67a69918d978ddeba29}{set\+Uniform1f} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, float \hyperlink{glew_8h_a26942fd2ed566ef553eae82d2c109c8f}{val})
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_af7c3899c2f210b8f662d5077ffa07c3a}{set\+Uniform2f} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const \hyperlink{structu__engine_1_1maths_1_1vec2}{maths\+::vec2} \&vector)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_ae760e5ccae41bb68a71c7e849285fe6a}{set\+Uniform3f} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const \hyperlink{structu__engine_1_1maths_1_1vec3}{maths\+::vec3} \&vector)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_a13d3e1d8aef749fe1db1b6fa766ca9d8}{set\+Uniform4f} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const \hyperlink{structu__engine_1_1maths_1_1vec4}{maths\+::vec4} \&vector)
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_a6afb273e58deb41aec1c0e8d30794d14}{set\+Uniform\+Mat4} (const \hyperlink{glew_8h_af7575655ac056b187ea385966b95a22d}{G\+Lchar} $\ast$\hyperlink{glew_8h_a5c4947d4516dd7cfa3505ce3a648a4ef}{name}, const \hyperlink{structu__engine_1_1maths_1_1mat4}{maths\+::mat4} \&\hyperlink{glew_8h_a7b24a3f2f56eb1244ae69dacb4fecb6f}{matrix})
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_a2fd8a40b1794c80f827932024b873cce}{enable} () const 
+\item 
+\hyperlink{wglew_8h_aeea6e3dfae3acf232096f57d2d57f084}{void} \hyperlink{classu__engine_1_1graphics_1_1_shader_a76c38646d03ad4b54cdb59dd33e0615b}{disable} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file shader.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a983b1025759d580f47499d4103321e1e}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{Shader(const char $\ast$vert\+Path, const char $\ast$frag\+Path)}]{\setlength{\rightskip}{0pt plus 5cm}u\+\_\+engine\+::graphics\+::\+Shader\+::\+Shader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{vert\+Path, }
+\item[{const char $\ast$}]{frag\+Path}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_a983b1025759d580f47499d4103321e1e}
+
+
+Definition at line 5 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a8d08acdf9bb1b18cc980a8229838434a}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!````~Shader@{$\sim$\+Shader}}
+\index{````~Shader@{$\sim$\+Shader}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{$\sim$\+Shader()}]{\setlength{\rightskip}{0pt plus 5cm}u\+\_\+engine\+::graphics\+::\+Shader\+::$\sim$\+Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_a8d08acdf9bb1b18cc980a8229838434a}
+
+
+Definition at line 9 of file shader.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a76c38646d03ad4b54cdb59dd33e0615b}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!disable@{disable}}
+\index{disable@{disable}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{disable() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::disable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classu__engine_1_1graphics_1_1_shader_a76c38646d03ad4b54cdb59dd33e0615b}
+
+
+Definition at line 106 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a2fd8a40b1794c80f827932024b873cce}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!enable@{enable}}
+\index{enable@{enable}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{enable() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::enable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classu__engine_1_1graphics_1_1_shader_a2fd8a40b1794c80f827932024b873cce}
+
+
+Definition at line 103 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_ac4f9160e334ff67a69918d978ddeba29}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform1f@{set\+Uniform1f}}
+\index{set\+Uniform1f@{set\+Uniform1f}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform1f(const G\+Lchar $\ast$name, float val)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform1f (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_ac4f9160e334ff67a69918d978ddeba29}
+
+
+Definition at line 81 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a0427896de6509827a587bff443ffdade}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform1i@{set\+Uniform1i}}
+\index{set\+Uniform1i@{set\+Uniform1i}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform1i(const G\+Lchar $\ast$name, int val)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform1i (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{{\bf int}}]{val}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_a0427896de6509827a587bff443ffdade}
+
+
+Definition at line 77 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_af7c3899c2f210b8f662d5077ffa07c3a}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform2f@{set\+Uniform2f}}
+\index{set\+Uniform2f@{set\+Uniform2f}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform2f(const G\+Lchar $\ast$name, const maths\+::vec2 \&vector)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform2f (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{const {\bf maths\+::vec2} \&}]{vector}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_af7c3899c2f210b8f662d5077ffa07c3a}
+
+
+Definition at line 85 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_ae760e5ccae41bb68a71c7e849285fe6a}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform3f@{set\+Uniform3f}}
+\index{set\+Uniform3f@{set\+Uniform3f}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform3f(const G\+Lchar $\ast$name, const maths\+::vec3 \&vector)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform3f (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{const {\bf maths\+::vec3} \&}]{vector}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_ae760e5ccae41bb68a71c7e849285fe6a}
+
+
+Definition at line 89 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a13d3e1d8aef749fe1db1b6fa766ca9d8}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform4f@{set\+Uniform4f}}
+\index{set\+Uniform4f@{set\+Uniform4f}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform4f(const G\+Lchar $\ast$name, const maths\+::vec4 \&vector)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform4f (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{const {\bf maths\+::vec4} \&}]{vector}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_a13d3e1d8aef749fe1db1b6fa766ca9d8}
+
+
+Definition at line 93 of file shader.\+cpp.
+
+\hypertarget{classu__engine_1_1graphics_1_1_shader_a6afb273e58deb41aec1c0e8d30794d14}{}\index{u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}!set\+Uniform\+Mat4@{set\+Uniform\+Mat4}}
+\index{set\+Uniform\+Mat4@{set\+Uniform\+Mat4}!u\+\_\+engine\+::graphics\+::\+Shader@{u\+\_\+engine\+::graphics\+::\+Shader}}
+\subsubsection[{set\+Uniform\+Mat4(const G\+Lchar $\ast$name, const maths\+::mat4 \&matrix)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} u\+\_\+engine\+::graphics\+::\+Shader\+::set\+Uniform\+Mat4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+Lchar} $\ast$}]{name, }
+\item[{const {\bf maths\+::mat4} \&}]{matrix}
+\end{DoxyParamCaption}
+)}\label{classu__engine_1_1graphics_1_1_shader_a6afb273e58deb41aec1c0e8d30794d14}
+
+
+Definition at line 97 of file shader.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/graphics/\hyperlink{shader_8h}{shader.\+h}\item 
+G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/graphics/\hyperlink{shader_8cpp}{shader.\+cpp}\end{DoxyCompactItemize}
