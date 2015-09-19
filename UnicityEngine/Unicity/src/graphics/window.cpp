@@ -58,6 +58,7 @@ namespace u_engine { namespace graphics {
 			glfwSetMouseButtonCallback(m_window, mouse_button_callback);
 			glfwSetKeyCallback(m_window, key_callback);
 			glfwSetCursorPosCallback(m_window, cursor_position_callback);
+			glfwSwapInterval(0.0);
 
 			if (glewInit() != GLEW_OK) {
 				std::cout << "Could not initialize GLEW!" << std::endl;
@@ -98,6 +99,12 @@ namespace u_engine { namespace graphics {
 		}
 
 		void Window::update() {
+
+			GLenum error = glGetError();
+			if (error != GL_NO_ERROR) {
+				std::cout << "OpenGL Error: " << error << std::endl;
+			}
+
 			glfwPollEvents();
 			glfwSwapBuffers(m_window);
 		}

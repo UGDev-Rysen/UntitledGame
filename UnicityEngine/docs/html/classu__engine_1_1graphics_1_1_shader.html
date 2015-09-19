@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_ue_b.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">UnicityEngine
-   &#160;<span id="projectnumber">dev0.0.5</span>
+   &#160;<span id="projectnumber">dev0.0.6</span>
    </div>
    <div id="projectbrief">Development Build</div>
   </td>
@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,8 +112,6 @@ $(document).ready(function(){initNavTree('classu__engine_1_1graphics_1_1_shader.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classu__engine_1_1graphics_1_1_shader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">u_engine::graphics::Shader Class Reference</div>  </div>
@@ -143,22 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2fd8a40b1794c80f827932024b873cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c38646d03ad4b54cdb59dd33e0615b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="wglew_8h.html#aeea6e3dfae3acf232096f57d2d57f084">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#a76c38646d03ad4b54cdb59dd33e0615b">disable</a> () const </td></tr>
 <tr class="separator:a76c38646d03ad4b54cdb59dd33e0615b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5a35d9811d9863691e40576e21c80f84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#a5a35d9811d9863691e40576e21c80f84">load</a> ()</td></tr>
-<tr class="separator:a5a35d9811d9863691e40576e21c80f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8b3c5800924cc7bf70442f40f0c64cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glew_8h.html#acebcc1c5663f14ebde1d16831e5fed94">GLint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#ac8b3c5800924cc7bf70442f40f0c64cc">getUniformLocation</a> (const <a class="el" href="glew_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *<a class="el" href="glew_8h.html#a5c4947d4516dd7cfa3505ce3a648a4ef">name</a>)</td></tr>
-<tr class="separator:ac8b3c5800924cc7bf70442f40f0c64cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a8146cc9b08f48c4381fb21c7f9297392"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#a8146cc9b08f48c4381fb21c7f9297392">m_VertPath</a></td></tr>
-<tr class="separator:a8146cc9b08f48c4381fb21c7f9297392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f8a6df855e56dcc5b5c2663b53a314"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#a16f8a6df855e56dcc5b5c2663b53a314">m_FragPath</a></td></tr>
-<tr class="separator:a16f8a6df855e56dcc5b5c2663b53a314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2222ab6525a9538cb193456f00365c6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu__engine_1_1graphics_1_1_shader.html#a2222ab6525a9538cb193456f00365c6c">m_ShaderID</a></td></tr>
-<tr class="separator:a2222ab6525a9538cb193456f00365c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -223,7 +206,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00108">108</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00106">106</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,58 +223,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00105">105</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac8b3c5800924cc7bf70442f40f0c64cc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="glew_8h.html#acebcc1c5663f14ebde1d16831e5fed94">GLint</a> u_engine::graphics::Shader::getUniformLocation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="glew_8h.html#af7575655ac056b187ea385966b95a22d">GLchar</a> *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00074">74</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5a35d9811d9863691e40576e21c80f84"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a> u_engine::graphics::Shader::load </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00013">13</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00103">103</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +251,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00083">83</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00081">81</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +279,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00079">79</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00077">77</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +307,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00087">87</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00085">85</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -403,7 +335,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00091">91</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00089">89</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -431,7 +363,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00095">95</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00093">93</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,80 +391,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00099">99</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a16f8a6df855e56dcc5b5c2663b53a314"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* u_engine::graphics::Shader::m_FragPath</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="shader_8h_source.html#l00016">16</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2222ab6525a9538cb193456f00365c6c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="glew_8h.html#a68c4714e43d8e827d80759f9cb864f3c">GLuint</a> u_engine::graphics::Shader::m_ShaderID</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="shader_8h_source.html#l00017">17</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8146cc9b08f48c4381fb21c7f9297392"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* u_engine::graphics::Shader::m_VertPath</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="shader_8h_source.html#l00015">15</a> of file <a class="el" href="shader_8h_source.html">shader.h</a>.</p>
+<p>Definition at line <a class="el" href="shader_8cpp_source.html#l00097">97</a> of file <a class="el" href="shader_8cpp_source.html">shader.cpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>UnicityEngine/Unicity/src/graphics/<a class="el" href="shader_8h_source.html">shader.h</a></li>
-<li>UnicityEngine/Unicity/src/graphics/<a class="el" href="shader_8cpp_source.html">shader.cpp</a></li>
+<li>G:/Libraries/VSProjects/UntitledGame/UnicityEngine/Unicity/src/graphics/<a class="el" href="shader_8h_source.html">shader.h</a></li>
+<li>G:/Libraries/VSProjects/UntitledGame/UnicityEngine/Unicity/src/graphics/<a class="el" href="shader_8cpp_source.html">shader.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

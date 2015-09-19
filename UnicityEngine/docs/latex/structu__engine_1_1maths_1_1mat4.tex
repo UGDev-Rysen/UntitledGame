@@ -1,0 +1,232 @@
+\hypertarget{structu__engine_1_1maths_1_1mat4}{}\section{u\+\_\+engine\+:\+:maths\+:\+:mat4 Struct Reference}
+\label{structu__engine_1_1maths_1_1mat4}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+
+
+{\ttfamily \#include $<$mat4.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structu__engine_1_1maths_1_1mat4_a3e30d4dc01f897306d0b9ab969e6a78f}{mat4} ()
+\item 
+\hyperlink{structu__engine_1_1maths_1_1mat4_aaab4e7ed7809ee1a99ea5ae8b5488ce4}{mat4} (float diagonal)
+\item 
+\hyperlink{structu__engine_1_1maths_1_1vec4}{vec4} \hyperlink{structu__engine_1_1maths_1_1mat4_a48f5a4fe578dfb584fab942877972a94}{get\+Column} (\hyperlink{wglew_8h_a500a82aecba06f4550f6849b8099ca21}{int} \hyperlink{glew_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index})
+\item 
+\hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \& \hyperlink{structu__engine_1_1maths_1_1mat4_a24a049d834f2b5905d22e3cdbd75b10d}{multiply} (const \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \&other)
+\item 
+\hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \& \hyperlink{structu__engine_1_1maths_1_1mat4_a34f02331c174475d829789d6a89802b2}{operator$\ast$=} (const \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_af6320e9644c38c1ad6ccf8579b3579f9}{identity} ()
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_acad18e49f82c123ffc29f07f32110d54}{orthographic} (float \hyperlink{glew_8h_a6358510bdde486b81c7951ee5c470ee4}{left}, float \hyperlink{glew_8h_a18826d74cd7b4e758c25b4ba66e20be2}{right}, float \hyperlink{glew_8h_a111675ec0799cd2ffecf18fd6c4ba449}{bottom}, float \hyperlink{glew_8h_a2d9dcbd99961f3384f2c4d57014e0c38}{top}, float near, float far)
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_adc7f54a60b855ece7513bdf946f96c39}{perspective} (float fov, float aspect\+Ratio, float near, float far)
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_a611759978e5699de27e278913a499239}{translation} (const \hyperlink{structu__engine_1_1maths_1_1vec3}{vec3} \&translation)
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_a4eaef201f513b1a506962323d625e928}{rotation} (float \hyperlink{glew_8h_a6d7a98b0d979b9411a4344a98a7a6122}{angle}, const \hyperlink{structu__engine_1_1maths_1_1vec3}{vec3} \&axis)
+\item 
+static \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_a7c7d37cb58d4c116c945308592bf65e8}{scale} (const \hyperlink{structu__engine_1_1maths_1_1vec3}{vec3} \&\hyperlink{glew_8h_a281421b881aa7a1266842b73a3bc7655}{scale})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{structu__engine_1_1maths_1_1mat4_a0efbb2abf6b7fd363620e1b0130a7e1c}{elements} \mbox{[}4 $\ast$4\mbox{]}\\
+\>\hyperlink{structu__engine_1_1maths_1_1vec4}{vec4} \hyperlink{structu__engine_1_1maths_1_1mat4_a6aad7268685211b538669541ff52895e}{columns} \mbox{[}4\mbox{]}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{structu__engine_1_1maths_1_1mat4_aec96623f8535f2451a1cfef2b9f56e29}{operator$\ast$} (\hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \hyperlink{glew_8h_a6358510bdde486b81c7951ee5c470ee4}{left}, const \hyperlink{structu__engine_1_1maths_1_1mat4}{mat4} \&\hyperlink{glew_8h_a18826d74cd7b4e758c25b4ba66e20be2}{right})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file mat4.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structu__engine_1_1maths_1_1mat4_a3e30d4dc01f897306d0b9ab969e6a78f}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!mat4@{mat4}}
+\index{mat4@{mat4}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{mat4()}]{\setlength{\rightskip}{0pt plus 5cm}u\+\_\+engine\+::maths\+::mat4\+::mat4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structu__engine_1_1maths_1_1mat4_a3e30d4dc01f897306d0b9ab969e6a78f}
+
+
+Definition at line 6 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_aaab4e7ed7809ee1a99ea5ae8b5488ce4}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!mat4@{mat4}}
+\index{mat4@{mat4}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{mat4(float diagonal)}]{\setlength{\rightskip}{0pt plus 5cm}u\+\_\+engine\+::maths\+::mat4\+::mat4 (
+\begin{DoxyParamCaption}
+\item[{float}]{diagonal}
+\end{DoxyParamCaption}
+)}\label{structu__engine_1_1maths_1_1mat4_aaab4e7ed7809ee1a99ea5ae8b5488ce4}
+
+
+Definition at line 12 of file mat4.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structu__engine_1_1maths_1_1mat4_a48f5a4fe578dfb584fab942877972a94}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!get\+Column@{get\+Column}}
+\index{get\+Column@{get\+Column}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{get\+Column(int index)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vec4} u\+\_\+engine\+::maths\+::mat4\+::get\+Column (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structu__engine_1_1maths_1_1mat4_a48f5a4fe578dfb584fab942877972a94}
+
+
+Definition at line 20 of file mat4.\+h.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_af6320e9644c38c1ad6ccf8579b3579f9}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!identity@{identity}}
+\index{identity@{identity}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{identity()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_af6320e9644c38c1ad6ccf8579b3579f9}
+
+
+Definition at line 22 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a24a049d834f2b5905d22e3cdbd75b10d}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!multiply@{multiply}}
+\index{multiply@{multiply}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{multiply(const mat4 \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} \& u\+\_\+engine\+::maths\+::mat4\+::multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf mat4} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{structu__engine_1_1maths_1_1mat4_a24a049d834f2b5905d22e3cdbd75b10d}
+
+
+Definition at line 26 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a34f02331c174475d829789d6a89802b2}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{operator$\ast$=(const mat4 \&other)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} \& u\+\_\+engine\+::maths\+::mat4\+::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf mat4} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{structu__engine_1_1maths_1_1mat4_a34f02331c174475d829789d6a89802b2}
+
+
+Definition at line 54 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_acad18e49f82c123ffc29f07f32110d54}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!orthographic@{orthographic}}
+\index{orthographic@{orthographic}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{orthographic(float left, float right, float bottom, float top, float near, float far)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{near, }
+\item[{float}]{far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_acad18e49f82c123ffc29f07f32110d54}
+
+
+Definition at line 59 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_adc7f54a60b855ece7513bdf946f96c39}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!perspective@{perspective}}
+\index{perspective@{perspective}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{perspective(float fov, float aspect\+Ratio, float near, float far)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{fov, }
+\item[{float}]{aspect\+Ratio, }
+\item[{float}]{near, }
+\item[{float}]{far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_adc7f54a60b855ece7513bdf946f96c39}
+
+
+Definition at line 77 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a4eaef201f513b1a506962323d625e928}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!rotation@{rotation}}
+\index{rotation@{rotation}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{rotation(float angle, const vec3 \&axis)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::rotation (
+\begin{DoxyParamCaption}
+\item[{float}]{angle, }
+\item[{const {\bf vec3} \&}]{axis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_a4eaef201f513b1a506962323d625e928}
+
+
+Definition at line 113 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a7c7d37cb58d4c116c945308592bf65e8}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!scale@{scale}}
+\index{scale@{scale}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{scale(const vec3 \&scale)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf vec3} \&}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_a7c7d37cb58d4c116c945308592bf65e8}
+
+
+Definition at line 148 of file mat4.\+cpp.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a611759978e5699de27e278913a499239}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!translation@{translation}}
+\index{translation@{translation}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{translation(const vec3 \&translation)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} u\+\_\+engine\+::maths\+::mat4\+::translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf vec3} \&}]{translation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{structu__engine_1_1maths_1_1mat4_a611759978e5699de27e278913a499239}
+
+
+Definition at line 99 of file mat4.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structu__engine_1_1maths_1_1mat4_aec96623f8535f2451a1cfef2b9f56e29}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mat4} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf mat4}}]{left, }
+\item[{const {\bf mat4} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structu__engine_1_1maths_1_1mat4_aec96623f8535f2451a1cfef2b9f56e29}
+
+
+Definition at line 48 of file mat4.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structu__engine_1_1maths_1_1mat4_af4fe66f09ffebbe03e558488b93053de}{}\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }\label{structu__engine_1_1maths_1_1mat4_af4fe66f09ffebbe03e558488b93053de}
+\hypertarget{structu__engine_1_1maths_1_1mat4_a6aad7268685211b538669541ff52895e}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!columns@{columns}}
+\index{columns@{columns}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{columns}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vec4} u\+\_\+engine\+::maths\+::mat4\+::columns\mbox{[}4\mbox{]}}\label{structu__engine_1_1maths_1_1mat4_a6aad7268685211b538669541ff52895e}
+
+
+Definition at line 15 of file mat4.\+h.
+
+\hypertarget{structu__engine_1_1maths_1_1mat4_a0efbb2abf6b7fd363620e1b0130a7e1c}{}\index{u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}!elements@{elements}}
+\index{elements@{elements}!u\+\_\+engine\+::maths\+::mat4@{u\+\_\+engine\+::maths\+::mat4}}
+\subsubsection[{elements}]{\setlength{\rightskip}{0pt plus 5cm}float u\+\_\+engine\+::maths\+::mat4\+::elements\mbox{[}4 $\ast$4\mbox{]}}\label{structu__engine_1_1maths_1_1mat4_a0efbb2abf6b7fd363620e1b0130a7e1c}
+
+
+Definition at line 14 of file mat4.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/maths/\hyperlink{mat4_8h}{mat4.\+h}\item 
+G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/maths/\hyperlink{mat4_8cpp}{mat4.\+cpp}\end{DoxyCompactItemize}

@@ -37,9 +37,7 @@ namespace u_engine{ namespace graphics {
 			std::cout << "Failed to compile vertex shader!\n" << &error[0] << std::endl;
 			glDeleteShader(vertex);
 			return 0;
-		}glShaderSource(vertex, 1, &vertSource, NULL);
-		glCompileShader(vertex);
-
+		}
 
 
 		glShaderSource(fragment, 1, &fragSource, NULL);

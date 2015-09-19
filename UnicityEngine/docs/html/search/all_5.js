@@ -1,10 +1,11 @@
 var searchData=
 [
+  ['elapsed',['elapsed',['../classu__engine_1_1_timer.html#a269854aab794ff1d1d18e6d64dce4e9d',1,'u_engine::Timer']]],
   ['elements',['elements',['../structu__engine_1_1maths_1_1mat4.html#a0efbb2abf6b7fd363620e1b0130a7e1c',1,'u_engine::maths::mat4']]],
   ['emscale',['emScale',['../glew_8h.html#a3726447d06505030028347a0a2074202',1,'glew.h']]],
   ['enable',['enable',['../classu__engine_1_1graphics_1_1_shader.html#a2fd8a40b1794c80f827932024b873cce',1,'u_engine::graphics::Shader::enable()'],['../glew_8h.html#ab0b5c7de20095d30091485d2c60a3dd5',1,'enable():&#160;glew.h']]],
   ['enabled',['enabled',['../glew_8h.html#a6274613d79de73fa67d1b6c4aa70c9d3',1,'glew.h']]],
-  ['end',['end',['../glew_8h.html#a432111147038972f06e049e18a837002',1,'glew.h']]],
+  ['end',['end',['../classu__engine_1_1graphics_1_1_batch_renderer2_d.html#a587a1e9091632c90b1706ac5a779d3d4',1,'u_engine::graphics::BatchRenderer2D::end()'],['../glew_8h.html#a432111147038972f06e049e18a837002',1,'end():&#160;glew.h']]],
   ['eqn',['eqn',['../glew_8h.html#acfda1cb77ea73112bc8769e1535537ff',1,'glew.h']]],
   ['equation',['equation',['../glew_8h.html#a288c5a39227eee15982d5acba893235f',1,'glew.h']]],
   ['error_5fincompatible_5fdevice_5fcontexts_5farb',['ERROR_INCOMPATIBLE_DEVICE_CONTEXTS_ARB',['../wglew_8h.html#adf20e6297613c960933d70196939049d',1,'wglew.h']]],

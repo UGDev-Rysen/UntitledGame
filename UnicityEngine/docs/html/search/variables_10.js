@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x',['x',['../struct_g_l_x_pbuffer_clobber_event.html#a8f0a7162a033c89ee94ce535580dbc32',1,'GLXPbufferClobberEvent::x()'],['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#a5118d48c3c8d5253d39922b5014b52ff',1,'GLXBufferClobberEventSGIX::x()'],['../structu__engine_1_1maths_1_1vec2.html#a25400d4a0d4e8bf5a24fd3a3e2073d4a',1,'u_engine::maths::vec2::x()'],['../structu__engine_1_1maths_1_1vec3.html#a3f06fa22fb72fb083d0e641660c39872',1,'u_engine::maths::vec3::x()'],['../structu__engine_1_1maths_1_1vec4.html#a7b942a2b3961a50f279a67f56dc5e74d',1,'u_engine::maths::vec4::x()']]],
-  ['xorigin',['XOrigin',['../struct_g_l_x_pipe_rect_limits.html#a3e5a965059d9f5d2ca42acd35af5bb9b',1,'GLXPipeRectLimits']]]
+  ['w',['w',['../structu__engine_1_1maths_1_1vec4.html#a5bcce6d958d948707fec88887b05d7b6',1,'u_engine::maths::vec4']]],
+  ['width',['width',['../struct_g_l_f_wvidmode.html#a698dcb200562051a7249cb6ae154c71d',1,'GLFWvidmode::width()'],['../struct_g_l_f_wimage.html#af6a71cc999fe6d3aea31dd7e9687d835',1,'GLFWimage::width()'],['../struct_g_l_x_pbuffer_clobber_event.html#aaca375fecb872c73c60cd5d0bfc7c7a5',1,'GLXPbufferClobberEvent::width()'],['../struct_g_l_x_buffer_clobber_event_s_g_i_x.html#adad23535733161528427584a42bfc6eb',1,'GLXBufferClobberEventSGIX::width()']]]
 ];

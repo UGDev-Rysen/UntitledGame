@@ -7,21 +7,8 @@ var classu__engine_1_1graphics_1_1_window =
     [ "getHeight", "classu__engine_1_1graphics_1_1_window.html#ad60ae406aebee2012dd2d71ab08de66f", null ],
     [ "getMousePosition", "classu__engine_1_1graphics_1_1_window.html#ae49ae110d10fa0741a3da682849b1ff1", null ],
     [ "getWidth", "classu__engine_1_1graphics_1_1_window.html#aff46afa2292ddca01e3e02fbe37e0173", null ],
-    [ "init", "classu__engine_1_1graphics_1_1_window.html#af58746c75ba485a0e3387052e10c6530", null ],
     [ "isKeyPressed", "classu__engine_1_1graphics_1_1_window.html#a3653c57a4857b352f4460860f2612858", null ],
     [ "isMButtonPressed", "classu__engine_1_1graphics_1_1_window.html#a1ce63ea608ff16bfeb6ebbcec26a200d", null ],
     [ "update", "classu__engine_1_1graphics_1_1_window.html#a498d5b982b6b7589653a3f60686c089c", null ],
-    [ "cursor_position_callback", "classu__engine_1_1graphics_1_1_window.html#abd0dee5e80d63ce619c6681efb034852", null ],
-    [ "GLFWwindow", "classu__engine_1_1graphics_1_1_window.html#aae4160679a33d851ec8945cc866dfaac", null ],
-    [ "key_callback", "classu__engine_1_1graphics_1_1_window.html#a5d0f196b2f1443f793ef20de522995a3", null ],
-    [ "mouse_button_callback", "classu__engine_1_1graphics_1_1_window.html#a934c179d0911e7f70088cebec526bfb6", null ],
-    [ "m_closed", "classu__engine_1_1graphics_1_1_window.html#aed382ff77e62643dc9e289fa75630d21", null ],
-    [ "m_height", "classu__engine_1_1graphics_1_1_window.html#a0b882d3ee3f462e4f587936f599a7b77", null ],
-    [ "m_keys", "classu__engine_1_1graphics_1_1_window.html#a2367dc04604aa8e70ced2aec5e5d740d", null ],
-    [ "m_mousebuttons", "classu__engine_1_1graphics_1_1_window.html#acf2a1812150dfe9e6bcaa04654801674", null ],
-    [ "m_mx", "classu__engine_1_1graphics_1_1_window.html#a21866954c51845bbd415d2acc632bd4f", null ],
-    [ "m_my", "classu__engine_1_1graphics_1_1_window.html#ae1de9822d2067c5f4e947561d70397af", null ],
-    [ "m_title", "classu__engine_1_1graphics_1_1_window.html#a07f1079c410e842a8e5fe19e6a0589be", null ],
-    [ "m_width", "classu__engine_1_1graphics_1_1_window.html#a679eacb010c5c75612f3b10a8496e76a", null ],
-    [ "m_window", "classu__engine_1_1graphics_1_1_window.html#a3d8ef06cd802d37d07dc147c238472c9", null ]
+    [ "GLFWwindow", "classu__engine_1_1graphics_1_1_window.html#aae4160679a33d851ec8945cc866dfaac", null ]
 ];

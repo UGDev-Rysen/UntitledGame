@@ -2,7 +2,7 @@ var searchData=
 [
   ['graphics',['graphics',['../namespaceu__engine_1_1graphics.html',1,'u_engine']]],
   ['maths',['maths',['../namespaceu__engine_1_1maths.html',1,'u_engine']]],
-  ['unicity_20engine',['Unicity Engine',['../md__unicity_engine__r_e_a_d_m_e.html',1,'']]],
+  ['unicity_20engine',['Unicity Engine',['../md__g_1__libraries__v_s_projects__untitled_game__unicity_engine__r_e_a_d_m_e.html',1,'']]],
   ['u1',['u1',['../glew_8h.html#ae0dd22f3489faf72912a0c730b29a546',1,'glew.h']]],
   ['u2',['u2',['../glew_8h.html#a9fdab897e3d539f6aa03ed3d50194af4',1,'glew.h']]],
   ['u_5fengine',['u_engine',['../namespaceu__engine.html',1,'']]],
@@ -12,6 +12,7 @@ var searchData=
   ['uint',['UINT',['../wglew_8h.html#a2cedd0ac2b26123330d3366994684b52',1,'wglew.h']]],
   ['umaxlinedelay',['uMaxLineDelay',['../wglew_8h.html#a9815b143fd3dd51430535aca34ddf3b2',1,'wglew.h']]],
   ['umaxpixeldelay',['uMaxPixelDelay',['../wglew_8h.html#abc9a169ec16cbe695616f6612c73d770',1,'wglew.h']]],
+  ['unbind',['unbind',['../classu__engine_1_1graphics_1_1_buffer.html#ad125dcdf5b527d0b334052b82cf716f3',1,'u_engine::graphics::Buffer::unbind()'],['../classu__engine_1_1graphics_1_1_index_buffer.html#ab917e66feff8da48503e3943d47855f3',1,'u_engine::graphics::IndexBuffer::unbind()'],['../classu__engine_1_1graphics_1_1_vertex_array.html#a75b0bba7b3a13e624a9b2656334e8a6a',1,'u_engine::graphics::VertexArray::unbind()']]],
   ['uniformblockbinding',['uniformBlockBinding',['../glew_8h.html#ac15d8775053e517f7961f1fbc8e41e9b',1,'glew.h']]],
   ['uniformblockindex',['uniformBlockIndex',['../glew_8h.html#adc30abe82647bc0cb76d2e37147524ba',1,'glew.h']]],
   ['uniformblockname',['uniformBlockName',['../glew_8h.html#ab2e77bf2e41a96a64a4ff8ecc6467bd4',1,'glew.h']]],

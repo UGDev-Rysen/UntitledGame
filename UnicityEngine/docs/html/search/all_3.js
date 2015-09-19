@@ -16,7 +16,7 @@ var searchData=
   ['clear',['clear',['../classu__engine_1_1graphics_1_1_window.html#a1bd69497bd45d1265b0bf3bc07f086c4',1,'u_engine::graphics::Window']]],
   ['closed',['closed',['../classu__engine_1_1graphics_1_1_window.html#a96d6897109221d2147c9302b52e0e860',1,'u_engine::graphics::Window']]],
   ['coeffs',['coeffs',['../glew_8h.html#aa525885eb6ef99d464fefa395c296d7e',1,'glew.h']]],
-  ['color',['color',['../glew_8h.html#a3ea846f998d64f079b86052b6c4193a8',1,'glew.h']]],
+  ['color',['color',['../structu__engine_1_1graphics_1_1_vertex_data.html#a3cc6c952a7b302374d84c048981a773f',1,'u_engine::graphics::VertexData::color()'],['../glew_8h.html#a3ea846f998d64f079b86052b6c4193a8',1,'color():&#160;glew.h']]],
   ['colorformat',['colorFormat',['../glew_8h.html#ae0e7869a91d4154265d646526f47b422',1,'glew.h']]],
   ['colornumber',['colorNumber',['../glew_8h.html#aa0cc7c98d48d41e532115fa975a55d8e',1,'glew.h']]],
   ['colorsamples',['colorSamples',['../glew_8h.html#a5576a958ca0cd84585000a3b95eec63e',1,'glew.h']]],
