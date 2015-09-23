@@ -1,10 +1,21 @@
 #pragma once
 
-#include <Windows.h>
+#define WINDOWS_TIMER 0
+
+#if WINDOWS_TIMER
+	#include <Windows.h>
+#else
+	#include <chrono>
+#endif
+
 
 namespace u_engine {
 
+
+#if WINDOWS_TIMER
+
 	class Timer {
+
 
 	private:
 		LARGE_INTEGER m_Start;
@@ -35,5 +46,36 @@ namespace u_engine {
 
 
 	};
+
+#else
+
+		class Timer {
+
+		private:
+
+			typedef std::chrono::high_resolution_clock HighResClock;
+			typedef std::chrono::duration<float, std::milli> milliseconds_type;
+			std::chrono::time_point<HighResClock> m_Start;
+
+		public:
+
+			Timer() {
+
+				reset();
+			}
+
+			void reset() {
+
+				m_Start = HighResClock::now();
+			}
+
+			float elapsed() {
+
+				return std::chrono::duration_cast<milliseconds_type>(HighResClock::now() - m_Start).count() / 1000.0f;
+			}
+
+		};
+
+#endif
 
 }

@@ -11,4 +11,15 @@ namespace u_engine { namespace maths {
 			return degrees * (M_PI / 180.0f);
 		}
 
+		inline float toDeegrees(float radians) {
+
+			return radians * (180.0f / M_PI);
+		}
+
+		inline float sign(float value) {
+
+			return (value > 0) - (value < 0);
+		}
+
+
 } }
