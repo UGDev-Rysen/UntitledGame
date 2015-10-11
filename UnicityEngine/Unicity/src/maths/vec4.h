@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
-namespace u_engine {
-	namespace maths {
+#include <utils/unicitydef.h>
+namespace u_engine { namespace maths {
 
 		struct vec4 {
-			float x, y, z, w;
+			UE_float x, y, z, w;
 
 			vec4() = default;
-			vec4(const float& x, const float& y, const float& z, const float& w);
+			vec4(const UE_float& x, const UE_float& y, const UE_float& z, const UE_float& w);
 
 			vec4& add(const vec4& other);
 			vec4& substract(const vec4& other);
@@ -20,8 +20,8 @@ namespace u_engine {
 			friend vec4 operator*(vec4 left, const vec4& right);
 			friend vec4 operator/(vec4 left, const vec4& right);
 
-			bool operator==(const vec4& other);
-			bool operator!=(const vec4& other);
+			UE_bool operator==(const vec4& other);
+			UE_bool operator!=(const vec4& other);
 
 			vec4& operator+=(const vec4& other);
 			vec4& operator-=(const vec4& other);

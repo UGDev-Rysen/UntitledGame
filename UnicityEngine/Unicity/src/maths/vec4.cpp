@@ -1,4 +1,4 @@
-#include "vec4.h"
+#include <maths/vec4.h>
 
 namespace u_engine {
 	namespace maths {
@@ -10,7 +10,7 @@ namespace u_engine {
 			w = 0.0f;
 		}
 		*/
-		vec4::vec4(const float& x, const float& y, const float& z, const float& w) {
+		vec4::vec4(const UE_float& x, const UE_float& y, const UE_float& z, const UE_float& w) {
 			this->x = x;
 			this->y = y;
 			this->z = z;
@@ -85,11 +85,11 @@ namespace u_engine {
 		}
 
 
-		bool vec4::operator==(const vec4& other) {
+		UE_bool vec4::operator==(const vec4& other) {
 			return x == other.x && y == other.y && z == other.z && w == other.w;
 		}
 
-		bool vec4::operator!=(const vec4& other) {
+		UE_bool vec4::operator!=(const vec4& other) {
 			return !(*this == other);
 		}
 

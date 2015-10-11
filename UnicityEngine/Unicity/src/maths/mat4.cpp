@@ -1,16 +1,17 @@
-#include "mat4.h"
+#include <maths/mat4.h>
 
+#include <utils/unicitydef.h>
 
 namespace u_engine { namespace maths {
 
 	mat4::mat4() {
-		for (int i = 0; i < 4 * 4; i++) {
+		for (UE_int i = 0; i < 4 * 4; i++) {
 			elements[i] = 0.0f;
 		}
 	}
 
-	mat4::mat4(float diagonal) {
-		for (int i = 0; i < 4 * 4; i++) {
+	mat4::mat4(UE_float diagonal) {
+		for (UE_int i = 0; i < 4 * 4; i++) {
 			elements[i] = 0.0f;
 		}
 		elements[0 + 0 * 4] = diagonal;
@@ -25,13 +26,13 @@ namespace u_engine { namespace maths {
 
 	mat4& mat4::multiply(const mat4& other) {
 
-		float data[16];
-		for (int y = 0; y < 4; y++) {
+		UE_float data[16];
+		for (UE_int y = 0; y < 4; y++) {
 
-			for (int x = 0; x < 4; x++) {
+			for (UE_int x = 0; x < 4; x++) {
 
-				float sum = 0.0f;
-				for (int e = 0; e < 4; e++) {
+				UE_float sum = 0.0f;
+				for (UE_int e = 0; e < 4; e++) {
 
 					sum += elements[x + e * 4] * other.elements[e + y * 4];
 					
@@ -39,7 +40,7 @@ namespace u_engine { namespace maths {
 				data[x + y * 4] = sum;
 			}
 		}
-		memcpy(elements, data, 4 * 4 * sizeof(float));
+		memcpy(elements, data, 4 * 4 * sizeof(UE_float));
 
 		return *this;
 	}
@@ -88,7 +89,7 @@ namespace u_engine { namespace maths {
 
 	mat4& mat4::invert()
 		 {
-		double temp[16];
+		UE_double temp[16];
 			
 			temp[0] = elements[5] * elements[10] * elements[15] -
 			elements[5] * elements[11] * elements[14] -
@@ -202,10 +203,10 @@ namespace u_engine { namespace maths {
 			elements[8] * elements[1] * elements[6] -
 			elements[8] * elements[2] * elements[5];
 			
-		double determinant = elements[0] * temp[0] + elements[1] * temp[4] + elements[2] * temp[8] + elements[3] * temp[12];
+		UE_double determinant = elements[0] * temp[0] + elements[1] * temp[4] + elements[2] * temp[8] + elements[3] * temp[12];
 		determinant = 1.0 / determinant;
 		
-		for (int i = 0; i < 4 * 4; i++)
+		for (UE_int i = 0; i < 4 * 4; i++)
 		elements[i] = temp[i] * determinant;
 		
 		return *this;
@@ -213,7 +214,7 @@ namespace u_engine { namespace maths {
 
 
 
-	mat4 mat4::orthographic(float left, float right, float bottom, float top, float near, float far) {
+	mat4 mat4::orthographic(UE_float left, UE_float right, UE_float bottom, UE_float top, UE_float near, UE_float far) {
 
 		mat4 result(1.0f);
 
@@ -231,15 +232,15 @@ namespace u_engine { namespace maths {
 
 
 
-	mat4 mat4::perspective(float fov, float aspectRatio, float near, float far) {
+	mat4 mat4::perspective(UE_float fov, UE_float aspectRatio, UE_float near, UE_float far) {
 
 		mat4 result(1.0f);
 
-		float q = 1.0f / tan(toRadians(0.5f * fov));
-		float a = q / aspectRatio;
+		UE_float q = 1.0f / tan(toRadians(0.5f * fov));
+		UE_float a = q / aspectRatio;
 
-		float b = (near + far) / (near - far);
-		float c = (2.0f * near * far) / (near - far);
+		UE_float b = (near + far) / (near - far);
+		UE_float c = (2.0f * near * far) / (near - far);
 
 
 		result.elements[0 + 0 * 4] = a;
@@ -267,18 +268,18 @@ namespace u_engine { namespace maths {
 
 
 
-	mat4 mat4::rotation(float angle, const vec3& axis) {
+	mat4 mat4::rotation(UE_float angle, const vec3& axis) {
 
 		mat4 result(1.0f);
 
-		float r = toRadians(angle);
-		float c = cos(r);
-		float s = sin(r);
-		float omc = 1.0f - c;
+		UE_float r = toRadians(angle);
+		UE_float c = cos(r);
+		UE_float s = sin(r);
+		UE_float omc = 1.0f - c;
 
-		float x = axis.x;
-		float y = axis.y;
-		float z = axis.z;
+		UE_float x = axis.x;
+		UE_float y = axis.y;
+		UE_float z = axis.z;
 
 		result.elements[0 + 0 * 4] = x * omc + c;
 		result.elements[1 + 0 * 4] = y * x * omc + z * s;
@@ -313,6 +314,11 @@ namespace u_engine { namespace maths {
 		return result;
 	}	
 
+	mat4 mat4::invert(const mat4& matrix) {
+
+		mat4 result = matrix;
+		return result.invert();
+	}
 
 } }
 

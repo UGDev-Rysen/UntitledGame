@@ -1,9 +1,10 @@
 #pragma once
 
 
-#include "maths_func.h"
-#include "vec3.h"
-#include "vec4.h"
+#include <maths/maths_func.h>
+#include <maths/vec3.h>
+#include <maths/vec4.h>
+#include <utils/unicitydef.h>
 
 namespace u_engine { namespace maths {
 
@@ -11,13 +12,13 @@ namespace u_engine { namespace maths {
 	struct mat4 {
 		union {
 
-			float elements[4 * 4];
+			UE_float elements[4 * 4];
 			vec4  columns[4];
 		};
 		mat4();
-		mat4(float diagonal);
+		mat4(UE_float diagonal);
 
-		vec4 getColumn(int index) {
+		vec4 getColumn(UE_int index) {
 			index *= 4;
 			return vec4(elements[index], elements[index + 1], elements[index + 2], elements[index + 3]);
 		}
@@ -39,12 +40,13 @@ namespace u_engine { namespace maths {
 
 		mat4& invert();
 
-		static mat4 orthographic(float left, float right, float bottom, float top, float near, float far);
-		static mat4 perspective(float fov, float aspectRatio, float near, float far);
+		static mat4 orthographic(UE_float left, UE_float right, UE_float bottom, UE_float top, UE_float near, UE_float far);
+		static mat4 perspective(UE_float fov, UE_float aspectRatio, UE_float near, UE_float far);
 
 		static mat4 translation(const vec3& translation);		
-		static mat4 rotation(float angle, const vec3& axis);
+		static mat4 rotation(UE_float angle, const vec3& axis);
 		static mat4 scale(const vec3& scale);
+		static mat4 invert(const mat4& matrix);
 
 	};
 

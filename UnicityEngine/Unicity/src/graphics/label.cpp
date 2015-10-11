@@ -1,21 +1,21 @@
-#include "label.h"
+#include <graphics/label.h>
 
 namespace u_engine { namespace graphics {
 
-	Label::Label(std::string text, float x, float y, unsigned int color)
+	Label::Label(const UE_string& text, UE_float x, UE_float y, UE_uint color)
 		: Renderable2D(), text(text), position(m_Position), m_Font(FontManager::get("SourceSansPro")) {
 		m_Position = maths::vec3(x, y, 0.0f);
 		m_Color = color;
 	}
 
-	Label::Label(std::string text, float x, float y, Font* font, unsigned int color)
+	Label::Label(const UE_string& text, UE_float x, UE_float y, Font* font, UE_uint color)
 	 : Renderable2D(), text(text), position(m_Position), m_Font(font) {
 
 		m_Position = maths::vec3(x, y, 0.0f);
 		m_Color = color;
 	}
 
-	Label::Label(std::string text, float x, float y, const std::string& font, unsigned int color)
+	Label::Label(const UE_string& text, UE_float x, UE_float y, const UE_string& font, UE_uint color)
 		 : Renderable2D(), text(text), position(m_Position), m_Font(FontManager::get(font)) {
 		m_Position = maths::vec3(x, y, 0.0f);
 		m_Color = color;
@@ -23,7 +23,7 @@ namespace u_engine { namespace graphics {
 		validateFont(font);
 		}
 	
-		Label::Label(std::string text, float x, float y, const std::string& font, unsigned int size, unsigned int color)
+	Label::Label(const UE_string& text, UE_float x, UE_float y, const UE_string& font, UE_uint size, UE_uint color)
 		 : Renderable2D(), text(text), position(m_Position), m_Font(FontManager::get(font, size)) {
 		m_Position = maths::vec3(x, y, 0.0f);
 		m_Color = color;
@@ -32,13 +32,13 @@ namespace u_engine { namespace graphics {
 		}
 
 
-	void Label::submit(Renderer2D* renderer) const {
+	UE_void Label::submit(Renderer2D* renderer) const {
 
 		renderer->drawString(text, position, *m_Font, m_Color);
 	}
 
 
-	void Label::validateFont(const std::string& name, int size)
+	UE_void Label::validateFont(const UE_string& name, UE_int size)
 		 {
 		if (m_Font != nullptr)
 			return;

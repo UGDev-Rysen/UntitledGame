@@ -6,10 +6,10 @@
 
 namespace u_engine {
 
-	static std::vector<std::string> split_string(const std::string &s, char delimeter) {
-		std::vector<std::string> elems;
+	static std::vector<UE_string> split_string(const UE_string &s, UE_char delimeter) {
+		std::vector<UE_string> elems;
 		std::stringstream ss(s);
-		std::string item;
+		UE_string item;
 		while (std::getline(ss, item, delimeter)) {
 			elems.push_back(item);
 		}

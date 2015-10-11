@@ -1,27 +1,17 @@
 #pragma once
 
 #include <cstddef>
-#include "../utils/Log.h"
-
-#include "renderer2D.h"
-#include "renderable2D.h"
-#include "buffers/indexbuffer.h"
+#include <u_engine_includes.h>
+#include <graphics/renderer2D.h>
+#include <graphics/renderable2D.h>
+#include <graphics/buffers/indexbuffer.h>
+#include <graphics/Framebuffer.h>
 
 
 namespace u_engine { namespace graphics {
 
-#define RENDERER_MAX_SPRITES	60000
-#define RENDERER_VERTEX_SIZE	sizeof(VertexData)
-#define RENDERER_SPRITE_SIZE	RENDERER_VERTEX_SIZE * 4
-#define RENDERER_BUFFER_SIZE	RENDERER_SPRITE_SIZE * RENDERER_MAX_SPRITES
-#define RENDERER_INDICES_SIZE	RENDERER_MAX_SPRITES * 6
-#define RENDERER_MAX_TEXTURES	32
 
-#define SHADER_VERTEX_INDEX		0
-#define SHADER_UV_INDEX			1
-#define SHADER_TID_INDEX		2
-#define SHADER_COLOR_INDEX		3
-
+	
 
 	class BatchRenderer2D : public Renderer2D {
 	private:
@@ -33,17 +23,32 @@ namespace u_engine { namespace graphics {
 
 		std::vector<GLuint> m_TextureSlots;
 
+		Framebuffer* m_FrameBuffer;
+		Framebuffer* m_PostEffectsBuffer;
+		UE_int m_ScreenBuffer;
+		maths::tvec2<UE_uint> m_ViewportSize, m_ScreenSize;
+		Shader* m_SimpleShader;
+		UE_uint m_ScreenQuad;
 	public:
-		BatchRenderer2D();
+		BatchRenderer2D(const maths::tvec2<UE_uint>& screenSize);
+
 		~BatchRenderer2D();
-		void begin() override;
-		void submit(const Renderable2D* renderable) override;
-		void drawString(const std::string& text, const maths::vec3& position, const Font& font, unsigned int color) override;
-		void end() override;
-		void flush() override;
+		UE_void begin() override;
+		UE_void submit(const Renderable2D* renderable) override;
+		UE_void drawString(const UE_string& text, const maths::vec3& position, const Font& font, UE_uint color) override;
+		UE_void end() override;
+		UE_void flush() override;
+
+		inline UE_void SetScreenSize(const maths::tvec2<UE_uint>& size) { m_ScreenSize = size; }
+		inline const maths::tvec2<UE_uint>& GetScreenSize() const { return m_ScreenSize; }
+		inline UE_void SetViewportSize(const maths::tvec2<UE_uint>& size) { m_ViewportSize = size; }
+		inline const maths::tvec2<UE_uint>& GetViewportSize() const { return m_ViewportSize; }
+		
 
 	private:
-		void init();
+		UE_void init();
+		UE_float submitTexture(UE_uint textureID);
+		UE_float submitTexture(const Texture* texture);
 
 
 	};

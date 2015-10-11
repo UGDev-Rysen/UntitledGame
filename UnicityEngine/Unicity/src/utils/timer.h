@@ -1,6 +1,6 @@
 #pragma once
 
-#define WINDOWS_TIMER 0
+
 
 #if WINDOWS_TIMER
 	#include <Windows.h>
@@ -19,7 +19,7 @@ namespace u_engine {
 
 	private:
 		LARGE_INTEGER m_Start;
-		double m_Freq;
+		UE_double m_Freq;
 
 	public:
 
@@ -31,17 +31,17 @@ namespace u_engine {
 			QueryPerformanceCounter(&m_Start);
 		}
 
-		void reset() {
+		UE_void reset() {
 
 			QueryPerformanceCounter(&m_Start);
 		}
 
-		float elapsed() {
+		UE_float elapsed() {
 
 			LARGE_INTEGER current;
 			QueryPerformanceCounter(&current);			
 			unsigned __int64 cycles = current.QuadPart - m_Start.QuadPart;
-			return (float)(cycles * m_Freq);
+			return (UE_float)(cycles * m_Freq);
 		}
 
 
@@ -54,7 +54,7 @@ namespace u_engine {
 		private:
 
 			typedef std::chrono::high_resolution_clock HighResClock;
-			typedef std::chrono::duration<float, std::milli> milliseconds_type;
+			typedef std::chrono::duration<UE_float, std::milli> milliseconds_type;
 			std::chrono::time_point<HighResClock> m_Start;
 
 		public:
@@ -64,12 +64,12 @@ namespace u_engine {
 				reset();
 			}
 
-			void reset() {
+			UE_void reset() {
 
 				m_Start = HighResClock::now();
 			}
 
-			float elapsed() {
+			UE_float elapsed() {
 
 				return std::chrono::duration_cast<milliseconds_type>(HighResClock::now() - m_Start).count() / 1000.0f;
 			}

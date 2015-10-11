@@ -1,11 +1,15 @@
-#include "layer.h"
+#include <graphics/layers/layer.h>
 
 namespace u_engine { namespace graphics {
 
-	Layer::Layer(Renderer2D* renderer, Shader* shader, maths::mat4 projectionMatrix)
-		: m_Renderer(renderer), m_Shader(shader), m_ProjectionMatrix(projectionMatrix) {
+	Layer::Layer(	Renderer2D*			renderer, 
+					Shader*				shader, 
+					maths::mat4			projectionMatrix)
+		:			renderer2D(			renderer), 
+					m_Shader(			shader), 
+					m_ProjectionMatrix(	projectionMatrix) {
 
-		m_Shader->enable();
+		m_Shader->bind();
 		m_Shader->setUniformMat4("pr_matrix", m_ProjectionMatrix);
 
 		GLint texIDs[] = {
@@ -16,32 +20,33 @@ namespace u_engine { namespace graphics {
 			30, 31
 		};
 		m_Shader->setUniform1iv("textures", texIDs, 32);
-		m_Shader->disable();
+		m_Shader->unbind();
 	}
 
 	Layer::~Layer() {
 
 		delete m_Shader;
-		delete m_Renderer;
+		delete renderer2D;
 
-		for (int i = 0; i < m_Renderables.size(); i++)
+		for (UE_uint i = 0; i < m_Renderables.size(); i++)
 			delete m_Renderables[i];
 	}
 
-	void Layer::add(Renderable2D* renderable) {
+	Renderable2D* Layer::add(Renderable2D* renderable) {
 		m_Renderables.push_back(renderable);
+		return renderable;
 	}
 
-	void Layer::render() {
+	UE_void Layer::render() {
 	
-		m_Shader->enable();
+		m_Shader->bind();
 
-		m_Renderer->begin();
+		renderer2D->begin();
 		for (const Renderable2D* renderable : m_Renderables)
-			renderable->submit(m_Renderer);
-		m_Renderer->end();
+			renderable->submit(renderer2D);
+		renderer2D->end();
 
-		m_Renderer->flush();
+		renderer2D->flush();
 
 	}
 
