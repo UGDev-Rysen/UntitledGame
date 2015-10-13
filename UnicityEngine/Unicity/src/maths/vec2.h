@@ -2,16 +2,17 @@
 
 #include <iostream>
 #include <math.h>
-#include "vec3.h"
+#include <maths/vec3.h>
 
+#include <utils/unicitydef.h>
 namespace u_engine { namespace maths {
 
 	struct vec2
 	{
-		float x, y;
+		UE_float x, y;
 
 		vec2();
-		vec2(const float& x, const float& y);
+		vec2(const UE_float& x, const UE_float& y);
 		vec2(const vec3& vector);
 
 		vec2& add(const vec2& other);
@@ -24,21 +25,21 @@ namespace u_engine { namespace maths {
 		friend vec2 operator*(vec2 left, const vec2& right);
 		friend vec2 operator/(vec2 left, const vec2& right);
 
-		friend vec2 operator+(vec2 left, float value);
-		friend vec2 operator*(vec2 left, float value);
+		friend vec2 operator+(vec2 left, UE_float value);
+		friend vec2 operator*(vec2 left, UE_float value);
 
-		bool operator==(const vec2& other);
-		bool operator!=(const vec2& other);
+		UE_bool operator==(const vec2& other);
+		UE_bool operator!=(const vec2& other);
 
 		vec2& operator+=(const vec2& other);
 		vec2& operator-=(const vec2& other);
 		vec2& operator*=(const vec2& other);
 		vec2& operator/=(const vec2& other);
 
-		float magnitude() const;
+		UE_float magnitude() const;
 		vec2 normalise() const;
-		float distance(const vec2& other) const;
-		float dot(const vec2& other) const;
+		UE_float distance(const vec2& other) const;
+		UE_float dot(const vec2& other) const;
 
 		friend std::ostream& operator<<(std::ostream& stream, const vec2& vector);
 	};

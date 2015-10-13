@@ -1,7 +1,8 @@
 #pragma once
 
-#include "src/graphics/layers/layer.h"
-#include "src/graphics/BatchRenderer2D.h"
+#include <graphics/layers/layer.h>
+#include <graphics/BatchRenderer2D.h>
+#include <maths/maths.h>
 
 class TileLayer : public u_engine::graphics::Layer
 {

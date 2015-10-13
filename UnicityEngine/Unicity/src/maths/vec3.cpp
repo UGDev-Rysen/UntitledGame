@@ -1,5 +1,5 @@
-#include "vec3.h"
-#include "vec2.h"
+#include <maths/vec3.h>
+#include <maths/vec2.h>
 
 namespace u_engine { namespace maths {
 
@@ -10,7 +10,7 @@ namespace u_engine { namespace maths {
 		z = 0.0f;
 	}
 
-	vec3::vec3(const float& x, const float& y, const float& z)
+	vec3::vec3(UE_float x, UE_float y, UE_float z)
 	{
 		this->x = x;
 		this->y = y;
@@ -100,21 +100,21 @@ namespace u_engine { namespace maths {
 		return divide(other);
 	}
 
-	bool vec3::operator==(const vec3& other)
+	UE_bool vec3::operator==(const vec3& other)
 	{
 		return x == other.x && y == other.y && z == other.z;
 	}
 
-	bool vec3::operator!=(const vec3& other)
+	UE_bool vec3::operator!=(const vec3& other)
 	{
 		return !(*this == other);
 	}
 
-	float vec3::distance(const vec3& other) const
+	UE_float vec3::distance(const vec3& other) const
 	{
-		float a = x - other.x;
-		float b = y - other.y;
-		float c = z - other.z;
+		UE_float a = x - other.x;
+		UE_float b = y - other.y;
+		UE_float c = z - other.z;
 		return sqrt(a * a + b * b + c * c);
 	}
 

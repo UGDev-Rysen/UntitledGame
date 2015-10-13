@@ -1,8 +1,8 @@
 #pragma once
 
 #include <vector>
-#include "font.h"
-
+#include <graphics/font.h>
+#include <utils/unicitydef.h>
 namespace u_engine { namespace graphics {
 
 	class FontManager {
@@ -10,11 +10,11 @@ namespace u_engine { namespace graphics {
 	private:
 		static std::vector<Font*> m_Fonts;
 	public:
-		static void add(Font* font);
+		static UE_void add(Font* font);
 		static Font* get();
-		static Font* get(const std::string& name);
-		static Font* get(const std::string& name, unsigned int size);
-		static void clean();
+		static Font* get(const UE_string& name);
+		static Font* get(const UE_string& name, UE_uint size);
+		static UE_void clean();
 	private:
 		FontManager() { }
 	};

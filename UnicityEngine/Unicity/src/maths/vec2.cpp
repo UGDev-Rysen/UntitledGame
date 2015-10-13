@@ -1,4 +1,5 @@
-#include "vec2.h"
+#include <maths/vec2.h>
+
 
 namespace u_engine { namespace maths {
 
@@ -8,7 +9,7 @@ namespace u_engine { namespace maths {
 		y = 0.0f;
 	}
 
-	vec2::vec2(const float& x, const float& y)
+	vec2::vec2(const UE_float& x, const UE_float& y)
 	{
 		this->x = x;
 		this->y = y;
@@ -72,12 +73,12 @@ namespace u_engine { namespace maths {
 		return left.divide(right);
 	}
 
-	vec2 operator+(vec2 left, float value)
+	vec2 operator+(vec2 left, UE_float value)
 	{
 		return vec2(left.x + value, left.y + value);
 	}
 
-	vec2 operator*(vec2 left, float value)
+	vec2 operator*(vec2 left, UE_float value)
 	{
 		return vec2(left.x * value, left.y * value);
 	}
@@ -102,36 +103,36 @@ namespace u_engine { namespace maths {
 		return divide(other);
 	}
 
-	bool vec2::operator==(const vec2& other)
+	UE_bool vec2::operator==(const vec2& other)
 	{
 		return x == other.x && y == other.y;
 	}
 
-	bool vec2::operator!=(const vec2& other)
+	UE_bool vec2::operator!=(const vec2& other)
 	{
 		return !(*this == other);
 	}
 
-	float vec2::distance(const vec2& other) const
+	UE_float vec2::distance(const vec2& other) const
 	{
-		float a = x - other.x;
-		float b = y - other.y;
+		UE_float a = x - other.x;
+		UE_float b = y - other.y;
 		return sqrt(a * a + b * b);
 	}
 
-	float vec2::dot(const vec2& other) const
+	UE_float vec2::dot(const vec2& other) const
 	{
 		return x * other.x + y * other.y;
 	}
 
-	float vec2::magnitude() const
+	UE_float vec2::magnitude() const
 	{
 		return sqrt(x * x + y * y);
 	}
 
 	vec2 vec2::normalise() const
 	{
-		float length = magnitude();
+		UE_float length = magnitude();
 		return vec2(x / length, y / length);
 	}
 

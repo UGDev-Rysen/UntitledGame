@@ -2,24 +2,25 @@
 
 #include <glew.h>
 #include <vector>
-
-#include "buffer.h"
+#include <u_engine_includes.h>
+#include <graphics/buffers/buffer.h>
 
 namespace u_engine { namespace graphics {
 
 	class VertexArray {
 	private:
 
-		GLuint m_ArrayID;
-		std::vector<Buffer*> m_Buffers;
+		GLuint					m_ArrayID;
+		std::vector<Buffer*>	m_Buffers;
 
 	public:
 		 VertexArray();
 		~VertexArray();
 
-		void addBuffer(Buffer* buffer, GLuint index);
-		void bind() const;
-		void unbind() const;
+		UE_void addBuffer(	Buffer*		buffer, 
+						GLuint		index);
+		UE_void bind() const;
+		UE_void unbind() const;
 
 	};
 

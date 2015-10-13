@@ -1,6 +1,7 @@
 #pragma once
 
-#include "renderable2d.h"
+#include <graphics/renderable2d.h>
+#include <utils/unicitydef.h>
 
 namespace u_engine { namespace graphics {
 
@@ -11,12 +12,12 @@ namespace u_engine { namespace graphics {
 		maths::vec2& size;
 	public:
 		Sprite(Texture* texture);
-		Sprite(float x, float y, Texture* texture);
-		Sprite(float x, float y, float width, float height, unsigned int color);
-		Sprite(float x, float y, float width, float height, maths::vec4 color);
-		Sprite(float x, float y, float width, float height, Texture* texture);
+		Sprite(UE_float x, UE_float y, Texture* texture);
+		Sprite(UE_float x, UE_float y, UE_float width, UE_float height, UE_uint color);
+		Sprite(UE_float x, UE_float y, UE_float width, UE_float height, maths::vec4 color);
+		Sprite(UE_float x, UE_float y, UE_float width, UE_float height, Texture* texture);
 
-		void setUV(std::vector<maths::vec2> uv);
+		UE_void setUV(const std::vector<maths::vec2>& uv);
 	};
 
 } }

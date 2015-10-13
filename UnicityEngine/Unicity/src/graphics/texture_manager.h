@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "texture.h"
+#include <graphics/texture.h>
 
 namespace u_engine { namespace graphics {
 
@@ -10,9 +10,9 @@ namespace u_engine { namespace graphics {
 	private:
 		static std::vector<Texture*> m_Textures;
 	public:
-		static void add(Texture* texture);
-		static Texture* get(const std::string& name);
-		static void clean();
+		static UE_void add(Texture* texture);
+		static Texture* get(const UE_string& name);
+		static UE_void clean();
 	private:
 		TextureManager() { }
 	};

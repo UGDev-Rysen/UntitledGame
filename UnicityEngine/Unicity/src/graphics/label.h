@@ -1,8 +1,9 @@
 #pragma once
 
-#include "renderable2d.h"
-#include "font_manager.h"
-
+#include <graphics/renderable2d.h>
+#include <graphics/font_manager.h>
+#include <utils/unicitydef.h>
+#include <u_engine_includes.h>
 namespace u_engine { namespace graphics {
 
 	class Label : public Renderable2D {
@@ -10,17 +11,17 @@ namespace u_engine { namespace graphics {
 	public:
 
 		Font* m_Font;
-		std::string text;
+		UE_string text;
 		maths::vec3& position;
-		float x, y;
+		UE_float x, y;
 
 	public:
-		Label(std::string text, float x, float y, unsigned int color);
-		Label(std::string text, float x, float y, Font* font, unsigned int color);
-		Label(std::string text, float x, float y, const std::string& font, unsigned int color);
-		Label(std::string text, float x, float y, const std::string& font, unsigned int size, unsigned int color);
-		void submit(Renderer2D* renderer) const override;
-		void validateFont(const std::string& name, int size = -1);
+		Label(const UE_string& text, UE_float x, UE_float y, UE_uint color);
+		Label(const UE_string& text, UE_float x, UE_float y, Font* font, UE_uint color);
+		Label(const UE_string& text, UE_float x, UE_float y, const UE_string& font, UE_uint color);
+		Label(const UE_string& text, UE_float x, UE_float y, const UE_string& font, UE_uint size, UE_uint color);
+		UE_void submit(Renderer2D* renderer) const override;
+		UE_void validateFont(const UE_string& name, UE_int size = -1);
 
 	};
 

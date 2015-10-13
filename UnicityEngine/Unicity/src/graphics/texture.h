@@ -1,34 +1,51 @@
 #pragma once
-
+#include <u_engine_includes.h>
 #include <iostream>
 #include <string>
-#include "../utils/Log.h"
-#include <FreeImage.h>
-
-#include <glew.h>
 
 
-#include "../utils/ImageLoad.h"
 
 namespace u_engine { namespace graphics{
+
+	enum class TextureWrap {
+
+		REPEAT						= GL_REPEAT,
+		CLAMP						= GL_CLAMP,
+		MIRRORED_REPEAT				= GL_MIRRORED_REPEAT,
+		CLAMP_TO_EDGE				= GL_CLAMP_TO_EDGE,
+		CLAMP_TO_BORDER				= GL_CLAMP_TO_BORDER
+	};
+
+	enum class TextureFilter {
+
+		LINEAR = GL_LINEAR,
+		NEAREST = GL_NEAREST
+	};
 
 	class Texture
 	{
 	private:
-		std::string m_Name, m_FileName;
-		GLuint m_TID;
-		GLsizei m_Width, m_Height;
-		unsigned int m_Bits;
+		static TextureWrap s_WrapMode;
+		static TextureFilter s_FilterMode;
+	private:
+		UE_string m_Name, m_FileName;
+		UE_uint m_TID;
+		UE_uint m_Width, m_Height;
+		UE_uint m_Bits;
 	public:
-		Texture(const std::string& name, const std::string& filename);
+		Texture(UE_uint width, UE_uint height, UE_uint bits = 24);
+		Texture(const UE_string& name, const UE_string& filename);
 		~Texture();
-		void bind() const;
-		void unbind() const;
+		UE_void bind() const;
+		UE_void unbind() const;
 		
-		inline const std::string& getName() const { return m_Name; }
-		inline const unsigned int getID() const { return m_TID; }
-		inline const unsigned int getWidth() const { return m_Width; }
-		inline const unsigned int getHeight() const { return m_Height; }
+		inline const UE_string& getName() const { return m_Name; }
+		inline const UE_uint getID() const { return m_TID; }
+		inline const UE_uint getWidth() const { return m_Width; }
+		inline const UE_uint getHeight() const { return m_Height; }
+	public:
+		inline static UE_void SetWrap(TextureWrap mode) { s_WrapMode = mode; }
+		inline static UE_void setFilter(TextureFilter mode) { s_FilterMode = mode; }
 	private:
 		GLuint load();
 	};

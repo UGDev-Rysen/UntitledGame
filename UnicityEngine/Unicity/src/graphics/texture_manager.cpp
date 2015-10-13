@@ -1,15 +1,15 @@
-#include "texture_manager.h"
+#include <graphics/texture_manager.h>
 
 namespace u_engine { namespace graphics {
 
 	std::vector<Texture*> TextureManager::m_Textures;
 
-	void TextureManager::add(Texture* texture)
+	UE_void TextureManager::add(Texture* texture)
 	{
 		m_Textures.push_back(texture);
 	}
 
-	Texture* TextureManager::get(const std::string& name)
+	Texture* TextureManager::get(const UE_string& name)
 	{
 		for (Texture* texture : m_Textures)
 		{
@@ -19,9 +19,9 @@ namespace u_engine { namespace graphics {
 		return nullptr;
 	}
 
-	void TextureManager::clean()
+	UE_void TextureManager::clean()
 	{
-		for (int i = 0; i < m_Textures.size(); i++)
+		for (UE_uint i = 0; i < m_Textures.size(); i++)
 			delete m_Textures[i];
 	}
 

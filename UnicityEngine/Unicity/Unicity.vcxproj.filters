@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\graphics\BatchRenderer2D.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
@@ -24,9 +23,6 @@
       <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\layers\layer.cpp">
-      <Filter>Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\shader.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\sprite.cpp">
@@ -200,11 +196,7 @@
     <ClCompile Include="ext\gorilla-audio\common\gc_thread.c">
       <Filter>ext\gorilla-audio</Filter>
     </ClCompile>
-    <ClCompile Include="examples\game.cpp" />
     <ClCompile Include="src\audio\sound.cpp">
-      <Filter>Audio</Filter>
-    </ClCompile>
-    <ClCompile Include="src\audio\sound_manager.cpp">
       <Filter>Audio</Filter>
     </ClCompile>
     <ClCompile Include="tilelayer.cpp">
@@ -213,6 +205,23 @@
     <ClCompile Include="src\graphics\texture_manager.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="src\shaders\shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shaders\ShaderFactory.cpp" />
+    <ClCompile Include="src\embedded\Embedded.cpp" />
+    <ClCompile Include="src\graphics\MeshFactory.cpp" />
+    <ClCompile Include="src\graphics\Framebuffer.cpp" />
+    <ClCompile Include="src\audio\SoundManager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Win32Log.cpp" />
+    <ClCompile Include="src\platform\windows\Win32Application.cpp" />
+    <ClCompile Include="src\platform\windows\Win32Window.cpp" />
+    <ClCompile Include="src\shaders\postfx\PostEffectsPass.cpp" />
+    <ClCompile Include="src\shaders\postfx\PostEffects.cpp" />
+    <ClCompile Include="src\physics\Collider_2D.cpp" />
+    <ClCompile Include="src\physics\PhysicsObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\BatchRenderer2D.h">
@@ -246,9 +255,6 @@
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\renderer2d.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\shader.h">
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\sprite.h">
@@ -357,9 +363,6 @@
     <ClInclude Include="src\audio\sound.h">
       <Filter>Audio</Filter>
     </ClInclude>
-    <ClInclude Include="src\audio\sound_manager.h">
-      <Filter>Audio</Filter>
-    </ClInclude>
     <ClInclude Include="src\utils\stringutils.h">
       <Filter>Utils</Filter>
     </ClInclude>
@@ -369,14 +372,27 @@
     <ClInclude Include="src\graphics\texture_manager.h">
       <Filter>Graphics</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\shaders\basic.frag">
-      <Filter>Shader</Filter>
-    </None>
-    <None Include="src\shaders\basic.vert">
-      <Filter>Shader</Filter>
-    </None>
+    <ClInclude Include="src\utils\unicitydef.h" />
+    <ClInclude Include="src\shaders\shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shaders\ShaderFactory.h" />
+    <ClInclude Include="src\embedded\Embedded.h" />
+    <ClInclude Include="src\graphics\Mask.h" />
+    <ClInclude Include="src\unicity_gl.h" />
+    <ClInclude Include="src\maths\tvec2.h" />
+    <ClInclude Include="src\u_engine_includes.h" />
+    <ClInclude Include="src\u_engine_defines.h" />
+    <ClInclude Include="src\graphics\MeshFactory.h" />
+    <ClInclude Include="src\graphics\Framebuffer.h" />
+    <ClInclude Include="src\audio\SoundManager.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\Application.h" />
+    <ClInclude Include="src\shaders\postfx\PostEffectsPass.h" />
+    <ClInclude Include="src\shaders\postfx\PostEffects.h" />
+    <ClInclude Include="src\physics\PhysicsObject.h" />
+    <ClInclude Include="src\physics\Collider_2D.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Graphics">
@@ -403,5 +419,11 @@
     <Filter Include="Audio">
       <UniqueIdentifier>{3aba20d5-e2f9-4d47-afa9-716f4ca82897}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\embedded\files\SourceSansPro-Light.embed" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\physics\TODO.txt" />
   </ItemGroup>
 </Project>

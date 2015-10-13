@@ -1,0 +1,50 @@
+#include <graphics/Framebuffer.h>
+
+namespace u_engine { namespace graphics {
+
+	Framebuffer::Framebuffer(const maths::tvec2<UE_uint>& size)
+		: m_Size(size), m_Width(m_Size.x), m_Height(m_Size.y), m_ClearColor(maths::vec4(0.0f, 0.0f, 0.0f, 1.0f))
+	{
+		Create(m_Width, m_Height);
+	}
+
+	Framebuffer::Framebuffer(UE_uint width, UE_uint height)
+		: m_Size(width, height), m_Width(m_Size.x), m_Height(m_Size.y), m_ClearColor(maths::vec4(0.0f, 0.0f, 0.0f, 1.0f))
+	{
+		Create(width, height);
+	}
+
+	Framebuffer::~Framebuffer()
+	{
+		GLCall(glDeleteFramebuffers(1, &m_Data.framebufferID));
+	}
+
+	UE_void Framebuffer::Create(UE_uint width, UE_uint height)
+	{
+		GLCall(glGenFramebuffers(1, &m_Data.framebufferID));
+		GLCall(glGenRenderbuffers(1, &m_Data.depthbufferID));
+		
+		Texture::setFilter(TextureFilter::LINEAR);
+		m_Texture = new Texture(width, height);
+
+		GLCall(glBindRenderbuffer(GL_RENDERBUFFER, m_Data.depthbufferID));
+		GLCall(glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT16, width, height));
+
+		GLCall(glBindFramebuffer(GL_FRAMEBUFFER, m_Data.framebufferID));
+		GLCall(glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_Texture->getID(), 0));
+		GLCall(glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, m_Data.depthbufferID));
+	}
+
+	UE_void Framebuffer::Bind() const
+	{
+		GLCall(glBindFramebuffer(GL_FRAMEBUFFER, m_Data.framebufferID));
+		GLCall(glViewport(0, 0, m_Width, m_Height));
+	}
+
+	UE_void Framebuffer::Clear()
+	{
+		GLCall(glClearColor(m_ClearColor.x, m_ClearColor.y, m_ClearColor.z, m_ClearColor.w));
+		GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
+	}
+
+} }

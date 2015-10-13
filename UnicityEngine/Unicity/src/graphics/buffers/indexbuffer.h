@@ -1,6 +1,6 @@
 #pragma once
 #include <glew.h>
-
+#include <u_engine_includes.h>
 namespace u_engine { namespace graphics {
 
 
@@ -9,18 +9,18 @@ namespace u_engine { namespace graphics {
 
 
 	private:
-		GLuint	m_BufferID;
-		GLuint	m_Count;
+		GLuint					m_BufferID;
+		GLuint					m_Count;
 	public:
 		IndexBuffer(GLushort*	data,
-			GLsizei		count);
+			GLsizei				count);
 
 
-		IndexBuffer(GLuint*	data,
-			GLsizei		count);
+		IndexBuffer(GLuint*		data,
+			GLsizei				count);
 		~IndexBuffer();
-		void bind()		const;
-		void unbind()	const;
+		UE_void bind()		const;
+		UE_void unbind()	const;
 		inline GLuint	getCount()	const { return m_Count; }
 
 	};

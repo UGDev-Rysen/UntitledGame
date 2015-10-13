@@ -1,31 +1,33 @@
-#include "vertexarray.h"
+#include <graphics/buffers/vertexarray.h>
 
 
 namespace u_engine { namespace graphics {
 
 
 	VertexArray::VertexArray() {
-		glGenVertexArrays(1, &m_ArrayID);
+	GLCall(glGenVertexArrays(1, &m_ArrayID));
 
 	}
 
 
 	VertexArray::~VertexArray(){
-		for (int i = 0; i < m_Buffers.size(); i++) {
+		for (UE_int i = 0; i < m_Buffers.size(); i++) {
 			delete m_Buffers[i];
-			glDeleteVertexArrays(1, &m_ArrayID);
+			GLCall(glDeleteVertexArrays(1, &m_ArrayID));
 		}
 	}
 
 
 
-	void VertexArray::addBuffer(Buffer* buffer, GLuint index){
+	UE_void VertexArray::addBuffer(Buffer* buffer, 
+								GLuint index){
 
 		bind();
 		buffer->bind();
 
-		glEnableVertexAttribArray(index);
-		glVertexAttribPointer(index, buffer->getComponentCount(), GL_FLOAT, GL_FALSE, 0, 0);
+		GLCall(glEnableVertexAttribArray(index));
+		GLCall(glVertexAttribPointer(index, buffer->getComponentCount(),
+								GL_FLOAT, GL_FALSE, 0, 0));
 
 		buffer->unbind();
 		unbind();
@@ -33,13 +35,13 @@ namespace u_engine { namespace graphics {
 		m_Buffers.push_back(buffer);
 	}
 
-	void VertexArray::bind() const {
-		glBindVertexArray(m_ArrayID);
+	UE_void VertexArray::bind() const {
+		GLCall(glBindVertexArray(m_ArrayID));
 	}
 
 
-	void VertexArray::unbind() const {
-		glBindVertexArray(0);
+	UE_void VertexArray::unbind() const {
+		GLCall(glBindVertexArray(0));
 	}
 
 
