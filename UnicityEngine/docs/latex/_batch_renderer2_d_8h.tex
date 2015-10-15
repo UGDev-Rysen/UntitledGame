@@ -1,0 +1,86 @@
+\hypertarget{_batch_renderer2_d_8h}{}\section{G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/graphics/\+Batch\+Renderer2\+D.h File Reference}
+\label{_batch_renderer2_d_8h}\index{G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/graphics/\+Batch\+Renderer2\+D.\+h@{G\+:/\+Libraries/\+V\+S\+Projects/\+Untitled\+Game/\+Unicity\+Engine/\+Unicity/src/graphics/\+Batch\+Renderer2\+D.\+h}}
+{\ttfamily \#include \char`\"{}renderer2\+D.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}buffers/indexbuffer.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cstddef$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classu__engine_1_1graphics_1_1_batch_renderer2_d}{u\+\_\+engine\+::graphics\+::\+Batch\+Renderer2\+D}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceu__engine}{u\+\_\+engine}
+\item 
+ \hyperlink{namespaceu__engine_1_1graphics}{u\+\_\+engine\+::graphics}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_aefd07068452cd59987563d08561fc508}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}~60000
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_a375bc2b5e56843340229bba7e8d79612}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E}~sizeof(Vertex\+Data)
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_a0fe4c3df4762ceacb2d1637b0af494fc}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E}~\hyperlink{_batch_renderer2_d_8h_a375bc2b5e56843340229bba7e8d79612}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E} $\ast$ 4
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_a3e407ddfe07d2e281044fd0bec91b416}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}~\hyperlink{_batch_renderer2_d_8h_a0fe4c3df4762ceacb2d1637b0af494fc}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E} $\ast$ \hyperlink{_batch_renderer2_d_8h_aefd07068452cd59987563d08561fc508}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_a4950cf15c52226f8df9153ab5e38e4a3}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E}~\hyperlink{_batch_renderer2_d_8h_aefd07068452cd59987563d08561fc508}{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S} $\ast$ 6
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_af1102727472ef989d5164481a4a79787}{S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X}~0
+\item 
+\#define \hyperlink{_batch_renderer2_d_8h_aee3d6b98abb95550cbb1e7a87aa49aec}{S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X}~1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_batch_renderer2_d_8h_a3e407ddfe07d2e281044fd0bec91b416}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E~{\bf R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E} $\ast$ {\bf R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}}\label{_batch_renderer2_d_8h_a3e407ddfe07d2e281044fd0bec91b416}
+
+
+Definition at line 12 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_a4950cf15c52226f8df9153ab5e38e4a3}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+I\+N\+D\+I\+C\+E\+S\+\_\+\+S\+I\+Z\+E~{\bf R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S} $\ast$ 6}\label{_batch_renderer2_d_8h_a4950cf15c52226f8df9153ab5e38e4a3}
+
+
+Definition at line 13 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_aefd07068452cd59987563d08561fc508}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}}
+\index{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+M\+A\+X\+\_\+\+S\+P\+R\+I\+T\+E\+S~60000}\label{_batch_renderer2_d_8h_aefd07068452cd59987563d08561fc508}
+
+
+Definition at line 9 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_a0fe4c3df4762ceacb2d1637b0af494fc}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+S\+I\+Z\+E~{\bf R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E} $\ast$ 4}\label{_batch_renderer2_d_8h_a0fe4c3df4762ceacb2d1637b0af494fc}
+
+
+Definition at line 11 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_a375bc2b5e56843340229bba7e8d79612}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E@{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+I\+Z\+E~sizeof(Vertex\+Data)}\label{_batch_renderer2_d_8h_a375bc2b5e56843340229bba7e8d79612}
+
+
+Definition at line 10 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_aee3d6b98abb95550cbb1e7a87aa49aec}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X@{S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X}}
+\index{S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X@{S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A\+D\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+I\+N\+D\+E\+X~1}\label{_batch_renderer2_d_8h_aee3d6b98abb95550cbb1e7a87aa49aec}
+
+
+Definition at line 16 of file Batch\+Renderer2\+D.\+h.
+
+\hypertarget{_batch_renderer2_d_8h_af1102727472ef989d5164481a4a79787}{}\index{Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}!S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X@{S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X}}
+\index{S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X@{S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X}!Batch\+Renderer2\+D.\+h@{Batch\+Renderer2\+D.\+h}}
+\subsubsection[{S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+A\+D\+E\+R\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+I\+N\+D\+E\+X~0}\label{_batch_renderer2_d_8h_af1102727472ef989d5164481a4a79787}
+
+
+Definition at line 15 of file Batch\+Renderer2\+D.\+h.
+
